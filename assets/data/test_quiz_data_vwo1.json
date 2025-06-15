@@ -1,0 +1,682 @@
+{
+  "quizzes": [
+    {
+      "quiz_id": "feniks_vwo_1_geschiedenis_h1",
+      "title": "Feniks - Hoofdstuk 1 – De Grieken en Romeinen",
+      "subject": "Geschiedenis",
+      "textbook": "Feniks",
+      "class_level": "VWO 1",
+      "learning_method": "Feniks",
+      "questions": [
+        {
+          "id": "0c610689-fef4-488a-aa5b-ef56651fd016",
+          "question_text": "Wat is het belangrijkste kenmerk van een directe democratie zoals in Athene?",
+          "options": [
+            "'Het volk kiest vertegenwoordigers'",
+            "'De koning heeft alle macht'",
+            "'Alle vrije mannen stemmen zelf over wetten'",
+            "'Vrouwen en slaven hebben stemrecht'"
+          ],
+          "correct_option_index": 2,
+          "explanation": "In het oude Athene stemden alle vrije mannen zelf over wetten: een directe democratie.",
+          "difficulty": "medium",
+          "learning_goal": "Uitleggen wat directe democratie inhoudt in het oude Athene.",
+          "tags": [
+            "Grieken",
+            "democratie",
+            "bestuur"
+          ]
+        },
+        {
+          "id": "a23748a4-ab49-43e5-bd84-e330f28a8995",
+          "question_text": "Wat was de belangrijkste reden voor de uitbreiding van het Romeinse Rijk?",
+          "options": [
+            "'Ze wilden vrede sluiten met alle buren'",
+            "'Ze hadden behoefte aan meer landbouwgrond en slaven'",
+            "'Ze werden aangevallen door de Germanen'",
+            "'Ze wilden meer handel drijven met China'"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De Romeinen breidden hun rijk uit voor rijkdom, landbouwgrond en slaven.",
+          "difficulty": "medium",
+          "learning_goal": "Begrijpen waarom het Romeinse Rijk zich uitbreidde.",
+          "tags": [
+            "Romeinen",
+            "expansie",
+            "oorzaken"
+          ]
+        },
+        {
+          "id": "bf7c3996-4682-4b78-987c-bd92ee6b9299",
+          "question_text": "Wat wordt bedoeld met 'romanisering'?",
+          "options": [
+            "'De vernietiging van lokale culturen'",
+            "'De verspreiding van Latijn en Romeinse gebruiken'",
+            "'De verovering van Rome door Germanen'",
+            "'De bouw van middeleeuwse steden'"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Romanisering betekent het overnemen van Romeinse cultuur, taal en gewoonten.",
+          "difficulty": "easy",
+          "learning_goal": "Uitleggen wat romanisering betekent en hoe dit gebeurde.",
+          "tags": [
+            "Romeinen",
+            "cultuur",
+            "romanisering"
+          ]
+        },
+        {
+          "id": "e630cbca-37db-4373-8c9b-bc76e0f7bc78",
+          "question_text": "Wie had in de Romeinse Republiek de meeste macht in vredestijd?",
+          "options": [
+            "'De keizer'",
+            "'De senaat'",
+            "'Het leger'",
+            "'De volksvergadering'"
+          ],
+          "correct_option_index": 1,
+          "explanation": "In de Romeinse Republiek had de senaat veel invloed, vooral in vredestijd.",
+          "difficulty": "medium",
+          "learning_goal": "Begrijpen hoe de macht verdeeld was in de Romeinse Republiek.",
+          "tags": [
+            "bestuur",
+            "Romeinen",
+            "republiek"
+          ]
+        },
+        {
+          "id": "01821d0a-5102-4d3a-8d87-a258d0d28bb6",
+          "question_text": "Welke Romeinse bouwwerken dienden voor vermaak van het volk?",
+          "options": [
+            "'Aquaducten'",
+            "'Thermen'",
+            "'Amfitheaters'",
+            "'Tempels'"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Amfitheaters zoals het Colosseum waren bedoeld voor vermaak zoals gladiatorengevechten.",
+          "difficulty": "easy",
+          "learning_goal": "Herkennen van Romeinse bouwwerken en hun functie.",
+          "tags": [
+            "Romeinen",
+            "architectuur",
+            "cultuur"
+          ]
+        },
+        {
+          "id": "73867953-9a04-4ebd-af90-740cab2e59ad",
+          "question_text": "Waarom werd Julius Caesar vermoord?",
+          "options": [
+            "'Hij verloor een oorlog'",
+            "'Hij werd te populair en machtig'",
+            "'Hij voerde nieuwe belastingen in'",
+            "'Hij maakte een deal met de Germanen'"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De senaat was bang dat Caesar te machtig werd en liet hem vermoorden.",
+          "difficulty": "hard",
+          "learning_goal": "Inzicht in de politieke spanningen in de Romeinse Republiek.",
+          "tags": [
+            "Romeinen",
+            "Julius Caesar",
+            "politiek"
+          ]
+        },
+        {
+          "id": "bf403bd0-4e12-4dec-b1c3-9fcde0bfb108",
+          "question_text": "Wat was het verschil tussen een slaaf en een vrije Romein?",
+          "options": [
+            "'Slaven mochten stemmen'",
+            "'Vrije Romeinen betaalden geen belasting'",
+            "'Slaven hadden geen rechten'",
+            "'Slaven hadden meer land'"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Slaven in Rome hadden geen burgerrechten, vrije Romeinen wel.",
+          "difficulty": "easy",
+          "learning_goal": "Verschil uitleggen tussen vrije burgers en slaven.",
+          "tags": [
+            "Romeinen",
+            "samenleving",
+            "slavernij"
+          ]
+        },
+        {
+          "id": "71cd7a46-7455-4276-bf4d-419a79fcdd68",
+          "question_text": "Wat bedoelen we met het 'klassieke erfgoed' van Grieken en Romeinen?",
+          "options": [
+            "'Hun mythen en sagen'",
+            "'De invloed van hun cultuur op latere tijden'",
+            "'Hun militaire veroveringen'",
+            "'Hun landbouwmethoden'"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Klassiek erfgoed betekent dat hun kunst, wetenschap en denken invloedrijk bleven.",
+          "difficulty": "medium",
+          "learning_goal": "Uitleggen wat wordt bedoeld met klassiek erfgoed.",
+          "tags": [
+            "erfgoed",
+            "cultuur",
+            "Grieken",
+            "Romeinen"
+          ]
+        },
+        {
+          "id": "31de7361-0414-446c-aba1-f9cedca5e025",
+          "question_text": "Welke taal spraken de meeste mensen in het westen van het Romeinse Rijk?",
+          "options": [
+            "'Grieks'",
+            "'Latijn'",
+            "'Keltisch'",
+            "'Germaans'"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Latijn was de voertaal in het westen van het Romeinse Rijk.",
+          "difficulty": "easy",
+          "learning_goal": "Weten welke taal in het Romeinse Rijk dominant was.",
+          "tags": [
+            "taal",
+            "Romeinen",
+            "Latijn"
+          ]
+        },
+        {
+          "id": "5cfac5a1-8d65-4c7c-be68-21f63c19e401",
+          "question_text": "Welke invloed hadden de Grieken op de Romeinse cultuur?",
+          "options": [
+            "'Geen",
+            "ze stonden vijandig tegenover elkaar'",
+            "'Ze namen goden en bouwstijlen over'",
+            "'Ze gebruikten elkaars munteenheden'",
+            "'Ze spraken dezelfde taal'"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De Romeinen namen veel van de Griekse goden, kunst en filosofie over.",
+          "difficulty": "medium",
+          "learning_goal": "Begrijpen hoe de Griekse cultuur de Romeinse beïnvloedde.",
+          "tags": [
+            "invloed",
+            "cultuur",
+            "Grieken",
+            "Romeinen"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "nieuw_nederlands_vwo_1_nederlands",
+      "title": "Nederlands - Basis Quiz",
+      "subject": "Nederlands",
+      "textbook": "Nieuw Nederlands",
+      "class_level": "VWO 1",
+      "learning_method": "Nieuw Nederlands",
+      "questions": [
+        {
+          "id": "dummy_nederlands_0",
+          "question_text": "Dit is een voorbeeldvraag voor Nederlands over onderwerp 1.",
+          "options": [
+            "Optie A 1",
+            "Optie B 1",
+            "Optie C 1"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 1 in Nederlands.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Nederlands.",
+          "tags": [
+            "nederlands",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_nederlands_1",
+          "question_text": "Dit is een voorbeeldvraag voor Nederlands over onderwerp 2.",
+          "options": [
+            "Optie A 2",
+            "Optie B 2",
+            "Optie C 2"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 2 in Nederlands.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Nederlands.",
+          "tags": [
+            "nederlands",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_nederlands_2",
+          "question_text": "Dit is een voorbeeldvraag voor Nederlands over onderwerp 3.",
+          "options": [
+            "Optie A 3",
+            "Optie B 3",
+            "Optie C 3"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 3 in Nederlands.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Nederlands.",
+          "tags": [
+            "nederlands",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_nederlands_3",
+          "question_text": "Dit is een voorbeeldvraag voor Nederlands over onderwerp 4.",
+          "options": [
+            "Optie A 4",
+            "Optie B 4",
+            "Optie C 4"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 4 in Nederlands.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Nederlands.",
+          "tags": [
+            "nederlands",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_nederlands_4",
+          "question_text": "Dit is een voorbeeldvraag voor Nederlands over onderwerp 5.",
+          "options": [
+            "Optie A 5",
+            "Optie B 5",
+            "Optie C 5"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 5 in Nederlands.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Nederlands.",
+          "tags": [
+            "nederlands",
+            "basis"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "stepping_stones_vwo_1_engels",
+      "title": "Engels - Basis Quiz",
+      "subject": "Engels",
+      "textbook": "Stepping Stones",
+      "class_level": "VWO 1",
+      "learning_method": "Stepping Stones",
+      "questions": [
+        {
+          "id": "dummy_engels_0",
+          "question_text": "Dit is een voorbeeldvraag voor Engels over onderwerp 1.",
+          "options": [
+            "Optie A 1",
+            "Optie B 1",
+            "Optie C 1"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 1 in Engels.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Engels.",
+          "tags": [
+            "engels",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_engels_1",
+          "question_text": "Dit is een voorbeeldvraag voor Engels over onderwerp 2.",
+          "options": [
+            "Optie A 2",
+            "Optie B 2",
+            "Optie C 2"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 2 in Engels.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Engels.",
+          "tags": [
+            "engels",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_engels_2",
+          "question_text": "Dit is een voorbeeldvraag voor Engels over onderwerp 3.",
+          "options": [
+            "Optie A 3",
+            "Optie B 3",
+            "Optie C 3"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 3 in Engels.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Engels.",
+          "tags": [
+            "engels",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_engels_3",
+          "question_text": "Dit is een voorbeeldvraag voor Engels over onderwerp 4.",
+          "options": [
+            "Optie A 4",
+            "Optie B 4",
+            "Optie C 4"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 4 in Engels.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Engels.",
+          "tags": [
+            "engels",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_engels_4",
+          "question_text": "Dit is een voorbeeldvraag voor Engels over onderwerp 5.",
+          "options": [
+            "Optie A 5",
+            "Optie B 5",
+            "Optie C 5"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 5 in Engels.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Engels.",
+          "tags": [
+            "engels",
+            "basis"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "getal_&_ruimte_vwo_1_wiskunde",
+      "title": "Wiskunde - Basis Quiz",
+      "subject": "Wiskunde",
+      "textbook": "Getal & Ruimte",
+      "class_level": "VWO 1",
+      "learning_method": "Getal & Ruimte",
+      "questions": [
+        {
+          "id": "dummy_wiskunde_0",
+          "question_text": "Dit is een voorbeeldvraag voor Wiskunde over onderwerp 1.",
+          "options": [
+            "Optie A 1",
+            "Optie B 1",
+            "Optie C 1"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 1 in Wiskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Wiskunde.",
+          "tags": [
+            "wiskunde",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_wiskunde_1",
+          "question_text": "Dit is een voorbeeldvraag voor Wiskunde over onderwerp 2.",
+          "options": [
+            "Optie A 2",
+            "Optie B 2",
+            "Optie C 2"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 2 in Wiskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Wiskunde.",
+          "tags": [
+            "wiskunde",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_wiskunde_2",
+          "question_text": "Dit is een voorbeeldvraag voor Wiskunde over onderwerp 3.",
+          "options": [
+            "Optie A 3",
+            "Optie B 3",
+            "Optie C 3"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 3 in Wiskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Wiskunde.",
+          "tags": [
+            "wiskunde",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_wiskunde_3",
+          "question_text": "Dit is een voorbeeldvraag voor Wiskunde over onderwerp 4.",
+          "options": [
+            "Optie A 4",
+            "Optie B 4",
+            "Optie C 4"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 4 in Wiskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Wiskunde.",
+          "tags": [
+            "wiskunde",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_wiskunde_4",
+          "question_text": "Dit is een voorbeeldvraag voor Wiskunde over onderwerp 5.",
+          "options": [
+            "Optie A 5",
+            "Optie B 5",
+            "Optie C 5"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 5 in Wiskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Wiskunde.",
+          "tags": [
+            "wiskunde",
+            "basis"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "de_geo_vwo_1_aardrijkskunde",
+      "title": "Aardrijkskunde - Basis Quiz",
+      "subject": "Aardrijkskunde",
+      "textbook": "De Geo",
+      "class_level": "VWO 1",
+      "learning_method": "De Geo",
+      "questions": [
+        {
+          "id": "dummy_aardrijkskunde_0",
+          "question_text": "Dit is een voorbeeldvraag voor Aardrijkskunde over onderwerp 1.",
+          "options": [
+            "Optie A 1",
+            "Optie B 1",
+            "Optie C 1"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 1 in Aardrijkskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Aardrijkskunde.",
+          "tags": [
+            "aardrijkskunde",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_aardrijkskunde_1",
+          "question_text": "Dit is een voorbeeldvraag voor Aardrijkskunde over onderwerp 2.",
+          "options": [
+            "Optie A 2",
+            "Optie B 2",
+            "Optie C 2"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 2 in Aardrijkskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Aardrijkskunde.",
+          "tags": [
+            "aardrijkskunde",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_aardrijkskunde_2",
+          "question_text": "Dit is een voorbeeldvraag voor Aardrijkskunde over onderwerp 3.",
+          "options": [
+            "Optie A 3",
+            "Optie B 3",
+            "Optie C 3"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 3 in Aardrijkskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Aardrijkskunde.",
+          "tags": [
+            "aardrijkskunde",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_aardrijkskunde_3",
+          "question_text": "Dit is een voorbeeldvraag voor Aardrijkskunde over onderwerp 4.",
+          "options": [
+            "Optie A 4",
+            "Optie B 4",
+            "Optie C 4"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 4 in Aardrijkskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Aardrijkskunde.",
+          "tags": [
+            "aardrijkskunde",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_aardrijkskunde_4",
+          "question_text": "Dit is een voorbeeldvraag voor Aardrijkskunde over onderwerp 5.",
+          "options": [
+            "Optie A 5",
+            "Optie B 5",
+            "Optie C 5"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 5 in Aardrijkskunde.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Aardrijkskunde.",
+          "tags": [
+            "aardrijkskunde",
+            "basis"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "biologie_voor_jou_vwo_1_biologie",
+      "title": "Biologie - Basis Quiz",
+      "subject": "Biologie",
+      "textbook": "Biologie voor jou",
+      "class_level": "VWO 1",
+      "learning_method": "Biologie voor jou",
+      "questions": [
+        {
+          "id": "dummy_biologie_0",
+          "question_text": "Dit is een voorbeeldvraag voor Biologie over onderwerp 1.",
+          "options": [
+            "Optie A 1",
+            "Optie B 1",
+            "Optie C 1"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 1 in Biologie.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Biologie.",
+          "tags": [
+            "biologie",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_biologie_1",
+          "question_text": "Dit is een voorbeeldvraag voor Biologie over onderwerp 2.",
+          "options": [
+            "Optie A 2",
+            "Optie B 2",
+            "Optie C 2"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 2 in Biologie.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Biologie.",
+          "tags": [
+            "biologie",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_biologie_2",
+          "question_text": "Dit is een voorbeeldvraag voor Biologie over onderwerp 3.",
+          "options": [
+            "Optie A 3",
+            "Optie B 3",
+            "Optie C 3"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 3 in Biologie.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Biologie.",
+          "tags": [
+            "biologie",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_biologie_3",
+          "question_text": "Dit is een voorbeeldvraag voor Biologie over onderwerp 4.",
+          "options": [
+            "Optie A 4",
+            "Optie B 4",
+            "Optie C 4"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 4 in Biologie.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Biologie.",
+          "tags": [
+            "biologie",
+            "basis"
+          ]
+        },
+        {
+          "id": "dummy_biologie_4",
+          "question_text": "Dit is een voorbeeldvraag voor Biologie over onderwerp 5.",
+          "options": [
+            "Optie A 5",
+            "Optie B 5",
+            "Optie C 5"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Dit is de uitleg voor vraag 5 in Biologie.",
+          "difficulty": "easy",
+          "learning_goal": "Begrijpen van basisconcepten in Biologie.",
+          "tags": [
+            "biologie",
+            "basis"
+          ]
+        }
+      ]
+    }
+  ]
+}
