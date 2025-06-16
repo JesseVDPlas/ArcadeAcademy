@@ -4,21 +4,17 @@ import { useUser } from '../../contexts/UserContext';
 
 export default function Summary() {
   const router = useRouter();
-  const { user, saveUserToStorage } = useUser();
-
-  if (!user) return null;
+  const { setUser, name, grade, preferredSubjects = [] } = useUser();
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Profieloverzicht</Text>
-      <Text style={styles.text}>Naam: {user.name}</Text>
-      <Text style={styles.text}>Klas: {user.grade}</Text>
+      <Text style={styles.text}>Naam: {name}</Text>
+      <Text style={styles.text}>Klas: {grade}</Text>
+      <Text style={styles.text}>Vakken: {preferredSubjects.length > 0 ? preferredSubjects.join(', ') : 'Geen gekozen'}</Text>
       <Pressable
         style={styles.button}
-        onPress={async () => {
-          await saveUserToStorage();
-          router.replace('/home');
-        }}
+        onPress={() => router.replace('/home')}
       >
         <Text style={styles.buttonText}>Start!</Text>
       </Pressable>

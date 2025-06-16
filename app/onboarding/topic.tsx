@@ -1,7 +1,7 @@
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { useQuiz } from '../../contexts/QuizContext';
+import { useUser } from '../../contexts/UserContext';
 
 const TOPICS = [
   { label: '🏛️ Geschiedenis', value: 'geschiedenis' },
@@ -22,27 +22,38 @@ const TOPICS = [
 
 export default function OnboardingTopic() {
   const router = useRouter();
-  const { startNewQuiz } = useQuiz();
+  const { setUser, preferredSubjects = [] } = useUser();
 
-  const handleSelect = (topic: string) => {
-    startNewQuiz(topic);
-    router.push('/quiz-screen');
+  const toggleSubject = (subject: string) => {
+    const updated = preferredSubjects.includes(subject)
+      ? preferredSubjects.filter((s) => s !== subject)
+      : [...preferredSubjects, subject];
+    setUser({ preferredSubjects: updated });
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Kies een onderwerp om mee te starten</Text>
+      <Text style={styles.title}>Kies je favoriete vakken</Text>
       <ScrollView contentContainerStyle={styles.options} showsVerticalScrollIndicator={false}>
         {TOPICS.map((topic) => (
           <Pressable
             key={topic.value}
-            style={styles.option}
-            onPress={() => handleSelect(topic.value)}
+            style={[styles.option, preferredSubjects.includes(topic.value) && styles.selected]}
+            onPress={() => toggleSubject(topic.value)}
           >
-            <Text style={styles.optionText}>{topic.label}</Text>
+            <Text style={styles.optionText}>
+              {preferredSubjects.includes(topic.value) ? '✅ ' : ''}{topic.label}
+            </Text>
           </Pressable>
         ))}
       </ScrollView>
+      <Pressable
+        style={[styles.button, preferredSubjects.length === 0 && { opacity: 0.5 }]}
+        onPress={() => router.push('/onboarding/summary')}
+        disabled={preferredSubjects.length === 0}
+      >
+        <Text style={styles.buttonText}>Volgende</Text>
+      </Pressable>
     </View>
   );
 }
@@ -87,6 +98,33 @@ const styles = StyleSheet.create({
   },
   optionText: {
     color: '#39FF14',
+    fontSize: 18,
+    fontFamily: 'Courier', // Vervang door pixel font als beschikbaar
+    fontWeight: 'bold',
+    textAlign: 'center',
+    letterSpacing: 1,
+    textShadowColor: '#FF00FF',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 6,
+  },
+  selected: {
+    backgroundColor: '#39FF14',
+  },
+  button: {
+    backgroundColor: '#39FF14',
+    borderRadius: 10,
+    paddingVertical: 16,
+    paddingHorizontal: 36,
+    marginTop: 24,
+    width: 280,
+    alignItems: 'center',
+    shadowColor: '#FF00FF',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 1,
+    shadowRadius: 12,
+  },
+  buttonText: {
+    color: '#000',
     fontSize: 18,
     fontFamily: 'Courier', // Vervang door pixel font als beschikbaar
     fontWeight: 'bold',

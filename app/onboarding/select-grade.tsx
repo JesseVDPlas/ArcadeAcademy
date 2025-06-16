@@ -6,7 +6,7 @@ const YEARS = ['1', '2', '3', '4', '5', '6'];
 
 export default function SelectGrade() {
   const router = useRouter();
-  const { user, setUser } = useUser();
+  const { setUser } = useUser();
 
   return (
     <View style={styles.container}>
@@ -16,7 +16,7 @@ export default function SelectGrade() {
           key={year}
           style={styles.button}
           onPress={() => {
-            setUser({ ...user, tempYear: year });
+            setUser({ grade: year });
             router.push('/onboarding/select-level' as any);
           }}
         >

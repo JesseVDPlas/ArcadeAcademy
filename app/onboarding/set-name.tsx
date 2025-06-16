@@ -5,8 +5,8 @@ import { useUser } from '../../contexts/UserContext';
 
 export default function SetName() {
   const router = useRouter();
-  const { user, setUser } = useUser();
-  const [name, setName] = useState(user?.name || '');
+  const { setUser } = useUser();
+  const [name, setName] = useState('');
 
   return (
     <View style={styles.container}>
@@ -21,13 +21,8 @@ export default function SetName() {
       <Pressable
         style={styles.button}
         onPress={() => {
-          setUser({
-            name,
-            grade: user?.grade || '',
-            preferredSubjects: user?.preferredSubjects || [],
-            tempYear: user?.tempYear,
-          });
-          router.push('/onboarding/select-grade');
+          setUser({ name: name.trim() });
+          router.replace('/home');
         }}
         disabled={!name}
       >
