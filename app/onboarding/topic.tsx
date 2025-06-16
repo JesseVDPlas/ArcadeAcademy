@@ -49,7 +49,7 @@ export default function OnboardingTopic() {
       </ScrollView>
       <Pressable
         style={[styles.button, preferredSubjects.length === 0 && { opacity: 0.5 }]}
-        onPress={() => router.push('/onboarding/summary')}
+        onPress={() => router.push('/onboarding/review' as any)}
         disabled={preferredSubjects.length === 0}
       >
         <Text style={styles.buttonText}>Volgende</Text>

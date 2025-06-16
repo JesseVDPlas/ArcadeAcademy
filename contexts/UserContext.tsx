@@ -1,54 +1,48 @@
-import * as SecureStore from 'expo-secure-store';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-export type UserProfile = {
-  name: string;
-  grade: string;
-  preferredSubjects: string[];
-  tempYear?: string;
+type User = {
+  name?: string;
+  grade?: string;
+  preferredSubjects?: string[];
+  soundOn: boolean;
+};
+type UserContextValue = User & {
+  setUser: (partial: Partial<User>) => void;
+  toggleSound: () => void;
+  hydrated: boolean;
 };
 
-type UserContextType = {
-  user: UserProfile | null;
-  setUser: (user: UserProfile | null) => void;
-  resetUser: () => Promise<void>;
-  saveUserToStorage: () => Promise<void>;
-  loadUserFromStorage: () => Promise<void>;
-  loading: boolean;
-};
-
-const UserContext = createContext<UserContextType | undefined>(undefined);
+const UserContext = createContext<UserContextValue | null>(null);
 
 export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<UserProfile | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [user, setUserState] = useState<User>({ soundOn: true });
+  const [hydrated, setHydrated] = useState(false);
 
+  // hydrate
   useEffect(() => {
-    loadUserFromStorage();
+    (async () => {
+      const stored = await AsyncStorage.getItem('user');
+      if (stored) setUserState(JSON.parse(stored));
+      setHydrated(true);
+    })();
   }, []);
 
-  const saveUserToStorage = async () => {
-    if (user) {
-      await SecureStore.setItemAsync('userProfile', JSON.stringify(user));
+  // persist
+  useEffect(() => {
+    if (hydrated) {
+      AsyncStorage.setItem('user', JSON.stringify(user));
     }
-  };
+  }, [user, hydrated]);
 
-  const loadUserFromStorage = async () => {
-    setLoading(true);
-    const data = await SecureStore.getItemAsync('userProfile');
-    if (data) {
-      setUser(JSON.parse(data));
-    }
-    setLoading(false);
-  };
+  const setUser = (partial: Partial<User>) =>
+    setUserState((prev) => ({ ...prev, ...partial }));
+  const toggleSound = () => setUserState((prev) => ({ ...prev, soundOn: !prev.soundOn }));
 
-  const resetUser = async () => {
-    await SecureStore.deleteItemAsync('userProfile');
-    setUser(null);
-  };
+  if (!hydrated) return null;
 
   return (
-    <UserContext.Provider value={{ user, setUser, resetUser, saveUserToStorage, loadUserFromStorage, loading }}>
+    <UserContext.Provider value={{ ...user, setUser, toggleSound, hydrated }}>
       {children}
     </UserContext.Provider>
   );
@@ -56,6 +50,6 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
 export const useUser = () => {
   const ctx = useContext(UserContext);
-  if (!ctx) throw new Error('useUser must be used within a UserProvider');
+  if (!ctx) throw new Error('useUser must be inside UserProvider');
   return ctx;
 }; 

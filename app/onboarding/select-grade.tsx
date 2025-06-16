@@ -17,7 +17,7 @@ export default function SelectGrade() {
           style={styles.button}
           onPress={() => {
             setUser({ grade: year });
-            router.push('/onboarding/select-level' as any);
+            router.push('/onboarding/topic');
           }}
         >
           <Text style={styles.buttonText}>{year}</Text>

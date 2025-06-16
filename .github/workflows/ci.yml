@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      # npm install met peer-override zodat Storybook + Firebase happy zijn
+      - name: Install deps
+        run: |
+          echo 'legacy-peer-deps=true' >> .npmrc
+          npm ci --legacy-peer-deps
+
+      # Link Expo native modules (headless)
+      - name: Expo install
+        run: npx expo install --non-interactive || true
+
+      # Lint
+      - name: ESLint
+        run: npx eslint "**/*.{ts,tsx}" --max-warnings=0
+
+      # Unit tests
+      - name: Jest
+        run: npm test -- --coverage
+
+      # Build Storybook (checks component compile)
+      - name: Storybook build
+        run: npx storybook build --docs --quiet 

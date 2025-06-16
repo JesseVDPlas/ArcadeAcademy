@@ -6,7 +6,7 @@ import { quizActions, useQuiz } from '../contexts/QuizContext';
 import XPBar from './XPBar';
 
 // Emoji fallback mapping
-const RESULT_ICONS: Record<string, any> = {
+const ICONS = {
   win: require('@/assets/images/trophy.png'),
   normal: require('@/assets/images/bitbyte.png'),
   lose: require('@/assets/images/sad.png'),
@@ -25,6 +25,9 @@ export default function ResultScreen() {
     if (score > highScore) {
       setIsNewRecord(true);
       dispatch(quizActions.setHighScore(score));
+    }
+    if (score > 0) {
+      dispatch(quizActions.levelDone(0));
     }
     // eslint-disable-next-line
   }, []);
@@ -53,7 +56,7 @@ export default function ResultScreen() {
         <XPBar score={score} />
         <Text style={styles.highScore}>High Score: {highScore}</Text>
         <View style={styles.bitbyteContainer}>
-          <Image source={RESULT_ICONS[resultType]} style={styles.bitbyte} />
+          <Image source={ICONS[resultType as keyof typeof ICONS]} style={{width:80,height:80,marginBottom:spacing.m}} />
         </View>
         <View style={styles.buttonsRow}>
           <Pressable
@@ -71,7 +74,7 @@ export default function ResultScreen() {
           >
             <Text style={styles.buttonText}>Leaderboard</Text>
           </Pressable>
-        </View>
+    </View>
         <Pressable
           style={[styles.button, { marginTop: spacing.m, alignSelf: 'center', width: '60%' }]}
           onPress={() => router.push('/home')}
@@ -115,17 +118,6 @@ const styles = StyleSheet.create({
   bitbyteContainer: {
     alignItems: 'center',
     marginVertical: 24,
-  },
-  bitbyte: {
-    width: 100,
-    height: 100,
-    marginBottom: 8,
-    maxWidth: 160,
-    maxHeight: 160,
-    shadowColor: '#39FF14',
-    shadowOffset: { width: 0, height: 0 },
-    shadowRadius: 16,
-    shadowOpacity: 0.7,
   },
   buttonsRow: { flexDirection: 'row', width: '100%', justifyContent: 'space-around', marginTop: spacing.l },
   button: { flexBasis: '45%' },

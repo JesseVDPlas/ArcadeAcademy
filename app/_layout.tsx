@@ -1,3 +1,4 @@
+import { UserProvider } from '@/contexts/UserContext';
 import RootNavigation from '@/navigation/RootNavigation';
 import React from 'react';
 
@@ -8,5 +9,9 @@ const RootComponent = isStorybook
   : RootNavigation;
 
 export default function AppRoot() {
-  return <RootComponent />;
+  return (
+    <UserProvider>
+      <RootComponent />
+    </UserProvider>
+  );
 }

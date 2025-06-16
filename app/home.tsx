@@ -1,8 +1,9 @@
 import quizData from '@/assets/data/test_quiz_data_vwo1.json';
 import { useRouter } from 'expo-router';
 import React, { useEffect } from 'react';
-import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
-import { quizActions, useQuiz } from '../contexts/QuizContext';
+import { StyleSheet, Text, View } from 'react-native';
+import Map from '../components/home/Map';
+import { useQuiz } from '../contexts/QuizContext';
 import { useUser } from '../contexts/UserContext';
 
 function normalizeGrade(s: string) {
@@ -45,52 +46,7 @@ export default function Home() {
         {subjects.length === 0 ? (
           <Text style={styles.noQuiz}>Er zijn nog geen levels voor jouw leerjaar.</Text>
         ) : (
-          <FlatList
-            data={subjects}
-            numColumns={2}
-            keyExtractor={item => item}
-            contentContainerStyle={{
-              alignItems: 'center',
-              justifyContent: 'center',
-              paddingHorizontal: 8,
-              gap: 12,
-            }}
-            columnWrapperStyle={{
-              gap: 12,
-              justifyContent: 'center',
-            }}
-            renderItem={({ item }) => (
-              <Pressable
-                style={styles.button}
-                onPress={() => {
-                  // 1. Filter quiz op subject en klas
-                  const filtered = quizData.quizzes.filter(
-                    (q: any) =>
-                      q.subject.toLowerCase() === item.toLowerCase() &&
-                      normalizeGrade(q.class_level) === normalizeGrade(user.grade)
-                  );
-                  const quiz = filtered[0];
-                  let mappedQuestions = quiz
-                    ? quiz.questions.map((q: any, idx: number) => ({
-                        id: `${quiz.subject}-${quiz.class_level}-${idx}`,
-                        paragraph: q.paragraph || '',
-                        question: q.question_text,
-                        options: q.options.map((opt: string) => opt.replace(/^'/, '').replace(/'$/, '')),
-                        correctIndex: q.correct_option_index,
-                        explanation: q.explanation || '',
-                      }))
-                    : [];
-                  // Shuffle en pak max 5
-                  mappedQuestions = mappedQuestions.sort(() => 0.5 - Math.random()).slice(0, 5);
-                  dispatch(quizActions.setQuestions(mappedQuestions));
-                  dispatch(quizActions.start());
-                  router.push('/quiz-screen');
-                }}
-              >
-                <Text style={styles.buttonText}>{item}</Text>
-              </Pressable>
-            )}
-          />
+          <Map />
         )}
       </View>
     );
