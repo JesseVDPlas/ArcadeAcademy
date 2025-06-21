@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     textShadowColor: colors.pink,
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 8,
+    textAlign: 'center',
   },
   input: {
     width: 220,

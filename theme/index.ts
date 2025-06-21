@@ -7,6 +7,8 @@ export const colors = {
   background: '#1B0044',
   selectedText: '#1B0044',
   selectedTextAlt: '#000',
+  white: '#FFFFFF',
+  green: '#39FF14', // Using neon green as default green
 };
 
 export const spacing = {
@@ -18,4 +20,4 @@ export const spacing = {
 };
 
 export const radius = { pixel: 4 };
-export const fonts = { arcade: 'ArcadeFont' }; 
+export const fonts = { arcade: 'ArcadeFont', body: 'System' }; 

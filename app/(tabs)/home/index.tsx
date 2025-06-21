@@ -3,7 +3,7 @@ import RetroButton from '@/components/shared/RetroButton';
 import ScreenWrapper from '@/components/shared/ScreenWrapper';
 import BitByte from '@/components/ui/BitByte';
 import { XPBar } from '@/components/ui/XPBar';
-import { quizActions, useQuiz } from '@/contexts/QuizContext';
+import { useQuiz } from '@/contexts/QuizContext';
 import { useUser } from '@/contexts/UserContext';
 import { colors, fonts } from '@/theme';
 import { useRouter } from 'expo-router';
@@ -11,17 +11,16 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
   const router = useRouter();
-  const { name } = useUser();
-  const { state, dispatch } = useQuiz();
+  const { name, preferredSubjects } = useUser();
+  const { state } = useQuiz();
 
   const handleStartPress = () => {
-    dispatch(quizActions.start());
-    const currentLevel = state.levels.find(l => l.status === 'current');
-    if (currentLevel) {
-      router.push({ pathname: '/quiz-screen', params: { level: currentLevel.id } });
-    }
+    // Gebruik het eerste voorkeursvak, of een fallback
+    const subjectToStart = preferredSubjects?.[0] || 'Geschiedenis';
+    router.push(`/quiz/${encodeURIComponent(subjectToStart)}`);
   };
 
+  // Tijdelijke XP data
   const userXP = 75;
   const maxXP = 100;
 

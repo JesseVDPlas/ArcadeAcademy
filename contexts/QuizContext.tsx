@@ -1,7 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as SecureStore from 'expo-secure-store';
-import React, { createContext, ReactNode, useContext, useEffect, useReducer } from 'react';
-import quizData from '../assets/data/test_quiz_data_vwo1.json';
+import React, { createContext, useContext, useEffect, useReducer } from 'react';
 
 export type QuizQuestion = {
   question: string;
@@ -13,11 +11,13 @@ export type QuizQuestion = {
 
 export type Question = {
   id: string;
-  paragraph: string;
-  question: string;
+  question_text: string;
   options: string[];
-  correctIndex: number;
+  correct_option_index: number;
   explanation: string;
+  difficulty: string;
+  learning_goal: string;
+  tags: string[];
 };
 
 // 1. Types ------------------------------------------------------
@@ -48,7 +48,7 @@ export function quizReducer(state: QuizState, action: QuizAction): QuizState {
   switch (action.type) {
     case 'START': {
       // Reset levels if not present
-      const levels = state.levels?.length
+      const levels: Level[] = state.levels?.length
         ? state.levels
         : Array.from({ length: 5 }, (_, i) => ({ id: i, status: (i === 0 ? 'current' : 'locked') as LevelStatus }));
       return {
@@ -77,7 +77,7 @@ export function quizReducer(state: QuizState, action: QuizAction): QuizState {
         highScore: Math.max(state.highScore, action.payload),
       };
     case 'RESET': {
-      const levels = state.levels?.length
+      const levels: Level[] = state.levels?.length
         ? state.levels
         : Array.from({ length: 5 }, (_, i) => ({ id: i, status: (i === 0 ? 'current' : 'locked') as LevelStatus }));
       return {
@@ -129,7 +129,7 @@ interface QuizContextValue {
 const QuizContext = createContext<QuizContextValue | undefined>(undefined);
 
 // 5. Provider ----------------------------------------------------
-export const QuizProvider = ({ children }: { children: ReactNode }) => {
+export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [state, dispatch] = useReducer(quizReducer, INITIAL_STATE);
 
   // Save currentLevelId to AsyncStorage on change
@@ -187,82 +187,4 @@ export const quizActions = {
   setQuestions: (q: Question[]) => ({ type: 'SET_QUESTIONS', payload: q } as const),
   levelDone: (levelId: number): QuizAction => ({ type: 'LEVEL_DONE', payload: levelId }),
   setLevels: (levels: Level[]) => ({ type: 'SET_LEVELS', payload: levels } as const),
-};
-
-const INITIAL_LIVES = 3;
-const QUESTIONS_PER_QUIZ = 5;
-
-export const QuizProviderOld: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [questions, setQuestions] = useState<QuizQuestion[]>([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [lives, setLives] = useState(INITIAL_LIVES);
-  const [score, setScore] = useState(0);
-  const [highscore, setHighscore] = useState(0);
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    loadHighscore();
-  }, []);
-
-  const startNewQuiz = (subject: string, grade?: string) => {
-    setLoading(true);
-    // Filter quiz op subject en klas
-    let filtered = quizData.quizzes.filter(
-      (q: any) =>
-        q.subject.toLowerCase() === subject.toLowerCase() &&
-        (!grade || q.class_level.toLowerCase() === grade.toLowerCase())
-    );
-    // Pak de eerste quiz die matcht
-    const quiz = filtered[0];
-    if (!quiz) {
-      setQuestions([]);
-      setLoading(false);
-      return;
-    }
-    // Map de vragen naar het interne formaat
-    let mappedQuestions = quiz.questions.map((q: any) => ({
-      question: q.question_text,
-      options: q.options.map((opt: string) => opt.replace(/^'/, '').replace(/'$/, '')),
-      correctAnswer: q.options[q.correct_option_index].replace(/^'/, '').replace(/'$/, ''),
-      subject: quiz.subject,
-      class_level: quiz.class_level,
-    }));
-    // Shuffle en pak QUESTIONS_PER_QUIZ
-    mappedQuestions = mappedQuestions.sort(() => 0.5 - Math.random()).slice(0, QUESTIONS_PER_QUIZ);
-    setQuestions(mappedQuestions);
-    setCurrentIndex(0);
-    setLives(INITIAL_LIVES);
-    setScore(0);
-    setLoading(false);
-  };
-
-  const answerQuestion = (correct: boolean) => {
-    if (correct) setScore(s => s + 1);
-    else setLives(l => l - 1);
-    setCurrentIndex(i => i + 1);
-  };
-
-  const resetQuiz = () => {
-    setQuestions([]);
-    setCurrentIndex(0);
-    setLives(INITIAL_LIVES);
-    setScore(0);
-  };
-
-  const loadHighscore = async () => {
-    const data = await SecureStore.getItemAsync('highscore');
-    if (data) setHighscore(Number(data));
-  };
-
-  return (
-    <QuizContext.Provider value={{ questions, currentIndex, lives, score, highscore, loading, startNewQuiz, answerQuestion, resetQuiz }}>
-      {children}
-    </QuizContext.Provider>
-  );
-};
-
-export const useQuizOld = () => {
-  const ctx = useContext(QuizContext);
-  if (!ctx) throw new Error('useQuiz must be used within a QuizProvider');
-  return ctx;
 }; 
