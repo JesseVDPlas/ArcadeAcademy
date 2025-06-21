@@ -4,6 +4,9 @@ export const colors = {
   pink: '#FF38CE',
   red: '#FF3062',
   dark: '#0B001C',
+  background: '#1B0044',
+  selectedText: '#1B0044',
+  selectedTextAlt: '#000',
 };
 
 export const spacing = {
@@ -15,4 +18,4 @@ export const spacing = {
 };
 
 export const radius = { pixel: 4 };
-export const fonts = { arcade: 'PressStart2P' }; 
+export const fonts = { arcade: 'ArcadeFont' }; 

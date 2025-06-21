@@ -1,3 +1,4 @@
+import { fonts } from '@/theme';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
   title: {
     color: '#39FF14',
     fontSize: 24,
-    fontFamily: 'Courier', // Vervang door pixel font als beschikbaar
+    fontFamily: fonts.arcade,
     marginBottom: 24,
     textAlign: 'center',
     textShadowColor: '#FF00FF',
@@ -99,7 +100,7 @@ const styles = StyleSheet.create({
   optionText: {
     color: '#39FF14',
     fontSize: 18,
-    fontFamily: 'Courier', // Vervang door pixel font als beschikbaar
+    fontFamily: fonts.arcade,
     fontWeight: 'bold',
     textAlign: 'center',
     letterSpacing: 1,
@@ -126,7 +127,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#000',
     fontSize: 18,
-    fontFamily: 'Courier', // Vervang door pixel font als beschikbaar
+    fontFamily: fonts.arcade,
     fontWeight: 'bold',
     textAlign: 'center',
     letterSpacing: 1,

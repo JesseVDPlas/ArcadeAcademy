@@ -1,4 +1,4 @@
-import { colors, spacing } from '@/theme';
+import { colors, fonts, spacing } from '@/theme';
 import { useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Image, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   title: {
     color: '#39FF14',
     fontSize: 36,
-    fontFamily: 'Courier',
+    fontFamily: fonts.arcade,
     marginBottom: 16,
     textShadowColor: '#FF00FF',
     textShadowOffset: { width: 0, height: 0 },
@@ -101,13 +101,13 @@ const styles = StyleSheet.create({
   score: {
     color: '#FF00FF',
     fontSize: 24,
-    fontFamily: 'Courier',
+    fontFamily: fonts.arcade,
     marginBottom: 8,
   },
   highScore: {
     color: '#39FF14',
     fontSize: 18,
-    fontFamily: 'Courier',
+    fontFamily: fonts.arcade,
     marginBottom: 16,
     textShadowColor: '#FF00FF',
     textShadowOffset: { width: 0, height: 0 },
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#39FF14',
     fontSize: 20,
-    fontFamily: 'Courier',
+    fontFamily: fonts.arcade,
     fontWeight: 'bold',
     textAlign: 'center',
     letterSpacing: 2,

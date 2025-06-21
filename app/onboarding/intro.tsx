@@ -1,3 +1,4 @@
+import { fonts } from '@/theme';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
   title: {
     color: '#39FF14',
     fontSize: 28,
-    fontFamily: 'ArcadeFont',
+    fontFamily: fonts.arcade,
     marginBottom: 24,
     textAlign: 'center',
     textShadowColor: '#FF00FF',
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
   subtitle: {
     color: '#39FF14',
     fontSize: 20,
-    fontFamily: 'Courier', // Vervang door pixel font als beschikbaar
+    fontFamily: fonts.arcade,
     marginBottom: 48,
     textAlign: 'center',
     textShadowColor: '#FF00FF',
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#39FF14',
     fontSize: 20,
-    fontFamily: 'ArcadeFont',
+    fontFamily: fonts.arcade,
     fontWeight: 'bold',
     textAlign: 'center',
     letterSpacing: 2,

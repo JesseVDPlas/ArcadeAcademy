@@ -1,3 +1,4 @@
+import { fonts } from '@/theme';
 import { useRouter } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useUser } from '../../contexts/UserContext';
@@ -23,8 +24,8 @@ export default function Summary() {
 }
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#000', alignItems: 'center', justifyContent: 'center' },
-  title: { color: '#39FF14', fontSize: 24, fontFamily: 'ArcadeFont', marginBottom: 24 },
-  text: { color: '#39FF14', fontSize: 18, fontFamily: 'ArcadeFont', marginBottom: 12 },
+  title: { color: '#39FF14', fontSize: 24, fontFamily: fonts.arcade, marginBottom: 24 },
+  text: { color: '#39FF14', fontSize: 18, fontFamily: fonts.arcade, marginBottom: 12 },
   button: { backgroundColor: '#111', borderColor: '#39FF14', borderWidth: 2, borderRadius: 10, padding: 16, marginTop: 32 },
-  buttonText: { color: '#39FF14', fontSize: 18, fontFamily: 'ArcadeFont', fontWeight: 'bold' },
+  buttonText: { color: '#39FF14', fontSize: 18, fontFamily: fonts.arcade, fontWeight: 'bold' },
 }); 

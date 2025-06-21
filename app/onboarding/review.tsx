@@ -1,38 +1,7 @@
-import { RetroButton } from '@/components/shared/RetroButton';
-import { useUser } from '@/contexts/UserContext';
 import { colors, spacing } from '@/theme';
-import { useRouter } from 'expo-router';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-export default function ReviewScreen() {
-  const { name, grade, preferredSubjects } = useUser();
-  const router = useRouter();
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Kloppen deze gegevens?</Text>
-
-      <View style={styles.card}>
-        <Text style={styles.line}>👤 Naam: {name}</Text>
-        <Text style={styles.line}>🏫 Klas: {grade}</Text>
-        <Text style={styles.line}>
-          📚 Vakken: {preferredSubjects?.join(', ') || '–'}
-        </Text>
-      </View>
-
-      <RetroButton onPress={() => router.back()}>
-        Wijzig
-      </RetroButton>
-      <RetroButton
-        style={{ marginTop: spacing.m }}
-        onPress={() => router.replace('/home')}
-      >
-        Start!
-      </RetroButton>
-    </View>
-  );
-}
+export default function Review() { return null; }
 
 const styles = StyleSheet.create({
   container: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: spacing.l },

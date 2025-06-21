@@ -4,6 +4,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 type User = {
   name?: string;
   grade?: string;
+  level?: string;
   preferredSubjects?: string[];
   soundOn: boolean;
 };

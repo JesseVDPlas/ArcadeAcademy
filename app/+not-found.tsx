@@ -1,3 +1,4 @@
+import { fonts } from '@/theme';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function NotFoundScreen() {
@@ -10,5 +11,5 @@ export default function NotFoundScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#000', justifyContent: 'center', alignItems: 'center' },
-  text: { fontSize: 20, color: '#FF00FF', fontFamily: 'Courier' },
+  text: { fontSize: 20, color: '#FF00FF', fontFamily: fonts.arcade },
 });

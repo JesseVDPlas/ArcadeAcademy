@@ -21,7 +21,7 @@ export default function StartScreen() {
         <Text style={styles.title}>ARCADE ACADEMY</Text>
         <RetroButton
           style={styles.button}
-          onPress={() => router.replace('/onboarding/set-name')}
+          onPress={() => router.replace('/onboarding/name')}
         >
           Start
         </RetroButton>
