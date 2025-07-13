@@ -1,6 +1,6 @@
 import RetroButton from '@/components/shared/RetroButton';
 import BitByte, { BitByteMood } from '@/components/ui/BitByte';
-import { useUser } from '@/contexts/UserContext';
+import { SubjectId, useUser } from '@/contexts/UserContext';
 import { colors, fonts, spacing } from '@/theme';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect } from 'react';
@@ -31,11 +31,6 @@ const ResultScreen = () => {
     if (tokensGained > 0) {
       addTokens(tokensGained);
     }
-    // Mark as completed if user passed
-    if (percentage >= 50) {
-      const quizId = `${subject.toLowerCase()}_vwo_1`; // simplified from data file for now
-      addCompletedQuiz(quizId);
-    }
   }, []);
 
   const handleRestart = () => {
@@ -45,6 +40,12 @@ const ResultScreen = () => {
 
   const handleHome = () => {
     resetLives();
+    // Mark quiz as completed if passed
+    if (percentage >= 50) {
+      const subjectId = subject.toLowerCase() as SubjectId;
+      const quizId = `${subjectId}_vwo_1`;
+      addCompletedQuiz(subjectId, quizId);
+    }
     router.replace('/(tabs)/home');
   };
 

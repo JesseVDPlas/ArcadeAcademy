@@ -1,4 +1,4 @@
-import LevelMap from '@/components/home/LevelMap';
+import DailyChallengeMap from '@/components/home/DailyChallengeMap';
 import LifeBar from '@/components/shared/LifeBar';
 import BitByte from '@/components/ui/BitByte';
 import { XPBar } from '@/components/ui/XPBar';
@@ -19,7 +19,8 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <LevelMap />
+      <DailyChallengeMap />
+      <View style={{ height: 1, backgroundColor: colors.neon, alignSelf: 'stretch', marginVertical: 16 }} />
 
       <View style={styles.statsRow}>
         <View style={styles.xpContainer}>

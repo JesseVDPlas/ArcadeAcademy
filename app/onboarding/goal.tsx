@@ -22,15 +22,18 @@ export default function OnboardingGoal() {
     <View style={styles.container}>
       <Text style={styles.title}>Wat is je leerdoel?</Text>
       <View style={styles.options}>
-        {GOALS.map((goal) => (
-          <Pressable
-            key={goal.value}
-            style={[styles.option, selected === goal.value && styles.selected]}
-            onPress={() => handleSelect(goal.value)}
-          >
-            <Text style={styles.optionText}>{goal.label}</Text>
-          </Pressable>
-        ))}
+        {GOALS.map((goal) => {
+          const isSelected = selected === goal.value;
+          return (
+            <Pressable
+              key={goal.value}
+              style={[styles.option, isSelected && styles.selected]}
+              onPress={() => handleSelect(goal.value)}
+            >
+              <Text style={[styles.optionText, isSelected && styles.selectedText]}>{goal.label}</Text>
+            </Pressable>
+          );
+        })}
       </View>
       <Pressable style={styles.button} onPress={() => router.push('/onboarding/topic')}>
         <Text style={styles.buttonText}>Ga verder</Text>
@@ -70,13 +73,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   selected: {
-    backgroundColor: colors.neon,
+    backgroundColor: '#111',
+    borderColor: colors.neon,
+    shadowColor: colors.neon,
+    shadowOpacity: 0.5,
+    shadowRadius: 8,
   },
   optionText: {
     color: colors.neon,
     fontSize: 18,
     fontFamily: fonts.arcade,
     textAlign: 'center',
+  },
+  selectedText: {
+    color: colors.deep,
   },
   button: {
     backgroundColor: '#111',
