@@ -8,7 +8,7 @@ const levels = ['MAVO', 'HAVO', 'VWO'];
 
 export default function Level() {
   const router = useRouter();
-  const { setUser } = useUser();
+  const { setLevel } = useUser();
   const [selected, setSelected] = useState<string | null>(null);
 
   return (
@@ -31,14 +31,14 @@ export default function Level() {
       <Pressable
         style={[styles.button, !selected && { opacity: 0.5 }]}
         disabled={!selected}
-        onPress={async () => {
+        onPress={() => {
           if (selected) {
-            await setUser({ level: selected });
-            router.replace('/(tabs)/home');
+            setLevel(selected);
+            router.replace('/onboarding/goal');
           }
         }}
       >
-        <Text style={styles.buttonText}>Start!</Text>
+        <Text style={styles.buttonText}>Volgende</Text>
       </Pressable>
     </View>
   );

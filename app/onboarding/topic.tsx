@@ -1,4 +1,4 @@
-import { fonts } from '@/theme';
+import { colors, fonts } from '@/theme';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -23,13 +23,13 @@ const TOPICS = [
 
 export default function OnboardingTopic() {
   const router = useRouter();
-  const { setUser, preferredSubjects = [] } = useUser();
+  const { setPreferredSubjects, preferredSubjects } = useUser();
 
   const toggleSubject = (subject: string) => {
     const updated = preferredSubjects.includes(subject)
       ? preferredSubjects.filter((s) => s !== subject)
       : [...preferredSubjects, subject];
-    setUser({ preferredSubjects: updated });
+    setPreferredSubjects(updated);
   };
 
   return (
@@ -50,7 +50,7 @@ export default function OnboardingTopic() {
       </ScrollView>
       <Pressable
         style={[styles.button, preferredSubjects.length === 0 && { opacity: 0.5 }]}
-        onPress={() => router.push('/onboarding/review' as any)}
+        onPress={() => router.replace('/(tabs)/home')}
         disabled={preferredSubjects.length === 0}
       >
         <Text style={styles.buttonText}>Volgende</Text>
@@ -62,77 +62,54 @@ export default function OnboardingTopic() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: colors.background,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 24,
   },
   title: {
-    color: '#39FF14',
+    color: colors.neon,
     fontSize: 24,
     fontFamily: fonts.arcade,
     marginBottom: 24,
     textAlign: 'center',
-    textShadowColor: '#FF00FF',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 8,
-    letterSpacing: 2,
   },
   options: {
     alignItems: 'center',
     paddingBottom: 32,
   },
   option: {
-    backgroundColor: '#111',
-    borderColor: '#39FF14',
+    borderColor: colors.neon,
     borderWidth: 2,
     borderRadius: 10,
-    paddingVertical: 16,
-    paddingHorizontal: 36,
-    marginVertical: 8,
-    width: 280,
+    padding: 16,
+    margin: 8,
+    backgroundColor: '#111',
     alignItems: 'center',
-    shadowColor: '#39FF14',
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 1,
-    shadowRadius: 12,
   },
   optionText: {
-    color: '#39FF14',
+    color: colors.neon,
     fontSize: 18,
     fontFamily: fonts.arcade,
-    fontWeight: 'bold',
     textAlign: 'center',
-    letterSpacing: 1,
-    textShadowColor: '#FF00FF',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 6,
   },
   selected: {
-    backgroundColor: '#39FF14',
+    backgroundColor: colors.neon,
   },
   button: {
-    backgroundColor: '#39FF14',
+    backgroundColor: '#111',
+    borderColor: colors.neon,
+    borderWidth: 2,
     borderRadius: 10,
-    paddingVertical: 16,
-    paddingHorizontal: 36,
+    padding: 16,
     marginTop: 24,
-    width: 280,
     alignItems: 'center',
-    shadowColor: '#FF00FF',
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 1,
-    shadowRadius: 12,
   },
   buttonText: {
-    color: '#000',
+    color: colors.neon,
     fontSize: 18,
     fontFamily: fonts.arcade,
     fontWeight: 'bold',
     textAlign: 'center',
-    letterSpacing: 1,
-    textShadowColor: '#FF00FF',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 6,
   },
 }); 

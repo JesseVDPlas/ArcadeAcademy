@@ -6,8 +6,8 @@ import { useUser } from '../../contexts/UserContext';
 
 export default function Name() {
   const router = useRouter();
-  const { setUser } = useUser();
-  const [name, setName] = useState('');
+  const { setName } = useUser();
+  const [name, setNameInput] = useState('');
 
   return (
     <View style={styles.container}>
@@ -15,16 +15,16 @@ export default function Name() {
       <TextInput
         style={styles.input}
         value={name}
-        onChangeText={setName}
+        onChangeText={setNameInput}
         placeholder="Naam"
         placeholderTextColor={colors.neon}
       />
       <Pressable
         style={styles.button}
         disabled={!name.trim()}
-        onPress={async () => {
+        onPress={() => {
           const trimmed = name.trim();
-          await setUser({ name: trimmed });
+          setName(trimmed);
           router.replace('/onboarding/grade');
         }}
       >

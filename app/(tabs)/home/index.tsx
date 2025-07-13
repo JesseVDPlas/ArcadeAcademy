@@ -1,86 +1,106 @@
+import LevelMap from '@/components/home/LevelMap';
 import LifeBar from '@/components/shared/LifeBar';
-import RetroButton from '@/components/shared/RetroButton';
-import ScreenWrapper from '@/components/shared/ScreenWrapper';
 import BitByte from '@/components/ui/BitByte';
 import { XPBar } from '@/components/ui/XPBar';
-import { useQuiz } from '@/contexts/QuizContext';
 import { useUser } from '@/contexts/UserContext';
-import { colors, fonts } from '@/theme';
+import { colors, fonts, radius, spacing } from '@/theme';
+import { FontAwesome } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-export default function HomeScreen() {
+const HomeScreen = () => {
   const router = useRouter();
-  const { name, preferredSubjects } = useUser();
-  const { state } = useQuiz();
+  const { name, xp, lives, tokens } = useUser();
 
-  const handleStartPress = () => {
-    // Gebruik het eerste voorkeursvak, of een fallback
-    const subjectToStart = preferredSubjects?.[0] || 'Geschiedenis';
-    router.push(`/quiz/${encodeURIComponent(subjectToStart)}`);
-  };
-
-  // Tijdelijke XP data
-  const userXP = 75;
-  const maxXP = 100;
+  // Voorbeeld: XP nodig voor volgend level
+  const xpForNextLevel = 1000;
 
   return (
-    <ScreenWrapper style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Welkom terug, {name}!</Text>
-        <LifeBar lives={state.lives} />
+    <SafeAreaView style={styles.container}>
+      <LevelMap />
+
+      <View style={styles.statsRow}>
+        <View style={styles.xpContainer}>
+          <Text style={styles.xpLabel}>
+            XP: {xp} / {xpForNextLevel}
+          </Text>
+          <XPBar progress={xp / xpForNextLevel} />
+        </View>
+        <LifeBar lives={lives} maxLives={5} />
       </View>
-      <View style={styles.xpSection}>
-        <Text style={styles.xpLabel}>XP</Text>
-        <XPBar progress={userXP / maxXP} />
+
+      <View style={styles.mainContent}>
+        <BitByte mood="idle" />
+        <View style={styles.tokenContainer}>
+          <FontAwesome name="diamond" size={24} color={colors.neon} />
+          <Text style={styles.tokenText}>{tokens}</Text>
+        </View>
       </View>
-      <View style={styles.mainAction}>
-        <BitByte mood="happy" />
-        <RetroButton onPress={handleStartPress} style={styles.startButton}>
-          <Text style={styles.startButtonText}>PRESS START</Text>
-        </RetroButton>
+
+      <View style={styles.placeholderSection}>
+        <Text style={styles.placeholderText}>Achievements coming soon... 🔒</Text>
       </View>
-    </ScreenWrapper>
+    </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    backgroundColor: colors.dark,
+    padding: spacing.m,
     justifyContent: 'space-between',
-    padding: 16,
   },
-  header: {
+  statsRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    width: '100%',
+    marginVertical: spacing.m,
+    paddingHorizontal: spacing.s,
   },
-  title: {
-    fontFamily: fonts.arcade,
-    fontSize: 16,
-    color: colors.neon,
-  },
-  xpSection: {
-    marginTop: 24,
+  xpContainer: {
+    flex: 1,
+    marginRight: spacing.m,
   },
   xpLabel: {
     fontFamily: fonts.arcade,
-    color: '#fff',
-    marginBottom: 8,
+    color: colors.white,
+    marginBottom: spacing.s,
+    fontSize: 12,
   },
-  mainAction: {
+  mainContent: {
+    flex: 1,
     alignItems: 'center',
-    marginBottom: 48,
+    justifyContent: 'center',
   },
-  startButton: {
-    width: '80%',
-    paddingVertical: 20,
+  tokenContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#00000040',
+    paddingVertical: spacing.s,
+    paddingHorizontal: spacing.m,
+    borderRadius: radius.pixel,
+    marginTop: spacing.l,
+    borderWidth: 1,
+    borderColor: colors.neon,
   },
-  startButtonText: {
+  tokenText: {
     fontFamily: fonts.arcade,
     color: colors.neon,
     fontSize: 20,
-    textShadowColor: colors.neon,
-    textShadowRadius: 8,
+    marginLeft: spacing.m,
   },
-}); 
+  placeholderSection: {
+    padding: spacing.m,
+    alignItems: 'center',
+  },
+  placeholderText: {
+    fontFamily: fonts.arcade,
+    color: '#ffffff80',
+    fontSize: 14,
+  },
+});
+
+export default HomeScreen; 

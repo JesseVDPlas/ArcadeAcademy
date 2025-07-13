@@ -18,7 +18,7 @@ function normalizeGrade(s: string) {
 
 export default function Home() {
   const router = useRouter();
-  const { name, grade } = useUser();
+  const { name, grade, level } = useUser();
   const { dispatch } = useQuiz();
 
   useEffect(() => {
@@ -31,8 +31,9 @@ export default function Home() {
   if (!quizData || !quizData.quizzes) return <View style={styles.container}><Text style={{ color: 'red', fontSize: 18 }}>Quizdata niet gevonden</Text></View>;
 
   try {
-    // Filter quizzes op leerjaar (genormaliseerd)
-    const filteredQuizzes = quizData.quizzes.filter(q => normalizeGrade(q.class_level) === normalizeGrade(grade || ''));
+    // Filter quizzes op leerjaar én niveau (genormaliseerd)
+    const combinedClassLevel = `${level || ''} ${grade || ''}`;
+    const filteredQuizzes = quizData.quizzes.filter(q => normalizeGrade(q.class_level) === normalizeGrade(combinedClassLevel));
     const subjects = Array.from(new Set(filteredQuizzes.map(q => q.subject)));
 
     return (

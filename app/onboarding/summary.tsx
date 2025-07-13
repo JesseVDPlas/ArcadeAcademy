@@ -5,7 +5,9 @@ import { useUser } from '../../contexts/UserContext';
 
 export default function Summary() {
   const router = useRouter();
-  const { setUser, name, grade, preferredSubjects = [] } = useUser();
+  const { setGrade, name, grade } = useUser();
+  // TODO: Haal preferredSubjects uit router params of context als je dat toevoegt
+  const preferredSubjects: string[] = [];
 
   return (
     <View style={styles.container}>

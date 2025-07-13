@@ -1,138 +1,130 @@
+import RetroButton from '@/components/shared/RetroButton';
+import BitByte, { BitByteMood } from '@/components/ui/BitByte';
+import { useUser } from '@/contexts/UserContext';
 import { colors, fonts, spacing } from '@/theme';
-import { useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
-import { Image, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
-import { quizActions, useQuiz } from '../contexts/QuizContext';
-import XPBar from './XPBar';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import React, { useEffect } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-// Emoji fallback mapping
-const ICONS = {
-  win: require('@/assets/images/trophy.png'),
-  normal: require('@/assets/images/bitbyte.png'),
-  lose: require('@/assets/images/sad.png'),
-};
-
-export default function ResultScreen() {
+const ResultScreen = () => {
   const router = useRouter();
-  const { state, dispatch } = useQuiz();
-  const [isNewRecord, setIsNewRecord] = useState(false);
-  const { height } = useWindowDimensions();
-  const maxScore = (state as any).questions?.length || 0;
-  const score = state.score;
-  const highScore = state.highScore;
+  const params = useLocalSearchParams<{
+    score: string;
+    total: string;
+    subject: string;
+    gameOver?: string;
+  }>();
+  const { addTokens, resetLives, addCompletedQuiz } = useUser();
+
+  const score = Number(params.score || 0);
+  const total = Number(params.total || 0);
+  const subject = params.subject || '';
+  const isGameOver = params.gameOver === 'true';
+
+  const percentage = total > 0 ? (score / total) * 100 : 0;
+  const bitByteMood: BitByteMood = isGameOver ? 'sad' : percentage >= 50 ? 'happy' : 'sad';
+  const xpGained = score * 10; // 10 XP per correct answer
+  const tokensGained = percentage === 100 ? 5 : 0;
 
   useEffect(() => {
-    if (score > highScore) {
-      setIsNewRecord(true);
-      dispatch(quizActions.setHighScore(score));
+    if (tokensGained > 0) {
+      addTokens(tokensGained);
     }
-    if (score > 0) {
-      dispatch(quizActions.levelDone(0));
+    // Mark as completed if user passed
+    if (percentage >= 50) {
+      const quizId = `${subject.toLowerCase()}_vwo_1`; // simplified from data file for now
+      addCompletedQuiz(quizId);
     }
-    // eslint-disable-next-line
   }, []);
 
-  let resultType = 'normal';
-  if (isNewRecord && score > 0) {
-    resultType = 'win';
-  } else if (score === 0) {
-    resultType = 'lose';
-  }
+  const handleRestart = () => {
+    resetLives();
+    router.replace({ pathname: '/quiz-screen', params: { subject } });
+  };
+
+  const handleHome = () => {
+    resetLives();
+    router.replace('/(tabs)/home');
+  };
 
   return (
-    <SafeAreaView style={styles.safe}>
-      <ScrollView
-        contentContainerStyle={[styles.container, { minHeight: height }]}
-        showsVerticalScrollIndicator={false}
-      >
-        <Text
-          style={styles.title}
-          numberOfLines={1}
-          adjustsFontSizeToFit
-        >
-          {score > 0 ? (isNewRecord ? 'Nieuw Record!' : 'You Win!') : 'Game Over'}
+    <SafeAreaView style={styles.container}>
+      <View style={styles.content}>
+        <Text style={styles.title}>{isGameOver ? 'Game Over' : 'Quiz Voltooid!'}</Text>
+        <BitByte mood={bitByteMood} />
+
+        <Text style={styles.scoreText}>
+          Je score: {score} / {total} ({percentage.toFixed(0)}%)
         </Text>
-        <Text style={styles.score}>Score: {score} / {maxScore}</Text>
-        <XPBar score={score} />
-        <Text style={styles.highScore}>High Score: {highScore}</Text>
-        <View style={styles.bitbyteContainer}>
-          <Image source={ICONS[resultType as keyof typeof ICONS]} style={{width:80,height:80,marginBottom:spacing.m}} />
+        <Text style={styles.feedbackText}>
+          {isGameOver
+            ? 'Geen levens meer!'
+            : percentage >= 50
+            ? 'Goed gedaan!'
+            : 'Volgende keer beter!'}
+        </Text>
+
+        <View style={styles.rewardsContainer}>
+          <Text style={styles.rewardLabel}>+ {xpGained} XP</Text>
+          {tokensGained > 0 && <Text style={styles.rewardLabel}>+ {tokensGained} Tokens</Text>}
         </View>
-        <View style={styles.buttonsRow}>
-          <Pressable
-            style={styles.button}
-            onPress={() => {
-              dispatch(quizActions.start());
-              router.push('/home');
-            }}
-          >
-            <Text style={styles.buttonText}>Try Again</Text>
-          </Pressable>
-          <Pressable
-            style={[styles.button, styles.leaderboardButton]}
-            onPress={() => router.push('/leaderboard' as any)}
-          >
-            <Text style={styles.buttonText}>Leaderboard</Text>
-          </Pressable>
-    </View>
-        <Pressable
-          style={[styles.button, { marginTop: spacing.m, alignSelf: 'center', width: '60%' }]}
-          onPress={() => router.push('/home')}
-        >
-          <Text style={styles.buttonText}>Terug naar Home</Text>
-        </Pressable>
-      </ScrollView>
+
+        <View style={styles.buttonContainer}>
+          <RetroButton onPress={handleRestart}>Opnieuw</RetroButton>
+          <RetroButton onPress={handleHome}>Home</RetroButton>
+        </View>
+      </View>
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.dark },
-  container: { flexGrow: 1, alignItems: 'center', justifyContent: 'space-between', padding: spacing.l },
-  title: {
-    color: '#39FF14',
-    fontSize: 36,
-    fontFamily: fonts.arcade,
-    marginBottom: 16,
-    textShadowColor: '#FF00FF',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 8,
-  },
-  score: {
-    color: '#FF00FF',
-    fontSize: 24,
-    fontFamily: fonts.arcade,
-    marginBottom: 8,
-  },
-  highScore: {
-    color: '#39FF14',
-    fontSize: 18,
-    fontFamily: fonts.arcade,
-    marginBottom: 16,
-    textShadowColor: '#FF00FF',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 4,
-    opacity: 0.8,
-    alignSelf: 'center',
-  },
-  bitbyteContainer: {
+  container: {
+    flex: 1,
+    backgroundColor: colors.dark,
+    justifyContent: 'center',
     alignItems: 'center',
-    marginVertical: 24,
   },
-  buttonsRow: { flexDirection: 'row', width: '100%', justifyContent: 'space-around', marginTop: spacing.l },
-  button: { flexBasis: '45%' },
-  leaderboardButton: {
-    borderColor: '#FF00FF',
+  content: {
+    alignItems: 'center',
+    padding: spacing.m,
   },
-  buttonText: {
-    color: '#39FF14',
-    fontSize: 20,
+  title: {
     fontFamily: fonts.arcade,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    letterSpacing: 2,
-    textShadowColor: '#FF00FF',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 6,
+    fontSize: 28,
+    color: colors.neon,
+    marginBottom: spacing.l,
+    textShadowColor: colors.neon,
+    textShadowRadius: 10,
   },
-}); 
+  scoreText: {
+    fontFamily: fonts.arcade,
+    fontSize: 18,
+    color: colors.white,
+    marginVertical: spacing.m,
+  },
+  feedbackText: {
+    fontFamily: fonts.arcade,
+    fontSize: 16,
+    color: colors.pink,
+    marginBottom: spacing.l,
+  },
+  rewardsContainer: {
+    marginVertical: spacing.l,
+  },
+  rewardLabel: {
+    fontFamily: fonts.arcade,
+    fontSize: 18,
+    color: colors.green,
+    textAlign: 'center',
+    marginVertical: spacing.s,
+  },
+  buttonContainer: {
+    marginTop: spacing.l,
+    width: '80%',
+    gap: spacing.m,
+  },
+});
+
+export default ResultScreen; 

@@ -13,7 +13,7 @@ const getGradesForLevel = (level?: string) => {
 
 export default function Grade() {
   const router = useRouter();
-  const { setUser, level } = useUser();
+  const { setGrade, level } = useUser();
   const grades = getGradesForLevel(level);
   const [selected, setSelected] = useState<string | null>(null);
 
@@ -37,9 +37,9 @@ export default function Grade() {
       <Pressable
         style={[styles.button, !selected && { opacity: 0.5 }]}
         disabled={!selected}
-        onPress={async () => {
+        onPress={() => {
           if (selected) {
-            await setUser({ grade: selected });
+            setGrade(selected);
             router.replace('/onboarding/level');
           }
         }}
@@ -59,4 +59,17 @@ const styles = StyleSheet.create({
   selectedText: { color: colors.selectedText, fontFamily: fonts.arcade },
   button: { backgroundColor: '#111', borderColor: colors.neon, borderWidth: 2, borderRadius: 10, padding: 16 },
   buttonText: { color: colors.neon, fontSize: 18, fontFamily: fonts.arcade, fontWeight: 'bold' },
+  input: {
+    width: '80%',
+    height: 50,
+    borderColor: colors.neon,
+    borderWidth: 2,
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    color: colors.neon,
+    fontSize: 18,
+    fontFamily: fonts.arcade,
+    marginBottom: 24,
+    backgroundColor: '#111',
+  },
 }); 

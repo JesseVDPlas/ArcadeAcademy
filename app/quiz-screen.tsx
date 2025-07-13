@@ -1,185 +1,188 @@
-import HeartIcon from '@/assets/images/heart.png';
-import { useRouter } from 'expo-router';
-import React, { useState } from 'react';
-import { Image, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
-import { quizActions, useQuiz } from '../contexts/QuizContext';
+import quizData from '@/assets/data/test_quiz_data_vwo1.json';
+import LifeBar from '@/components/shared/LifeBar';
+import RetroButton from '@/components/shared/RetroButton';
+import { useUser } from '@/contexts/UserContext';
+import { colors, fonts, spacing } from '@/theme';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import React, { useEffect, useMemo, useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-// Placeholder componenten
-const LifeBar = ({ lives }: { lives: number }) => (
-  <View style={{ flexDirection: 'row', marginBottom: 24 }}>
-    {[...Array(3)].map((_, i) => (
-      <Image
-        key={i}
-        source={HeartIcon}
-        style={{ width: 24, height: 24, marginHorizontal: 4, opacity: lives > i ? 1 : 0.2 }}
-        resizeMode="contain"
-      />
-    ))}
-  </View>
-);
-const BitByte = () => (
-  <View style={{ alignItems: 'center', marginBottom: 16 }}>
-    <Image source={require('@/assets/images/bitbyte.png')} style={{ width: 80, height: 80 }} resizeMode="contain" />
-  </View>
-);
-const RetroButton = ({ children, onPress, disabled }: any) => (
-  <Pressable
-    style={({ pressed }) => [
-      styles.option,
-      pressed && { backgroundColor: '#39FF14', borderColor: '#FF00FF' },
-      disabled && { opacity: 0.5 },
-    ]}
-    onPress={onPress}
-    disabled={disabled}
-  >
-    <Text style={styles.optionText}>{children}</Text>
-  </Pressable>
-);
+// Define the type for a single question
+type Question = {
+  id: string;
+  question_text: string;
+  options: string[];
+  correct_option_index: number;
+  explanation: string;
+};
 
-export default function QuizScreen() {
+const QuizScreen = () => {
   const router = useRouter();
-  const { state, dispatch } = useQuiz();
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [selected, setSelected] = useState<number | null>(null);
-  const { width } = useWindowDimensions();
+  const { subject } = useLocalSearchParams<{ subject: string }>();
+  const { grade, level, lives, useLife, addXP, resetLives } = useUser();
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [score, setScore] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
-  // questions should come from context or props, adjust as needed
-  // For now, assume questions are available in context as state.questions
-  const questions = state.questions || [];
-  const loading = false; // adjust if you have loading state
-
-  if (loading || !questions || questions.length === 0) {
-    return <View style={styles.container}><Text style={styles.loading}>Laden...</Text></View>;
-  }
-
-  const currentQuestion = questions[state.current];
-  const isEnd = state.current >= questions.length || state.lives === 0;
-
-  const handleOption = (idx: number) => {
-    if (feedback || isEnd) return;
-    setSelected(idx);
-    const correct = currentQuestion.correctIndex === idx;
-    setFeedback(correct ? 'correct' : 'wrong');
-    if (correct) {
-      dispatch(quizActions.correct());
-    } else {
-      dispatch(quizActions.wrong());
+  useEffect(() => {
+    const combinedClassLevel = `${level || ''} ${grade || ''}`.trim();
+    const quiz = quizData.quizzes.find(
+      (q) =>
+        q.subject.toLowerCase() === subject?.toLowerCase() &&
+        q.class_level.toLowerCase() === combinedClassLevel.toLowerCase()
+    );
+    if (quiz?.questions) {
+      setQuestions(quiz.questions as Question[]);
     }
+  }, [subject, grade, level]);
+
+  useEffect(() => {
+    // Reset lives at the start of a new quiz
+    resetLives();
+  }, []);
+
+  const handleAnswer = (index: number) => {
+    if (selectedAnswer !== null) return;
+
+    const correct = questions[currentIndex].correct_option_index === index;
+    setSelectedAnswer(index);
+    setIsCorrect(correct);
+
+    if (correct) {
+      addXP(10);
+      setScore((s) => s + 1);
+    } else {
+      useLife();
+    }
+
     setTimeout(() => {
-      setFeedback(null);
-      setSelected(null);
-      if (state.current + 1 >= questions.length || (state.lives - (correct ? 0 : 1)) === 0) {
-        router.push('/result-screen');
+      // Check for game over
+      if (!correct && lives <= 1) {
+        router.replace({
+          pathname: '/result-screen',
+          params: {
+            score: score.toString(),
+            total: questions.length.toString(),
+            subject: subject,
+            gameOver: 'true',
+          },
+        });
+        return;
       }
-    }, 900);
+
+      // Check for end of quiz
+      if (currentIndex === questions.length - 1) {
+        router.replace({
+          pathname: '/result-screen',
+          params: {
+            score: (correct ? score + 1 : score).toString(),
+            total: questions.length.toString(),
+            subject: subject,
+          },
+        });
+        return;
+      }
+
+      // Next question
+      setCurrentIndex((i) => i + 1);
+      setSelectedAnswer(null);
+      setIsCorrect(null);
+    }, 1200);
   };
 
-  if (!currentQuestion || isEnd) return null;
+  const currentQuestion = useMemo(() => questions[currentIndex], [questions, currentIndex]);
+
+  if (!currentQuestion) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <Text style={styles.loadingText}>Quiz laden...</Text>
+      </SafeAreaView>
+    );
+  }
+
+  const getButtonVariant = (index: number) => {
+    if (selectedAnswer === null) return 'primary';
+    const correctIndex = questions[currentIndex].correct_option_index;
+    if (index === correctIndex) return 'success';
+    if (index === selectedAnswer && selectedAnswer !== correctIndex) return 'danger';
+    return 'primary';
+  };
 
   return (
-    <View style={styles.container}>
-      <LifeBar lives={state.lives} />
-      <BitByte />
-      <Text style={[styles.question, { fontSize: width < 380 ? 20 : 22 }]}>{currentQuestion.question}</Text>
-      <View style={styles.optionsRow}>
-        {currentQuestion.options.map((opt: string, idx: number) => (
+    <SafeAreaView style={styles.container}>
+      <View style={styles.header}>
+        <Text style={styles.progressText}>
+          Vraag {currentIndex + 1} / {questions.length}
+        </Text>
+        <LifeBar lives={lives} maxLives={5} />
+      </View>
+
+      <View style={styles.questionContainer}>
+        <Text style={styles.questionText}>{currentQuestion.question_text}</Text>
+      </View>
+
+      <View style={styles.optionsContainer}>
+        {currentQuestion.options.map((option, index) => (
           <RetroButton
-            key={idx}
-            onPress={() => handleOption(idx)}
-            disabled={feedback !== null}
-            style={[
-              styles.option,
-              selected === idx ? styles.selected : {},
-              { width: width < 380 ? '90%' : 320, paddingVertical: width < 380 ? 12 : 16 },
-            ]}
+            key={index}
+            onPress={() => handleAnswer(index)}
+            disabled={selectedAnswer !== null}
+            variant={getButtonVariant(index)}
+            selected={selectedAnswer === index && getButtonVariant(index) === 'primary'}
           >
-            <Text style={[styles.optionText, { fontSize: width < 380 ? 16 : 18 }]}>{opt}</Text>
+            {option}
           </RetroButton>
         ))}
       </View>
-      {feedback && (
-        <Text style={[styles.feedback, feedback === 'correct' ? styles.correct : styles.wrong]}>
-          {feedback === 'correct' ? 'Correct!' : 'Fout!'}
-        </Text>
-      )}
-    </View>
+    </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 24,
+    backgroundColor: colors.dark,
+    padding: spacing.m,
   },
-  question: {
-    color: '#39FF14',
-    fontSize: 22,
-    fontFamily: 'ArcadeFont',
-    marginBottom: 32,
-    textAlign: 'center',
-    textShadowColor: '#FF00FF',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 8,
-    letterSpacing: 1,
-  },
-  optionsRow: {
-    width: '100%',
-    alignItems: 'center',
-    marginBottom: 24,
-  },
-  option: {
-    backgroundColor: '#111',
-    borderColor: '#39FF14',
-    borderWidth: 2,
-    borderRadius: 10,
-    paddingVertical: 16,
-    paddingHorizontal: 36,
-    marginVertical: 8,
-    width: 280,
-    alignItems: 'center',
-    shadowColor: '#39FF14',
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 1,
-    shadowRadius: 12,
-  },
-  optionText: {
-    color: '#39FF14',
+  loadingText: {
+    fontFamily: fonts.arcade,
     fontSize: 18,
-    fontFamily: 'ArcadeFont',
-    fontWeight: 'bold',
+    color: colors.white,
     textAlign: 'center',
-    letterSpacing: 1,
-    textShadowColor: '#FF00FF',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 6,
+    flex: 1,
+    justifyContent: 'center',
   },
-  feedback: {
-    fontSize: 24,
-    fontFamily: 'ArcadeFont',
-    marginTop: 16,
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: spacing.s,
+  },
+  progressText: {
+    fontFamily: fonts.arcade,
+    color: colors.white,
+    fontSize: 14,
+  },
+  questionContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: spacing.m,
+  },
+  questionText: {
+    fontFamily: fonts.arcade,
+    fontSize: 18,
+    color: colors.white,
     textAlign: 'center',
-    textShadowColor: '#FF00FF',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 8,
+    lineHeight: 28,
   },
-  correct: {
-    color: '#39FF14',
+  optionsContainer: {
+    paddingBottom: spacing.l,
+    gap: spacing.m,
   },
-  wrong: {
-    color: '#FF00FF',
-  },
-  loading: {
-    color: '#39FF14',
-    fontFamily: 'ArcadeFont',
-    fontSize: 20,
-    marginTop: 40,
-  },
-  selected: {
-    backgroundColor: '#39FF14',
-    borderColor: '#FF00FF',
-    borderWidth: 2,
-  },
-}); 
+});
+
+export default QuizScreen; 
