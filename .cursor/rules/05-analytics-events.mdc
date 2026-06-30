@@ -1,0 +1,30 @@
+# 05 Analytics Events
+
+## Goal
+Maintain a consistent event taxonomy for MVP metrics and release decisions.
+
+## Canonical event names
+- onboarding_started
+- onboarding_completed
+- quiz_started
+- question_answered
+- quiz_completed
+- reward_granted
+- xp_gained
+- token_earned
+- streak_updated
+- leaderboard_viewed
+- paywall_viewed
+- purchase_started
+- purchase_completed
+
+## Always
+- Use consistent snake_case naming.
+- Define required parameters per event before implementation.
+- Log one event once per user action (no duplicate multi-layer logging).
+- Keep event semantics stable over time.
+
+## Prohibited
+- Renaming events without migration notes.
+- Emitting duplicate events from multiple layers for the same action.
+- Tracking sensitive user data not required for product decisions.

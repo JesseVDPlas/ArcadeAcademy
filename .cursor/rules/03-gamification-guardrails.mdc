@@ -1,0 +1,20 @@
+# 03 Gamification Guardrails
+
+## Goal
+Ensure motivation systems are fair, learning-oriented, and non-manipulative.
+
+## Principles
+- Reward learning progress, not only raw activity.
+- Keep sessions short, motivating, and restart-friendly.
+- Add comeback mechanics to reduce frustration.
+- Keep tokens, lives, and streaks fair and transparent.
+
+## Always
+- Validate that mechanics reinforce the core learning loop.
+- Review abuse potential for progression and rewards.
+- Prefer systems that encourage return without coercion.
+
+## Prohibited
+- Pay-to-win loops.
+- Reward spam with no learning value.
+- Punishment patterns that excessively block user progress.

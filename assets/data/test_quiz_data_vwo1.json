@@ -3,7 +3,7 @@
     {
       "quiz_id": "feniks_vwo_1_geschiedenis_h1",
       "title": "Feniks - Hoofdstuk 1 – De Grieken en Romeinen",
-      "subject": "Geschiedenis",
+      "subject": "hist",
       "textbook": "Feniks",
       "class_level": "VWO 1",
       "learning_method": "Feniks",
@@ -206,7 +206,7 @@
     {
       "quiz_id": "nieuw_nederlands_vwo_1_nederlands",
       "title": "Nederlands - Basis Quiz",
-      "subject": "Nederlands",
+      "subject": "nl",
       "textbook": "Nieuw Nederlands",
       "class_level": "VWO 1",
       "learning_method": "Nieuw Nederlands",
@@ -301,7 +301,7 @@
     {
       "quiz_id": "stepping_stones_vwo_1_engels",
       "title": "Engels - Basis Quiz",
-      "subject": "Engels",
+      "subject": "engels",
       "textbook": "Stepping Stones",
       "class_level": "VWO 1",
       "learning_method": "Stepping Stones",
@@ -396,7 +396,7 @@
     {
       "quiz_id": "getal_&_ruimte_vwo_1_wiskunde",
       "title": "Wiskunde - Basis Quiz",
-      "subject": "Wiskunde",
+      "subject": "math",
       "textbook": "Getal & Ruimte",
       "class_level": "VWO 1",
       "learning_method": "Getal & Ruimte",
@@ -491,7 +491,7 @@
     {
       "quiz_id": "de_geo_vwo_1_aardrijkskunde",
       "title": "Aardrijkskunde - Basis Quiz",
-      "subject": "Aardrijkskunde",
+      "subject": "geo",
       "textbook": "De Geo",
       "class_level": "VWO 1",
       "learning_method": "De Geo",
@@ -586,7 +586,7 @@
     {
       "quiz_id": "biologie_voor_jou_vwo_1_biologie",
       "title": "Biologie - Basis Quiz",
-      "subject": "Biologie",
+      "subject": "biologie",
       "textbook": "Biologie voor jou",
       "class_level": "VWO 1",
       "learning_method": "Biologie voor jou",

@@ -1,0 +1,27 @@
+[
+  { "name": "home", "query": "home", "category": "ui", "tags": ["nav"] },
+  { "name": "play", "query": "play", "category": "ui", "tags": ["start", "action"] },
+  { "name": "pause", "query": "pause", "category": "ui", "tags": ["control"] },
+  { "name": "back", "query": "back", "category": "ui", "tags": ["nav"] },
+  { "name": "forward", "query": "forward", "category": "ui", "tags": ["nav"] },
+  { "name": "settings", "query": "settings", "category": "ui", "tags": ["menu"] },
+  { "name": "info", "query": "info", "category": "ui", "tags": ["help"] },
+  { "name": "help", "query": "help", "category": "ui", "tags": ["help"] },
+  { "name": "star", "query": "star", "category": "ui", "tags": ["favorite"] },
+  { "name": "trophy", "query": "trophy", "category": "ui", "tags": ["achievement"] },
+  { "name": "leaderboard", "query": "leaderboard", "category": "ui", "tags": ["rank"] },
+  { "name": "user", "query": "user", "category": "ui", "tags": ["profile"] },
+  { "name": "book", "query": "book", "category": "ui", "tags": ["learn"] },
+  { "name": "question", "query": "question", "category": "ui", "tags": ["quiz"] },
+  { "name": "geography", "query": "globe", "category": "ui", "tags": ["geography"] },
+  { "name": "lightning", "query": "lightning", "category": "ui", "tags": ["power"] },
+  { "name": "scissors", "query": "scissors", "category": "ui", "tags": ["tools"] },
+  { "name": "skip", "query": "skip", "category": "ui", "tags": ["control"] },
+  { "name": "clock", "query": "clock", "category": "ui", "tags": ["time"] },
+
+  { "name": "heart", "query": "heart", "category": "hud", "tags": ["life"] },
+  { "name": "gem", "query": "diamond", "category": "hud", "tags": ["currency"] },
+  { "name": "xp", "query": "bolt", "category": "hud", "tags": ["xp"] },
+  { "name": "streak", "query": "flame", "category": "hud", "tags": ["streak"] },
+  { "name": "life", "query": "life", "category": "hud", "tags": ["life"] }
+]

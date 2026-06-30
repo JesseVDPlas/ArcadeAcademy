@@ -1,7 +1,8 @@
-import { colors, fonts } from '@/theme';
+import { RetroInput } from '@/components/ui/RetroInput';
+import { colors, coreStyles, fonts, radii, spacing } from '@/theme';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useUser } from '../../contexts/UserContext';
 
 export default function Name() {
@@ -11,13 +12,18 @@ export default function Name() {
 
   return (
     <View style={styles.container}>
+      <Image
+        source={require('../../assets/images/bitbyte.png')}
+        style={styles.bitbyte}
+        resizeMode="contain"
+      />
       <Text style={styles.title}>Wat is je naam?</Text>
-      <TextInput
-        style={styles.input}
+      <RetroInput
         value={name}
         onChangeText={setNameInput}
         placeholder="Naam"
-        placeholderTextColor={colors.neon}
+        size="large"
+        style={styles.input}
       />
       <Pressable
         style={styles.button}
@@ -25,7 +31,7 @@ export default function Name() {
         onPress={() => {
           const trimmed = name.trim();
           setName(trimmed);
-          router.replace('/onboarding/grade');
+          router.replace('/onboarding/level');
         }}
       >
         <Text style={styles.buttonText}>Volgende</Text>
@@ -34,9 +40,20 @@ export default function Name() {
   );
 }
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background, alignItems: 'center', justifyContent: 'center' },
-  title: { color: colors.neon, fontSize: 24, fontFamily: fonts.arcade, marginBottom: 24 },
-  input: { borderColor: colors.neon, borderWidth: 2, borderRadius: 10, color: colors.neon, fontSize: 18, fontFamily: fonts.arcade, padding: 12, marginBottom: 24, width: 220, backgroundColor: '#111' },
-  button: { backgroundColor: '#111', borderColor: colors.neon, borderWidth: 2, borderRadius: 10, padding: 16 },
-  buttonText: { color: colors.neon, fontSize: 18, fontFamily: fonts.arcade, fontWeight: 'bold' },
-}); 
+  container: { flex: 1, backgroundColor: coreStyles.screenBg, alignItems: 'center', justifyContent: 'center', padding: spacing.xl },
+  bitbyte: {
+    width: 120,
+    height: 120,
+    marginBottom: spacing.xl,
+  },
+  title: { color: colors.neonGreen, fontSize: 24, fontFamily: fonts.arcade, marginBottom: spacing.xl, textAlign: 'center' },
+  input: { width: 280, marginBottom: spacing.xl, textAlign: 'center' },
+  button: {
+    backgroundColor: coreStyles.buttonBg,
+    borderColor: coreStyles.buttonBorder,
+    borderWidth: 1,
+    borderRadius: radii.m,
+    padding: spacing.l,
+  },
+  buttonText: { color: colors.neonGreen, fontSize: 18, fontFamily: fonts.arcade, fontWeight: 'bold' },
+});

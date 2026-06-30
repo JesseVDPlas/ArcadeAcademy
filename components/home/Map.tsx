@@ -1,3 +1,4 @@
+import placeholderQuizzes from '@/assets/data/placeholder_quizzes.json';
 import quizData from '@/assets/data/test_quiz_data_vwo1.json';
 import { useRouter } from 'expo-router';
 import React from 'react';
@@ -52,21 +53,14 @@ const IslandTile = ({ status, img, onPress }: any) => {
   );
 };
 
-const ISLANDS = [
-  { status: 'done', img: require('@/assets/images/island1.png') },
-  { status: 'done', img: require('@/assets/images/island1.png') },
-  { status: 'current', img: require('@/assets/images/island1.png') },
-  { status: 'locked', img: require('@/assets/images/island1.png') },
-  { status: 'locked', img: require('@/assets/images/island1.png') },
-];
-
 export default function Map() {
   const router = useRouter();
   const { state, dispatch } = useQuiz();
 
   // Dummy quiz selection logic (pak eerste quiz)
   const startQuiz = () => {
-    const quiz = quizData.quizzes[0];
+    const allQuizzes = [...quizData.quizzes, ...placeholderQuizzes.quizzes];
+    const quiz = allQuizzes[0];
     let mappedQuestions = quiz
       ? quiz.questions.map((q: any, idx: number) => ({
           id: `${quiz.subject}-${quiz.class_level}-${idx}`,

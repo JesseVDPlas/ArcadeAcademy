@@ -1,6 +1,6 @@
-import { colors, fonts } from '@/theme';
+import { colors, coreStyles, fonts, radii, spacing } from '@/theme';
 import { useRouter } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useUser } from '../../contexts/UserContext';
 
@@ -16,6 +16,12 @@ export default function Grade() {
   const { setGrade, level } = useUser();
   const grades = getGradesForLevel(level);
   const [selected, setSelected] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!level?.trim()) {
+      router.replace('/onboarding/level');
+    }
+  }, [level, router]);
 
   return (
     <View style={styles.container}>
@@ -40,7 +46,7 @@ export default function Grade() {
         onPress={() => {
           if (selected) {
             setGrade(selected);
-            router.replace('/onboarding/level');
+            router.replace('/onboarding/goal');
           }
         }}
       >
@@ -50,26 +56,39 @@ export default function Grade() {
   );
 }
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background, alignItems: 'center', justifyContent: 'center' },
-  title: { color: colors.neon, fontSize: 24, fontFamily: fonts.arcade, marginBottom: 24 },
-  options: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginBottom: 24 },
-  option: { borderColor: colors.neon, borderWidth: 2, borderRadius: 10, padding: 16, margin: 8, backgroundColor: '#111' },
-  selected: { backgroundColor: colors.neon },
-  optionText: { color: colors.neon, fontSize: 18, fontFamily: fonts.arcade },
+  container: { flex: 1, backgroundColor: coreStyles.screenBg, alignItems: 'center', justifyContent: 'center' },
+  title: { color: colors.neonGreen, fontSize: 24, fontFamily: fonts.arcade, marginBottom: spacing.xl },
+  options: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginBottom: spacing.xl },
+  option: {
+    borderColor: colors.neonGreen,
+    borderWidth: 1,
+    borderRadius: radii.m,
+    padding: spacing.l,
+    margin: spacing.s,
+    backgroundColor: coreStyles.buttonBg,
+  },
+  selected: { backgroundColor: colors.neonGreen },
+  optionText: { color: colors.neonGreen, fontSize: 18, fontFamily: fonts.arcade },
   selectedText: { color: colors.selectedText, fontFamily: fonts.arcade },
-  button: { backgroundColor: '#111', borderColor: colors.neon, borderWidth: 2, borderRadius: 10, padding: 16 },
-  buttonText: { color: colors.neon, fontSize: 18, fontFamily: fonts.arcade, fontWeight: 'bold' },
+  button: {
+    backgroundColor: coreStyles.buttonBg,
+    borderColor: coreStyles.buttonBorder,
+    borderWidth: 1,
+    borderRadius: radii.m,
+    padding: spacing.l,
+  },
+  buttonText: { color: colors.neonGreen, fontSize: 18, fontFamily: fonts.arcade, fontWeight: 'bold' },
   input: {
     width: '80%',
     height: 50,
-    borderColor: colors.neon,
+    borderColor: colors.neonGreen,
     borderWidth: 2,
-    borderRadius: 10,
+    borderRadius: radii.m,
     paddingHorizontal: 10,
-    color: colors.neon,
+    color: colors.neonGreen,
     fontSize: 18,
     fontFamily: fonts.arcade,
-    marginBottom: 24,
-    backgroundColor: '#111',
+    marginBottom: spacing.xl,
+    backgroundColor: coreStyles.buttonBg,
   },
-}); 
+});

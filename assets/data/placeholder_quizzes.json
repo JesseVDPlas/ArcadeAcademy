@@ -1,0 +1,2557 @@
+{
+  "quizzes": [
+    {
+      "quiz_id": "nederlands_vwo1",
+      "title": "Nederlands",
+      "subject": "nl",
+      "textbook": "Nieuw Nederlands",
+      "class_level": "VWO 1",
+      "learning_method": "Nieuw Nederlands",
+      "questions": [
+        {
+          "id": "nl_basis_1",
+          "question_text": "Wat is een zelfstandig naamwoord?",
+          "options": [
+            "Een werkwoord",
+            "Een naam voor een ding, persoon of dier",
+            "Een bijvoeglijk naamwoord",
+            "Een lidwoord"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een zelfstandig naamwoord is een woord dat een naam geeft aan een ding, persoon of dier.",
+          "difficulty": "easy",
+          "learning_goal": "Herkennen van woordsoorten",
+          "tags": [
+            "grammatica",
+            "woordsoorten"
+          ]
+        },
+        {
+          "id": "nl_basis_2",
+          "question_text": "Welke zin is correct gespeld?",
+          "options": [
+            "Ik ga naar de winkel",
+            "Ik ga naa de winkel",
+            "Ik gaa naar de winkel",
+            "Ik ga naar de winkel"
+          ],
+          "correct_option_index": 0,
+          "explanation": "De eerste zin is correct gespeld.",
+          "difficulty": "easy",
+          "learning_goal": "Spelling toepassen",
+          "tags": [
+            "spelling"
+          ]
+        },
+        {
+          "id": "nl_basis_3",
+          "question_text": "Wat is de stam van het werkwoord 'lopen'?",
+          "options": [
+            "Loop",
+            "Lopen",
+            "Loopt",
+            "Liep"
+          ],
+          "correct_option_index": 0,
+          "explanation": "De stam van 'lopen' is 'loop'.",
+          "difficulty": "medium",
+          "learning_goal": "Werkwoorden vervoegen",
+          "tags": [
+            "werkwoorden",
+            "grammatica"
+          ]
+        },
+        {
+          "id": "nl_basis_4",
+          "question_text": "Wat is een synoniem?",
+          "options": [
+            "Een tegengesteld woord",
+            "Een woord met dezelfde betekenis",
+            "Een samengesteld woord",
+            "Een leenwoord"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een synoniem is een woord met ongeveer dezelfde betekenis als een ander woord.",
+          "difficulty": "easy",
+          "learning_goal": "Woordenschat uitbreiden",
+          "tags": [
+            "woordenschat"
+          ]
+        },
+        {
+          "id": "nl_basis_5",
+          "question_text": "Welk leesteken gebruik je aan het einde van een vraag?",
+          "options": [
+            "Punt",
+            "Komma",
+            "Vraagteken",
+            "Uitroepteken"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Een vraag eindigt altijd met een vraagteken.",
+          "difficulty": "easy",
+          "learning_goal": "Interpunctie correct gebruiken",
+          "tags": [
+            "interpunctie"
+          ]
+        },
+        {
+          "id": "nl_basis_6",
+          "question_text": "Wat is de meervoudsvorm van 'huis'?",
+          "options": [
+            "Huisen",
+            "Huizen",
+            "Huise",
+            "Huis"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De meervoudsvorm van 'huis' is 'huizen'.",
+          "difficulty": "easy",
+          "learning_goal": "Meervoudsvormen maken",
+          "tags": [
+            "grammatica",
+            "spelling"
+          ]
+        },
+        {
+          "id": "nl_basis_7",
+          "question_text": "Welke tijd is dit: 'Ik liep naar school'?",
+          "options": [
+            "Tegenwoordige tijd",
+            "Verleden tijd",
+            "Toekomende tijd",
+            "Voltooid tegenwoordige tijd"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Liep' is de verleden tijd van 'lopen'.",
+          "difficulty": "medium",
+          "learning_goal": "Werkwoordstijden herkennen",
+          "tags": [
+            "werkwoorden",
+            "tijden"
+          ]
+        },
+        {
+          "id": "nl_basis_8",
+          "question_text": "Wat is een bijvoeglijk naamwoord?",
+          "options": [
+            "Een woord dat een eigenschap beschrijft",
+            "Een werkwoord",
+            "Een lidwoord",
+            "Een persoonlijk voornaamwoord"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Een bijvoeglijk naamwoord beschrijft een eigenschap van een zelfstandig naamwoord.",
+          "difficulty": "easy",
+          "learning_goal": "Woordsoorten herkennen",
+          "tags": [
+            "grammatica",
+            "woordsoorten"
+          ]
+        },
+        {
+          "id": "nl_basis_9",
+          "question_text": "Welk woord is een antoniem van 'groot'?",
+          "options": [
+            "Klein",
+            "Enorm",
+            "Hoog",
+            "Breed"
+          ],
+          "correct_option_index": 0,
+          "explanation": "'Klein' is het tegenovergestelde (antoniem) van 'groot'.",
+          "difficulty": "easy",
+          "learning_goal": "Woordenschat: antoniemen",
+          "tags": [
+            "woordenschat"
+          ]
+        },
+        {
+          "id": "nl_basis_10",
+          "question_text": "Hoeveel klinkers heeft het woord 'computer'?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Computer heeft 3 klinkers: o, u, e.",
+          "difficulty": "medium",
+          "learning_goal": "Klinkers en medeklinkers onderscheiden",
+          "tags": [
+            "spelling",
+            "klanken"
+          ]
+        },
+        {
+          "id": "nl_gev_1",
+          "question_text": "Wat is een metafoor?",
+          "options": [
+            "Een letterlijke vergelijking",
+            "Een overdreven uitdrukking",
+            "Een beeldende vergelijking zonder 'als' of 'zoals'",
+            "Een herhaling van woorden"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Een metafoor is een beeldende vergelijking waarbij je iets direct met iets anders vergelijkt zonder 'als' of 'zoals'.",
+          "difficulty": "hard",
+          "learning_goal": "Stijlfiguren herkennen",
+          "tags": [
+            "stijlfiguren",
+            "literatuur"
+          ]
+        },
+        {
+          "id": "nl_gev_2",
+          "question_text": "Wat is de functie van een bijwoordelijke bepaling?",
+          "options": [
+            "Het onderwerp beschrijven",
+            "Tijd, plaats, manier of reden aangeven",
+            "Het werkwoord vervoegen",
+            "De hoofdzin verbinden"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een bijwoordelijke bepaling geeft meer informatie over tijd, plaats, manier of reden.",
+          "difficulty": "hard",
+          "learning_goal": "Zinsdelen herkennen",
+          "tags": [
+            "grammatica",
+            "zinsdelen"
+          ]
+        },
+        {
+          "id": "nl_gev_3",
+          "question_text": "Wat is een personificatie?",
+          "options": [
+            "Een persoon beschrijven",
+            "Menselijke eigenschappen geven aan dingen of dieren",
+            "Een overdrijving",
+            "Een vergelijking"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Personificatie is het geven van menselijke eigenschappen aan dingen of dieren.",
+          "difficulty": "medium",
+          "learning_goal": "Stijlfiguren herkennen",
+          "tags": [
+            "stijlfiguren"
+          ]
+        },
+        {
+          "id": "nl_gev_4",
+          "question_text": "Welke zin bevat een onderschikkend voegwoord?",
+          "options": [
+            "Ik eet een appel",
+            "Hij kwam omdat het regende",
+            "Ze zingen en dansen",
+            "Morgen ga ik winkelen"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Omdat' is een onderschikkend voegwoord dat een bijzin inleidt.",
+          "difficulty": "hard",
+          "learning_goal": "Voegwoorden herkennen",
+          "tags": [
+            "grammatica",
+            "voegwoorden"
+          ]
+        },
+        {
+          "id": "nl_gev_5",
+          "question_text": "Wat is het verschil tussen 'hun' en 'hen'?",
+          "options": [
+            "Er is geen verschil",
+            "'Hun' is bezittelijk, 'hen' is lijdend voorwerp",
+            "'Hen' is bezittelijk, 'hun' is lijdend voorwerp",
+            "Ze zijn allebei bezittelijk"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Hun' gebruik je voor bezit (hun huis), 'hen' gebruik je als meewerkend of lijdend voorwerp (ik zie hen).",
+          "difficulty": "hard",
+          "learning_goal": "Voornaamwoorden correct gebruiken",
+          "tags": [
+            "grammatica",
+            "voornaamwoorden"
+          ]
+        },
+        {
+          "id": "nl_gev_6",
+          "question_text": "Wat is een alliteratie?",
+          "options": [
+            "Rijmende woorden",
+            "Herhaling van dezelfde beginletter",
+            "Een lange zin",
+            "Een vragende zin"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Alliteratie is het herhalen van dezelfde beginletter in opeenvolgende woorden.",
+          "difficulty": "medium",
+          "learning_goal": "Stijlfiguren herkennen",
+          "tags": [
+            "stijlfiguren"
+          ]
+        },
+        {
+          "id": "nl_gev_7",
+          "question_text": "Wat is een voltooid deelwoord?",
+          "options": [
+            "Een werkwoord in de tegenwoordige tijd",
+            "Een werkwoord dat eindigt op -d of -t",
+            "Een zelfstandig naamwoord",
+            "Een bijvoeglijk naamwoord"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een voltooid deelwoord is een werkwoordsvorm die eindigt op -d of -t, zoals 'gelopen' of 'gemaakt'.",
+          "difficulty": "medium",
+          "learning_goal": "Werkwoordsvormen herkennen",
+          "tags": [
+            "grammatica",
+            "werkwoorden"
+          ]
+        },
+        {
+          "id": "nl_gev_8",
+          "question_text": "Welke zin is een vragende bijzin?",
+          "options": [
+            "Wat doe jij?",
+            "Ik vraag me af wat jij doet",
+            "Doe jij dat?",
+            "Waarom kom je niet?"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Ik vraag me af wat jij doet' bevat een vragende bijzin ('wat jij doet').",
+          "difficulty": "hard",
+          "learning_goal": "Bijzinnen herkennen",
+          "tags": [
+            "grammatica",
+            "zinsbouw"
+          ]
+        },
+        {
+          "id": "nl_gev_9",
+          "question_text": "Wat is een eufemisme?",
+          "options": [
+            "Een overdrijving",
+            "Een verzachtende uitdrukking",
+            "Een herhaling",
+            "Een vraag"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een eufemisme is een verzachtende of verhullende uitdrukking voor iets onaangenaams.",
+          "difficulty": "hard",
+          "learning_goal": "Stijlfiguren herkennen",
+          "tags": [
+            "stijlfiguren",
+            "woordenschat"
+          ]
+        },
+        {
+          "id": "nl_gev_10",
+          "question_text": "Wat is het verschil tussen 'als' en 'dan' bij vergelijkingen?",
+          "options": [
+            "Er is geen verschil",
+            "'Als' bij gelijkheid, 'dan' bij ongelijkheid",
+            "'Dan' bij gelijkheid, 'als' bij ongelijkheid",
+            "Ze zijn allebei hetzelfde"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Je gebruikt 'als' bij gelijkheid (zo groot als) en 'dan' bij ongelijkheid (groter dan).",
+          "difficulty": "medium",
+          "learning_goal": "Correct taalgebruik",
+          "tags": [
+            "grammatica",
+            "vergelijkingen"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "wiskunde_vwo1",
+      "title": "Wiskunde",
+      "subject": "math",
+      "textbook": "Getal & Ruimte",
+      "class_level": "VWO 1",
+      "learning_method": "Getal & Ruimte",
+      "questions": [
+        {
+          "id": "math_basis_1",
+          "question_text": "Wat is 7 × 8?",
+          "options": [
+            "54",
+            "56",
+            "64",
+            "48"
+          ],
+          "correct_option_index": 1,
+          "explanation": "7 × 8 = 56",
+          "difficulty": "easy",
+          "learning_goal": "Tafels beheersen",
+          "tags": [
+            "rekenen",
+            "vermenigvuldigen"
+          ]
+        },
+        {
+          "id": "math_basis_2",
+          "question_text": "Los op: x + 5 = 12",
+          "options": [
+            "x = 5",
+            "x = 7",
+            "x = 17",
+            "x = 12"
+          ],
+          "correct_option_index": 1,
+          "explanation": "x = 12 - 5 = 7",
+          "difficulty": "easy",
+          "learning_goal": "Eenvoudige vergelijkingen oplossen",
+          "tags": [
+            "algebra",
+            "vergelijkingen"
+          ]
+        },
+        {
+          "id": "math_basis_3",
+          "question_text": "Wat is een even getal?",
+          "options": [
+            "Een getal dat deelbaar is door 2",
+            "Een getal dat eindigt op 1, 3, 5, 7 of 9",
+            "Een getal groter dan 10",
+            "Een negatief getal"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Een even getal is deelbaar door 2 zonder rest.",
+          "difficulty": "easy",
+          "learning_goal": "Getalbegrippen kennen",
+          "tags": [
+            "getallen",
+            "deelbaarheid"
+          ]
+        },
+        {
+          "id": "math_basis_4",
+          "question_text": "Wat is 25% van 80?",
+          "options": [
+            "15",
+            "20",
+            "25",
+            "30"
+          ],
+          "correct_option_index": 1,
+          "explanation": "25% = 1/4, dus 80 ÷ 4 = 20",
+          "difficulty": "medium",
+          "learning_goal": "Procenten berekenen",
+          "tags": [
+            "procenten",
+            "breuken"
+          ]
+        },
+        {
+          "id": "math_basis_5",
+          "question_text": "Hoeveel graden heeft een driehoek in totaal?",
+          "options": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De som van de hoeken in een driehoek is altijd 180°.",
+          "difficulty": "easy",
+          "learning_goal": "Eigenschappen van driehoeken kennen",
+          "tags": [
+            "meetkunde",
+            "hoeken"
+          ]
+        },
+        {
+          "id": "math_basis_6",
+          "question_text": "Wat is de oppervlakte van een rechthoek met lengte 5 cm en breedte 3 cm?",
+          "options": [
+            "8 cm²",
+            "15 cm²",
+            "16 cm²",
+            "20 cm²"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Oppervlakte = lengte × breedte = 5 × 3 = 15 cm²",
+          "difficulty": "easy",
+          "learning_goal": "Oppervlakte berekenen",
+          "tags": [
+            "meetkunde",
+            "oppervlakte"
+          ]
+        },
+        {
+          "id": "math_basis_7",
+          "question_text": "Vereenvoudig: 3a + 2a",
+          "options": [
+            "5a",
+            "6a",
+            "5a²",
+            "3a²"
+          ],
+          "correct_option_index": 0,
+          "explanation": "3a + 2a = 5a (gelijksoortige termen optellen)",
+          "difficulty": "medium",
+          "learning_goal": "Letterrekenen",
+          "tags": [
+            "algebra",
+            "vereenvoudigen"
+          ]
+        },
+        {
+          "id": "math_basis_8",
+          "question_text": "Wat is de breuk 1/2 als decimaal getal?",
+          "options": [
+            "0,25",
+            "0,5",
+            "0,75",
+            "1,0"
+          ],
+          "correct_option_index": 1,
+          "explanation": "1/2 = 0,5",
+          "difficulty": "easy",
+          "learning_goal": "Breuken en decimalen",
+          "tags": [
+            "breuken",
+            "decimalen"
+          ]
+        },
+        {
+          "id": "math_basis_9",
+          "question_text": "Los op: 2x = 10",
+          "options": [
+            "x = 2",
+            "x = 5",
+            "x = 8",
+            "x = 20"
+          ],
+          "correct_option_index": 1,
+          "explanation": "x = 10 ÷ 2 = 5",
+          "difficulty": "easy",
+          "learning_goal": "Vergelijkingen oplossen",
+          "tags": [
+            "algebra",
+            "vergelijkingen"
+          ]
+        },
+        {
+          "id": "math_basis_10",
+          "question_text": "Wat is het gemiddelde van 10, 20 en 30?",
+          "options": [
+            "15",
+            "20",
+            "25",
+            "30"
+          ],
+          "correct_option_index": 1,
+          "explanation": "(10 + 20 + 30) ÷ 3 = 60 ÷ 3 = 20",
+          "difficulty": "medium",
+          "learning_goal": "Gemiddelde berekenen",
+          "tags": [
+            "statistiek",
+            "rekenen"
+          ]
+        },
+        {
+          "id": "math_gev_1",
+          "question_text": "Los op: 3x - 7 = 14",
+          "options": [
+            "x = 5",
+            "x = 7",
+            "x = 9",
+            "x = 21"
+          ],
+          "correct_option_index": 1,
+          "explanation": "3x = 21, dus x = 7",
+          "difficulty": "medium",
+          "learning_goal": "Vergelijkingen oplossen",
+          "tags": [
+            "algebra"
+          ]
+        },
+        {
+          "id": "math_gev_2",
+          "question_text": "Wat is de omtrek van een cirkel met diameter 10 cm? (π ≈ 3,14)",
+          "options": [
+            "15,7 cm",
+            "31,4 cm",
+            "78,5 cm",
+            "314 cm"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Omtrek = π × d = 3,14 × 10 = 31,4 cm",
+          "difficulty": "hard",
+          "learning_goal": "Cirkelberekeningen",
+          "tags": [
+            "meetkunde",
+            "cirkel"
+          ]
+        },
+        {
+          "id": "math_gev_3",
+          "question_text": "Vereenvoudig: 2(3x + 5)",
+          "options": [
+            "5x + 5",
+            "6x + 5",
+            "6x + 10",
+            "5x + 10"
+          ],
+          "correct_option_index": 2,
+          "explanation": "2(3x + 5) = 6x + 10",
+          "difficulty": "medium",
+          "learning_goal": "Haakjes wegwerken",
+          "tags": [
+            "algebra"
+          ]
+        },
+        {
+          "id": "math_gev_4",
+          "question_text": "Wat is 3² + 4²?",
+          "options": [
+            "25",
+            "49",
+            "7",
+            "14"
+          ],
+          "correct_option_index": 0,
+          "explanation": "3² + 4² = 9 + 16 = 25",
+          "difficulty": "easy",
+          "learning_goal": "Machten berekenen",
+          "tags": [
+            "machten"
+          ]
+        },
+        {
+          "id": "math_gev_5",
+          "question_text": "Een rechthoek heeft oppervlakte 48 cm² en lengte 8 cm. Wat is de breedte?",
+          "options": [
+            "6 cm",
+            "40 cm",
+            "56 cm",
+            "384 cm"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Breedte = Oppervlakte ÷ lengte = 48 ÷ 8 = 6 cm",
+          "difficulty": "medium",
+          "learning_goal": "Oppervlakte formules toepassen",
+          "tags": [
+            "meetkunde"
+          ]
+        },
+        {
+          "id": "math_gev_6",
+          "question_text": "Welke breuk is gelijk aan 0,75?",
+          "options": [
+            "1/4",
+            "2/3",
+            "3/4",
+            "4/5"
+          ],
+          "correct_option_index": 2,
+          "explanation": "3/4 = 0,75",
+          "difficulty": "easy",
+          "learning_goal": "Breuken en decimalen",
+          "tags": [
+            "breuken"
+          ]
+        },
+        {
+          "id": "math_gev_7",
+          "question_text": "Als 5x = 35, wat is dan x + 10?",
+          "options": [
+            "7",
+            "17",
+            "45",
+            "12"
+          ],
+          "correct_option_index": 1,
+          "explanation": "5x = 35 dus x = 7, dan x + 10 = 17",
+          "difficulty": "hard",
+          "learning_goal": "Meerstaps vergelijkingen",
+          "tags": [
+            "algebra"
+          ]
+        },
+        {
+          "id": "math_gev_8",
+          "question_text": "Wat is het gemiddelde van 8, 12, 16 en 20?",
+          "options": [
+            "12",
+            "14",
+            "16",
+            "18"
+          ],
+          "correct_option_index": 1,
+          "explanation": "(8+12+16+20) ÷ 4 = 56 ÷ 4 = 14",
+          "difficulty": "medium",
+          "learning_goal": "Gemiddelde berekenen",
+          "tags": [
+            "statistiek"
+          ]
+        },
+        {
+          "id": "math_gev_9",
+          "question_text": "Hoeveel graden heeft een vierhoek in totaal?",
+          "options": [
+            "180°",
+            "270°",
+            "360°",
+            "450°"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Een vierhoek heeft 360° (4 - 2) × 180° = 360°",
+          "difficulty": "medium",
+          "learning_goal": "Hoeksommen",
+          "tags": [
+            "meetkunde"
+          ]
+        },
+        {
+          "id": "math_gev_10",
+          "question_text": "Wat is 40% van 250?",
+          "options": [
+            "90",
+            "100",
+            "110",
+            "150"
+          ],
+          "correct_option_index": 1,
+          "explanation": "40% = 0,4 dus 0,4 × 250 = 100",
+          "difficulty": "medium",
+          "learning_goal": "Procenten berekenen",
+          "tags": [
+            "procenten"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "geschiedenis_vwo1",
+      "title": "Geschiedenis",
+      "subject": "hist",
+      "textbook": "Feniks",
+      "class_level": "VWO 1",
+      "learning_method": "Feniks",
+      "questions": [
+        {
+          "id": "hist_basis_1",
+          "question_text": "Wat is de prehistorie?",
+          "options": [
+            "De tijd voordat mensen bestonden",
+            "De tijd voordat er geschreven bronnen waren",
+            "De middeleeuwen",
+            "De tijd na de Romeinen"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De prehistorie is de tijd voordat mensen begonnen met schrijven.",
+          "difficulty": "easy",
+          "learning_goal": "Historische begrippen kennen",
+          "tags": [
+            "prehistorie",
+            "tijdvakken"
+          ]
+        },
+        {
+          "id": "hist_basis_2",
+          "question_text": "Wat is een primaire bron?",
+          "options": [
+            "Een geschiedenisboek",
+            "Een bron uit de tijd zelf",
+            "Een film over geschiedenis",
+            "Een internet artikel"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een primaire bron komt uit de tijd die je bestudeert, zoals een origineel document of foto.",
+          "difficulty": "medium",
+          "learning_goal": "Bronnen analyseren",
+          "tags": [
+            "bronnen",
+            "onderzoek"
+          ]
+        },
+        {
+          "id": "hist_basis_3",
+          "question_text": "In welk tijdvak leefden de jagers en verzamelaars?",
+          "options": [
+            "Middeleeuwen",
+            "Prehistorie",
+            "Romeinse tijd",
+            "Moderne tijd"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Jagers en verzamelaars leefden in de prehistorie, voordat landbouw werd uitgevonden.",
+          "difficulty": "easy",
+          "learning_goal": "Tijdvakken plaatsen",
+          "tags": [
+            "prehistorie",
+            "samenleving"
+          ]
+        },
+        {
+          "id": "hist_basis_4",
+          "question_text": "Wat is een monarch?",
+          "options": [
+            "Een president",
+            "Een koning of koningin",
+            "Een burgemeester",
+            "Een minister"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een monarch is een koning of koningin die regeert over een land.",
+          "difficulty": "easy",
+          "learning_goal": "Bestuurlijke begrippen kennen",
+          "tags": [
+            "bestuur",
+            "politiek"
+          ]
+        },
+        {
+          "id": "hist_basis_5",
+          "question_text": "Wat betekent 'democratie'?",
+          "options": [
+            "Regering door één persoon",
+            "Regering door het volk",
+            "Regering door de kerk",
+            "Regering door het leger"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Democratie betekent volksheerschappij, waarbij het volk beslist.",
+          "difficulty": "easy",
+          "learning_goal": "Politieke systemen begrijpen",
+          "tags": [
+            "democratie",
+            "bestuur"
+          ]
+        },
+        {
+          "id": "hist_basis_6",
+          "question_text": "Wat is een chronologische volgorde?",
+          "options": [
+            "Op alfabetische volgorde",
+            "Op belangrijkheid",
+            "Op tijdsvolgorde",
+            "Op plaats"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Chronologische volgorde betekent gebeurtenissen ordenen in de volgorde waarin ze plaatsvonden.",
+          "difficulty": "easy",
+          "learning_goal": "Tijdsbesef ontwikkelen",
+          "tags": [
+            "chronologie",
+            "tijd"
+          ]
+        },
+        {
+          "id": "hist_basis_7",
+          "question_text": "Wat is een revolutie?",
+          "options": [
+            "Een langzame verandering",
+            "Een plotselinge, grote verandering",
+            "Een oorlog tussen landen",
+            "Een ontdekking"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een revolutie is een snelle, ingrijpende verandering in de maatschappij.",
+          "difficulty": "medium",
+          "learning_goal": "Historische begrippen kennen",
+          "tags": [
+            "revolutie",
+            "verandering"
+          ]
+        },
+        {
+          "id": "hist_basis_8",
+          "question_text": "Wat is een beschaving?",
+          "options": [
+            "Een groep jagers",
+            "Een ontwikkelde samenleving met steden, schrijven en bestuur",
+            "Een primitieve stam",
+            "Een religieuze groep"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een beschaving is een ontwikkelde samenleving met kenmerken zoals steden, schrift en georganiseerd bestuur.",
+          "difficulty": "medium",
+          "learning_goal": "Kenmerken van beschavingen herkennen",
+          "tags": [
+            "beschaving",
+            "samenleving"
+          ]
+        },
+        {
+          "id": "hist_basis_9",
+          "question_text": "Wat is een tijdlijn?",
+          "options": [
+            "Een lijst van belangrijke personen",
+            "Een kaart van een gebied",
+            "Een schematische weergave van gebeurtenissen in de tijd",
+            "Een familie stamboom"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Een tijdlijn toont gebeurtenissen in chronologische volgorde.",
+          "difficulty": "easy",
+          "learning_goal": "Historische hulpmiddelen gebruiken",
+          "tags": [
+            "tijdlijn",
+            "hulpmiddelen"
+          ]
+        },
+        {
+          "id": "hist_basis_10",
+          "question_text": "Wat betekent 'voor Christus' (v.Chr.)?",
+          "options": [
+            "Na het jaar 0",
+            "Voor het jaar 0",
+            "In de middeleeuwen",
+            "In de moderne tijd"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Jaren voor Christus (v.Chr.) zijn jaren vóór het jaar 0 in onze jaartelling.",
+          "difficulty": "easy",
+          "learning_goal": "Jaartelling begrijpen",
+          "tags": [
+            "jaartelling",
+            "chronologie"
+          ]
+        },
+        {
+          "id": "hist_gev_1",
+          "question_text": "Wat was de belangrijkste functie van het Forum Romanum?",
+          "options": [
+            "Militaire basis",
+            "Handels- en vergaderplaats",
+            "Religieus centrum",
+            "Watervoorziening"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Het Forum Romanum was het centrum voor handel, politiek en rechtspraak.",
+          "difficulty": "hard",
+          "learning_goal": "Romeinse architectuur",
+          "tags": [
+            "romeinen"
+          ]
+        },
+        {
+          "id": "hist_gev_2",
+          "question_text": "Welke uitvinding was cruciaal voor het ontstaan van beschavingen?",
+          "options": [
+            "Het wiel",
+            "Landbouw",
+            "Schrijven",
+            "Vuur"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Landbouw maakte vaste nederzettingen mogelijk, wat leidde tot beschavingen.",
+          "difficulty": "hard",
+          "learning_goal": "Neolithische revolutie",
+          "tags": [
+            "prehistorie",
+            "beschaving"
+          ]
+        },
+        {
+          "id": "hist_gev_3",
+          "question_text": "Wat was het verschil tussen patriciers en plebejers in Rome?",
+          "options": [
+            "Taal",
+            "Afkomst en rechten",
+            "Geloof",
+            "Kleding"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Patriciers waren adellijke families met meer rechten, plebejers waren gewone burgers.",
+          "difficulty": "hard",
+          "learning_goal": "Romeinse samenleving",
+          "tags": [
+            "romeinen",
+            "samenleving"
+          ]
+        },
+        {
+          "id": "hist_gev_4",
+          "question_text": "Waarom was de Nijl belangrijk voor het oude Egypte?",
+          "options": [
+            "Militaire verdediging",
+            "Jaarlijkse overstromingen brachten vruchtbare grond",
+            "Religieuze ceremonies",
+            "Drinkwater alleen"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De jaarlijkse overstromingen van de Nijl maakten de grond vruchtbaar voor landbouw.",
+          "difficulty": "medium",
+          "learning_goal": "Egyptische beschaving",
+          "tags": [
+            "egypte",
+            "landbouw"
+          ]
+        },
+        {
+          "id": "hist_gev_5",
+          "question_text": "Wat is een kenmerk van een absolute monarchie?",
+          "options": [
+            "Het volk heeft alle macht",
+            "De koning heeft onbeperkte macht",
+            "De wet bepaalt alles",
+            "Niemand heeft macht"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Bij een absolute monarchie heeft de heerser volledige macht zonder beperkingen.",
+          "difficulty": "hard",
+          "learning_goal": "Bestuurssystemen",
+          "tags": [
+            "politiek"
+          ]
+        },
+        {
+          "id": "hist_gev_6",
+          "question_text": "Wat betekent 'AD' in jaartallen (bijv. 500 AD)?",
+          "options": [
+            "After Death",
+            "Anno Domini",
+            "Ancient Date",
+            "After Dynasty"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Anno Domini betekent 'in het jaar van de Heer' (na Christus).",
+          "difficulty": "medium",
+          "learning_goal": "Jaartelling",
+          "tags": [
+            "chronologie"
+          ]
+        },
+        {
+          "id": "hist_gev_7",
+          "question_text": "Welke groep had GEEN stemrecht in de Atheense democratie?",
+          "options": [
+            "Rijke mannen",
+            "Soldaten",
+            "Vrouwen en slaven",
+            "Oudere mannen"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Alleen vrije mannelijke burgers hadden stemrecht in Athene.",
+          "difficulty": "medium",
+          "learning_goal": "Griekse democratie",
+          "tags": [
+            "grieken",
+            "democratie"
+          ]
+        },
+        {
+          "id": "hist_gev_8",
+          "question_text": "Wat was een belangrijke oorzaak van de val van het West-Romeinse Rijk?",
+          "options": [
+            "Een vulkaanuitbarsting",
+            "Invasies van Germaanse stammen",
+            "Een epidemie",
+            "Een aardbeving"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Germaanse stammen vielen het West-Romeinse Rijk binnen en droegen bij aan de val.",
+          "difficulty": "hard",
+          "learning_goal": "Val van Rome",
+          "tags": [
+            "romeinen",
+            "ondergang"
+          ]
+        },
+        {
+          "id": "hist_gev_9",
+          "question_text": "Wat is een archeoloog?",
+          "options": [
+            "Iemand die gebouwen ontwerpt",
+            "Iemand die het verleden bestudeert door opgravingen",
+            "Een geschiedenisleraar",
+            "Een museumdirecteur"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Archeologen bestuderen het verleden door materiële resten op te graven en te onderzoeken.",
+          "difficulty": "easy",
+          "learning_goal": "Historisch onderzoek",
+          "tags": [
+            "archeologie"
+          ]
+        },
+        {
+          "id": "hist_gev_10",
+          "question_text": "Wat was de Pax Romana?",
+          "options": [
+            "Een oorlog",
+            "Een periode van vrede in het Romeinse Rijk",
+            "Een wet",
+            "Een gebouw"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De Pax Romana was een periode van relatieve vrede en stabiliteit in het Romeinse Rijk.",
+          "difficulty": "hard",
+          "learning_goal": "Romeinse geschiedenis",
+          "tags": [
+            "romeinen",
+            "vrede"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "aardrijkskunde_vwo1",
+      "title": "Aardrijkskunde",
+      "subject": "geo",
+      "textbook": "De Geo",
+      "class_level": "VWO 1",
+      "learning_method": "De Geo",
+      "questions": [
+        {
+          "id": "geo_basis_1",
+          "question_text": "Wat is de hoofdstad van Nederland?",
+          "options": [
+            "Rotterdam",
+            "Amsterdam",
+            "Den Haag",
+            "Utrecht"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Amsterdam is de hoofdstad van Nederland.",
+          "difficulty": "easy",
+          "learning_goal": "Hoofdsteden kennen",
+          "tags": [
+            "europa",
+            "hoofdsteden"
+          ]
+        },
+        {
+          "id": "geo_basis_2",
+          "question_text": "Hoeveel continenten zijn er op aarde?",
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Er zijn 7 continenten: Afrika, Antarctica, Azië, Australië/Oceanië, Europa, Noord-Amerika en Zuid-Amerika.",
+          "difficulty": "easy",
+          "learning_goal": "Aardrijkskundige basiskennis",
+          "tags": [
+            "continenten",
+            "werelddelen"
+          ]
+        },
+        {
+          "id": "geo_basis_3",
+          "question_text": "Wat is een kaartschaal?",
+          "options": [
+            "De grootte van een kaart",
+            "De verhouding tussen afstand op de kaart en werkelijke afstand",
+            "De kleuren op een kaart",
+            "De legenda van een kaart"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een kaartschaal geeft de verhouding weer tussen afstanden op de kaart en in werkelijkheid.",
+          "difficulty": "medium",
+          "learning_goal": "Kaarten lezen",
+          "tags": [
+            "kaarten",
+            "schaal"
+          ]
+        },
+        {
+          "id": "geo_basis_4",
+          "question_text": "Welke oceaan ligt tussen Europa en Amerika?",
+          "options": [
+            "Stille Oceaan",
+            "Indische Oceaan",
+            "Atlantische Oceaan",
+            "Noordelijke IJszee"
+          ],
+          "correct_option_index": 2,
+          "explanation": "De Atlantische Oceaan ligt tussen Europa en Amerika.",
+          "difficulty": "easy",
+          "learning_goal": "Oceanen kennen",
+          "tags": [
+            "oceanen",
+            "werelddelen"
+          ]
+        },
+        {
+          "id": "geo_basis_5",
+          "question_text": "Wat is de evenaar?",
+          "options": [
+            "De noordpool",
+            "De zuidpool",
+            "Een denkbeeldige lijn rond het midden van de aarde",
+            "De rand van een continent"
+          ],
+          "correct_option_index": 2,
+          "explanation": "De evenaar is een denkbeeldige lijn die de aarde in twee gelijke helften verdeelt.",
+          "difficulty": "easy",
+          "learning_goal": "Aardrijkskundige begrippen kennen",
+          "tags": [
+            "coördinaten",
+            "aarde"
+          ]
+        },
+        {
+          "id": "geo_basis_6",
+          "question_text": "Wat is een delta?",
+          "options": [
+            "Een berg",
+            "Een gebied waar een rivier in zee uitmondt",
+            "Een woestijn",
+            "Een vulkaan"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een delta is het gebied waar een rivier in meerdere armen in zee uitmondt.",
+          "difficulty": "medium",
+          "learning_goal": "Landvormen herkennen",
+          "tags": [
+            "landvormen",
+            "water"
+          ]
+        },
+        {
+          "id": "geo_basis_7",
+          "question_text": "Wat betekent NAP?",
+          "options": [
+            "Nieuwe Amsterdamse Polder",
+            "Normaal Amsterdams Peil",
+            "Noord Atlantische Pact",
+            "Nationale Afwatering Project"
+          ],
+          "correct_option_index": 1,
+          "explanation": "NAP staat voor Normaal Amsterdams Peil, het referentiepunt voor hoogtes in Nederland.",
+          "difficulty": "medium",
+          "learning_goal": "Nederlandse begrippen kennen",
+          "tags": [
+            "nederland",
+            "hoogte"
+          ]
+        },
+        {
+          "id": "geo_basis_8",
+          "question_text": "Wat is een polder?",
+          "options": [
+            "Een heuvel",
+            "Een drooggemaakt stuk land",
+            "Een bos",
+            "Een rivier"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een polder is een stuk land dat is drooggemaakt en beschermd wordt tegen water.",
+          "difficulty": "easy",
+          "learning_goal": "Nederlandse landschap kennen",
+          "tags": [
+            "nederland",
+            "water"
+          ]
+        },
+        {
+          "id": "geo_basis_9",
+          "question_text": "Welk kompaspunt ligt tegenover noord?",
+          "options": [
+            "Oost",
+            "West",
+            "Zuid",
+            "Noordoost"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Zuid ligt tegenover noord op het kompas.",
+          "difficulty": "easy",
+          "learning_goal": "Kompasrichtingen kennen",
+          "tags": [
+            "oriëntatie",
+            "kompas"
+          ]
+        },
+        {
+          "id": "geo_basis_10",
+          "question_text": "Wat is een hoofdstad?",
+          "options": [
+            "De grootste stad van een land",
+            "De stad waar de regering zetelt",
+            "De oudste stad van een land",
+            "De rijkste stad van een land"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een hoofdstad is de stad waar de regering van een land zetelt.",
+          "difficulty": "easy",
+          "learning_goal": "Aardrijkskundige begrippen",
+          "tags": [
+            "steden",
+            "bestuur"
+          ]
+        },
+        {
+          "id": "geo_gev_1",
+          "question_text": "Wat is een breedtegraad?",
+          "options": [
+            "Een denkbeeldige lijn van oost naar west",
+            "Een denkbeeldige lijn van noord naar zuid",
+            "De afstand tot de evenaar",
+            "De afstand tot Greenwich"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Breedtegraden lopen parallel aan de evenaar van oost naar west.",
+          "difficulty": "hard",
+          "learning_goal": "Coördinatensysteem",
+          "tags": [
+            "coördinaten"
+          ]
+        },
+        {
+          "id": "geo_gev_2",
+          "question_text": "Welk continent is het droogste?",
+          "options": [
+            "Afrika",
+            "Australië",
+            "Antarctica",
+            "Azië"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Antarctica is technisch gezien de droogste omdat het bijna geen neerslag krijgt.",
+          "difficulty": "hard",
+          "learning_goal": "Klimaatzones",
+          "tags": [
+            "klimaat"
+          ]
+        },
+        {
+          "id": "geo_gev_3",
+          "question_text": "Wat is een fjord?",
+          "options": [
+            "Een woestijn",
+            "Een diep dal dat door een gletsjer is uitgeslepen en nu gevuld is met zeewater",
+            "Een vulkaan",
+            "Een tropisch eiland"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een fjord is een door gletsjers gevormd dal dat nu met zeewater gevuld is.",
+          "difficulty": "hard",
+          "learning_goal": "Landvormen",
+          "tags": [
+            "landschap",
+            "gletsjers"
+          ]
+        },
+        {
+          "id": "geo_gev_4",
+          "question_text": "Wat betekent getijde?",
+          "options": [
+            "Het verschil in waterstand door de maan",
+            "Een storm op zee",
+            "Een zeestroom",
+            "De diepte van de zee"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Getijden worden veroorzaakt door de aantrekkingskracht van de maan op het water.",
+          "difficulty": "medium",
+          "learning_goal": "Natuurlijke processen",
+          "tags": [
+            "water",
+            "maan"
+          ]
+        },
+        {
+          "id": "geo_gev_5",
+          "question_text": "Welke kaartprojectie behoudt oppervlakten maar vervormt vormen?",
+          "options": [
+            "Mercator",
+            "Peters",
+            "Globe",
+            "Stereografisch"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De Peters-projectie behoudt oppervlakten maar vervormt vormen van landmassa's.",
+          "difficulty": "hard",
+          "learning_goal": "Kaartprojecties",
+          "tags": [
+            "kaarten"
+          ]
+        },
+        {
+          "id": "geo_gev_6",
+          "question_text": "Wat is erosie?",
+          "options": [
+            "Het opbouwen van land",
+            "Het afslijten van gesteente door water, wind of ijs",
+            "Een aardbeving",
+            "Vulkanische activiteit"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Erosie is het proces waarbij gesteente wordt afgesleten door natuurlijke krachten.",
+          "difficulty": "medium",
+          "learning_goal": "Natuurlijke processen",
+          "tags": [
+            "erosie",
+            "landschap"
+          ]
+        },
+        {
+          "id": "geo_gev_7",
+          "question_text": "In welke klimaatzone ligt Nederland?",
+          "options": [
+            "Tropisch",
+            "Gematigd zeeklimaat",
+            "Poolklimaat",
+            "Steppenklimaat"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Nederland heeft een gematigd zeeklimaat met milde winters en koele zomers.",
+          "difficulty": "easy",
+          "learning_goal": "Klimaatzones",
+          "tags": [
+            "klimaat",
+            "nederland"
+          ]
+        },
+        {
+          "id": "geo_gev_8",
+          "question_text": "Wat is een belangrijke oorzaak van zeespiegelstijging?",
+          "options": [
+            "Meer regen",
+            "Smeltende ijskappen door klimaatverandering",
+            "Aardbevingen",
+            "Meer scheepvaart"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Het smelten van ijskappen en gletsjers door klimaatverandering verhoogt de zeespiegel.",
+          "difficulty": "hard",
+          "learning_goal": "Klimaatverandering",
+          "tags": [
+            "klimaat",
+            "water"
+          ]
+        },
+        {
+          "id": "geo_gev_9",
+          "question_text": "Wat is de hoofdfunctie van een dijk in Nederland?",
+          "options": [
+            "Landbouw",
+            "Bescherming tegen water",
+            "Transport",
+            "Recreatie"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Dijken beschermen het lage land tegen overstromingen.",
+          "difficulty": "easy",
+          "learning_goal": "Waterbeheer",
+          "tags": [
+            "nederland",
+            "water"
+          ]
+        },
+        {
+          "id": "geo_gev_10",
+          "question_text": "Welke lijn verdeelt de aarde in een oostelijk en westelijk halfrond?",
+          "options": [
+            "Evenaar",
+            "Nulmeridiaan (Greenwich)",
+            "Noordpool",
+            "Keerkring van Kreeft"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De nulmeridiaan door Greenwich verdeelt oost en west.",
+          "difficulty": "medium",
+          "learning_goal": "Coördinatensysteem",
+          "tags": [
+            "coördinaten"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "engels_vwo1",
+      "title": "Engels",
+      "subject": "engels",
+      "textbook": "Stepping Stones",
+      "class_level": "VWO 1",
+      "learning_method": "Stepping Stones",
+      "questions": [
+        {
+          "id": "eng_basis_1",
+          "question_text": "What is the English word for 'hond'?",
+          "options": [
+            "Cat",
+            "Dog",
+            "Bird",
+            "Fish"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Dog' is the English word for 'hond'.",
+          "difficulty": "easy",
+          "learning_goal": "Basic vocabulary",
+          "tags": [
+            "vocabulary",
+            "animals"
+          ]
+        },
+        {
+          "id": "eng_basis_2",
+          "question_text": "Choose the correct form: 'She ___ to school every day.'",
+          "options": [
+            "go",
+            "goes",
+            "going",
+            "gone"
+          ],
+          "correct_option_index": 1,
+          "explanation": "With 'she', we use 'goes' (third person singular).",
+          "difficulty": "medium",
+          "learning_goal": "Present simple tense",
+          "tags": [
+            "grammar",
+            "present simple"
+          ]
+        },
+        {
+          "id": "eng_basis_3",
+          "question_text": "What is the plural of 'child'?",
+          "options": [
+            "Childs",
+            "Children",
+            "Childes",
+            "Child"
+          ],
+          "correct_option_index": 1,
+          "explanation": "The plural of 'child' is 'children' (irregular plural).",
+          "difficulty": "medium",
+          "learning_goal": "Irregular plurals",
+          "tags": [
+            "grammar",
+            "plurals"
+          ]
+        },
+        {
+          "id": "eng_basis_4",
+          "question_text": "How do you say 'Goedemorgen' in English?",
+          "options": [
+            "Good night",
+            "Good afternoon",
+            "Good morning",
+            "Goodbye"
+          ],
+          "correct_option_index": 2,
+          "explanation": "'Good morning' is the English greeting for 'goedemorgen'.",
+          "difficulty": "easy",
+          "learning_goal": "Greetings",
+          "tags": [
+            "vocabulary",
+            "greetings"
+          ]
+        },
+        {
+          "id": "eng_basis_5",
+          "question_text": "What is the opposite of 'big'?",
+          "options": [
+            "Large",
+            "Small",
+            "Huge",
+            "Tall"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Small' is the opposite of 'big'.",
+          "difficulty": "easy",
+          "learning_goal": "Antonyms",
+          "tags": [
+            "vocabulary",
+            "opposites"
+          ]
+        },
+        {
+          "id": "eng_basis_6",
+          "question_text": "Choose the correct sentence:",
+          "options": [
+            "I am 12 years old",
+            "I have 12 years",
+            "I am 12 years",
+            "I have 12 years old"
+          ],
+          "correct_option_index": 0,
+          "explanation": "In English, we say 'I am X years old' to express age.",
+          "difficulty": "easy",
+          "learning_goal": "Expressing age",
+          "tags": [
+            "grammar",
+            "expressions"
+          ]
+        },
+        {
+          "id": "eng_basis_7",
+          "question_text": "What comes after Monday?",
+          "options": [
+            "Sunday",
+            "Tuesday",
+            "Wednesday",
+            "Friday"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Tuesday comes after Monday in the week.",
+          "difficulty": "easy",
+          "learning_goal": "Days of the week",
+          "tags": [
+            "vocabulary",
+            "time"
+          ]
+        },
+        {
+          "id": "eng_basis_8",
+          "question_text": "Choose the correct form: 'There ___ a book on the table.'",
+          "options": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "correct_option_index": 0,
+          "explanation": "We use 'is' with singular nouns ('a book').",
+          "difficulty": "medium",
+          "learning_goal": "There is/are",
+          "tags": [
+            "grammar",
+            "to be"
+          ]
+        },
+        {
+          "id": "eng_basis_9",
+          "question_text": "What is the English word for 'school'?",
+          "options": [
+            "Skool",
+            "School",
+            "Scool",
+            "Skhool"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'School' is spelled the same in English and Dutch.",
+          "difficulty": "easy",
+          "learning_goal": "Spelling",
+          "tags": [
+            "vocabulary",
+            "spelling"
+          ]
+        },
+        {
+          "id": "eng_basis_10",
+          "question_text": "Which word is a verb?",
+          "options": [
+            "Happy",
+            "Run",
+            "Blue",
+            "Table"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Run' is a verb (action word), the others are adjectives or nouns.",
+          "difficulty": "easy",
+          "learning_goal": "Word classes",
+          "tags": [
+            "grammar",
+            "word classes"
+          ]
+        },
+        {
+          "id": "eng_gev_1",
+          "question_text": "Choose the correct past tense: 'Yesterday, I ___ to the park.'",
+          "options": [
+            "go",
+            "goes",
+            "went",
+            "gone"
+          ],
+          "correct_option_index": 2,
+          "explanation": "'Went' is the past tense of 'go'.",
+          "difficulty": "medium",
+          "learning_goal": "Past simple irregular verbs",
+          "tags": [
+            "grammar",
+            "past tense"
+          ]
+        },
+        {
+          "id": "eng_gev_2",
+          "question_text": "What is the comparative form of 'good'?",
+          "options": [
+            "Gooder",
+            "Better",
+            "Best",
+            "More good"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Better' is the irregular comparative form of 'good'.",
+          "difficulty": "hard",
+          "learning_goal": "Comparatives",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "eng_gev_3",
+          "question_text": "Which sentence is in present continuous?",
+          "options": [
+            "I walk to school",
+            "I am walking to school",
+            "I walked to school",
+            "I will walk to school"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Present continuous uses 'am/is/are + verb-ing'.",
+          "difficulty": "medium",
+          "learning_goal": "Present continuous",
+          "tags": [
+            "grammar",
+            "tenses"
+          ]
+        },
+        {
+          "id": "eng_gev_4",
+          "question_text": "What does 'library' mean?",
+          "options": [
+            "Winkel",
+            "Bibliotheek",
+            "School",
+            "Museum"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Library' means bibliotheek.",
+          "difficulty": "easy",
+          "learning_goal": "Vocabulary",
+          "tags": [
+            "vocabulary"
+          ]
+        },
+        {
+          "id": "eng_gev_5",
+          "question_text": "Choose the correct form: 'She has ___ brothers.'",
+          "options": [
+            "much",
+            "many",
+            "a lot",
+            "few"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'Many' is used with countable plural nouns.",
+          "difficulty": "medium",
+          "learning_goal": "Quantifiers",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "eng_gev_6",
+          "question_text": "What is the superlative of 'bad'?",
+          "options": [
+            "Baddest",
+            "Worse",
+            "Worst",
+            "Most bad"
+          ],
+          "correct_option_index": 2,
+          "explanation": "'Worst' is the irregular superlative of 'bad'.",
+          "difficulty": "hard",
+          "learning_goal": "Superlatives",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "eng_gev_7",
+          "question_text": "Which word is a preposition?",
+          "options": [
+            "Run",
+            "Happy",
+            "Under",
+            "Quickly"
+          ],
+          "correct_option_index": 2,
+          "explanation": "'Under' is a preposition showing position.",
+          "difficulty": "medium",
+          "learning_goal": "Word classes",
+          "tags": [
+            "grammar"
+          ]
+        },
+        {
+          "id": "eng_gev_8",
+          "question_text": "What is the past participle of 'eat'?",
+          "options": [
+            "Ate",
+            "Eating",
+            "Eaten",
+            "Eats"
+          ],
+          "correct_option_index": 2,
+          "explanation": "The past participle of 'eat' is 'eaten'.",
+          "difficulty": "hard",
+          "learning_goal": "Irregular verbs",
+          "tags": [
+            "grammar",
+            "verbs"
+          ]
+        },
+        {
+          "id": "eng_gev_9",
+          "question_text": "Choose the correct: 'I have lived here ___ 5 years.'",
+          "options": [
+            "since",
+            "for",
+            "during",
+            "while"
+          ],
+          "correct_option_index": 1,
+          "explanation": "'For' is used with a period of time.",
+          "difficulty": "hard",
+          "learning_goal": "Prepositions of time",
+          "tags": [
+            "grammar",
+            "prepositions"
+          ]
+        },
+        {
+          "id": "eng_gev_10",
+          "question_text": "What is an adjective?",
+          "options": [
+            "A doing word",
+            "A describing word",
+            "A naming word",
+            "A connecting word"
+          ],
+          "correct_option_index": 1,
+          "explanation": "An adjective describes a noun (e.g., 'big', 'red', 'happy').",
+          "difficulty": "easy",
+          "learning_goal": "Word classes",
+          "tags": [
+            "grammar"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "biologie_vwo1",
+      "title": "Biologie",
+      "subject": "biologie",
+      "textbook": "Biologie voor jou",
+      "class_level": "VWO 1",
+      "learning_method": "Biologie voor jou",
+      "questions": [
+        {
+          "id": "bio_basis_1",
+          "question_text": "Wat is een cel?",
+          "options": [
+            "Een groot organisme",
+            "De kleinste eenheid van leven",
+            "Een orgaan",
+            "Een weefsel"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een cel is de kleinste eenheid die als levend wordt beschouwd.",
+          "difficulty": "easy",
+          "learning_goal": "Basis celbiologie",
+          "tags": [
+            "cellen",
+            "leven"
+          ]
+        },
+        {
+          "id": "bio_basis_2",
+          "question_text": "Hoeveel poten heeft een insect?",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Insecten hebben altijd 6 poten.",
+          "difficulty": "easy",
+          "learning_goal": "Kenmerken van dieren",
+          "tags": [
+            "insecten",
+            "dieren"
+          ]
+        },
+        {
+          "id": "bio_basis_3",
+          "question_text": "Wat is fotosynthese?",
+          "options": [
+            "Ademhaling van dieren",
+            "Het proces waarbij planten licht omzetten in voedsel",
+            "De groei van planten",
+            "Het eten van voedsel"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Bij fotosynthese zetten planten lichtenergie om in chemische energie (suikers).",
+          "difficulty": "medium",
+          "learning_goal": "Processen in planten",
+          "tags": [
+            "planten",
+            "fotosynthese"
+          ]
+        },
+        {
+          "id": "bio_basis_4",
+          "question_text": "Welk orgaan pompt bloed door je lichaam?",
+          "options": [
+            "Longen",
+            "Hart",
+            "Lever",
+            "Maag"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Het hart is de pomp die bloed door je lichaam pompt.",
+          "difficulty": "easy",
+          "learning_goal": "Organen en hun functies",
+          "tags": [
+            "mens",
+            "organen"
+          ]
+        },
+        {
+          "id": "bio_basis_5",
+          "question_text": "Wat is een herbivoor?",
+          "options": [
+            "Een planteneter",
+            "Een vleeseter",
+            "Een alleseter",
+            "Een parasite"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Een herbivoor is een dier dat alleen planten eet.",
+          "difficulty": "easy",
+          "learning_goal": "Voedselrelaties",
+          "tags": [
+            "ecologie",
+            "voedselketen"
+          ]
+        },
+        {
+          "id": "bio_basis_6",
+          "question_text": "Hoeveel zintuigen heeft de mens?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correct_option_index": 2,
+          "explanation": "De mens heeft 5 zintuigen: zien, horen, ruiken, proeven en voelen.",
+          "difficulty": "easy",
+          "learning_goal": "Zintuigen",
+          "tags": [
+            "mens",
+            "zintuigen"
+          ]
+        },
+        {
+          "id": "bio_basis_7",
+          "question_text": "Wat is een zoogdier?",
+          "options": [
+            "Een dier dat eieren legt",
+            "Een dier dat zijn jongen zoogt",
+            "Een dier dat in water leeft",
+            "Een dier met vleugels"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Zoogdieren geven melk aan hun jongen (zogen).",
+          "difficulty": "easy",
+          "learning_goal": "Diergroepen classificeren",
+          "tags": [
+            "dieren",
+            "classificatie"
+          ]
+        },
+        {
+          "id": "bio_basis_8",
+          "question_text": "Waar vind je chloroplast in een plantencel?",
+          "options": [
+            "In de celkern",
+            "In het cytoplasma",
+            "In de celwand",
+            "In de vacuole"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Chloroplasten (voor fotosynthese) bevinden zich in het cytoplasma.",
+          "difficulty": "medium",
+          "learning_goal": "Celstructuur",
+          "tags": [
+            "cellen",
+            "planten"
+          ]
+        },
+        {
+          "id": "bio_basis_9",
+          "question_text": "Wat is de functie van rode bloedcellen?",
+          "options": [
+            "Afweerstoffen maken",
+            "Zuurstof transporteren",
+            "Bloed stollen",
+            "Voedingsstoffen verteren"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Rode bloedcellen transporteren zuurstof door het lichaam.",
+          "difficulty": "medium",
+          "learning_goal": "Bloedcellen en hun functies",
+          "tags": [
+            "mens",
+            "bloed"
+          ]
+        },
+        {
+          "id": "bio_basis_10",
+          "question_text": "Wat is een ecosysteem?",
+          "options": [
+            "Een enkele plant",
+            "Een dier",
+            "Een gemeenschap van organismen en hun omgeving",
+            "Een cel"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Een ecosysteem is een samenhangende gemeenschap van levende wezens en hun leefomgeving.",
+          "difficulty": "medium",
+          "learning_goal": "Ecologische begrippen",
+          "tags": [
+            "ecologie",
+            "ecosysteem"
+          ]
+        },
+        {
+          "id": "bio_gev_1",
+          "question_text": "Wat is de functie van chlorofyl?",
+          "options": [
+            "Bescherming",
+            "Lichtabsorptie voor fotosynthese",
+            "Transport van water",
+            "Opslag van voedsel"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Chlorofyl absorbeert lichtenergie voor fotosynthese.",
+          "difficulty": "hard",
+          "learning_goal": "Fotosynthese",
+          "tags": [
+            "planten",
+            "fotosynthese"
+          ]
+        },
+        {
+          "id": "bio_gev_2",
+          "question_text": "Wat is het verschil tussen een planten- en diercel?",
+          "options": [
+            "Grootte",
+            "Plantencel heeft celwand en chloroplasten",
+            "Kleur",
+            "Vorm"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Plantencellen hebben een celwand en chloroplasten, dierencellen niet.",
+          "difficulty": "hard",
+          "learning_goal": "Celstructuur",
+          "tags": [
+            "cellen"
+          ]
+        },
+        {
+          "id": "bio_gev_3",
+          "question_text": "Wat is de functie van rode bloedlichaampjes?",
+          "options": [
+            "Infecties bestrijden",
+            "Zuurstoftransport",
+            "Bloed laten stollen",
+            "Voedsel verteren"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Rode bloedcellen transporteren zuurstof van de longen naar de cellen.",
+          "difficulty": "medium",
+          "learning_goal": "Bloedcellen",
+          "tags": [
+            "mens",
+            "bloed"
+          ]
+        },
+        {
+          "id": "bio_gev_4",
+          "question_text": "Wat is een producent in een voedselketen?",
+          "options": [
+            "Een roofdier",
+            "Een plant die fotosynthese doet",
+            "Een schimmel",
+            "Een bacterie"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Producenten zijn organismen (meestal planten) die hun eigen voedsel maken via fotosynthese.",
+          "difficulty": "hard",
+          "learning_goal": "Voedselketens",
+          "tags": [
+            "ecologie"
+          ]
+        },
+        {
+          "id": "bio_gev_5",
+          "question_text": "Wat is de functie van de longen?",
+          "options": [
+            "Bloed pompen",
+            "Zuurstof opnemen en CO₂ afgeven",
+            "Voedsel verteren",
+            "Afvalstoffen filteren"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De longen nemen zuurstof op en geven koolstofdioxide af tijdens ademhaling.",
+          "difficulty": "medium",
+          "learning_goal": "Ademhalingssysteem",
+          "tags": [
+            "mens",
+            "ademhaling"
+          ]
+        },
+        {
+          "id": "bio_gev_6",
+          "question_text": "Wat is DNA?",
+          "options": [
+            "Een eiwit",
+            "Erfelijk materiaal met genetische informatie",
+            "Een suiker",
+            "Een enzym"
+          ],
+          "correct_option_index": 1,
+          "explanation": "DNA bevat de erfelijke informatie in de vorm van genen.",
+          "difficulty": "hard",
+          "learning_goal": "Erfelijkheid",
+          "tags": [
+            "genetica",
+            "DNA"
+          ]
+        },
+        {
+          "id": "bio_gev_7",
+          "question_text": "Wat is een carnivoor?",
+          "options": [
+            "Planteneter",
+            "Vleeseter",
+            "Alleseter",
+            "Aasdier"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een carnivoor is een vleeseter.",
+          "difficulty": "easy",
+          "learning_goal": "Voedselrelaties",
+          "tags": [
+            "ecologie"
+          ]
+        },
+        {
+          "id": "bio_gev_8",
+          "question_text": "Wat is osmose?",
+          "options": [
+            "Beweging van water door een membraan",
+            "Fotosynthese",
+            "Celdeling",
+            "Ademhaling"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Osmose is de beweging van water door een semipermeabel membraan.",
+          "difficulty": "hard",
+          "learning_goal": "Celtransport",
+          "tags": [
+            "cellen",
+            "transport"
+          ]
+        },
+        {
+          "id": "bio_gev_9",
+          "question_text": "Hoeveel poten heeft een spin?",
+          "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Spinnen hebben 8 poten (geen insecten!).",
+          "difficulty": "easy",
+          "learning_goal": "Dierclassificatie",
+          "tags": [
+            "dieren"
+          ]
+        },
+        {
+          "id": "bio_gev_10",
+          "question_text": "Wat is een symbiose?",
+          "options": [
+            "Strijd tussen soorten",
+            "Samenwerking tussen twee soorten die elkaar voordeel biedt",
+            "Competitie",
+            "Parasitisme"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Symbiose is een nauwe samenwerking tussen twee soorten waarbij beide profiteren.",
+          "difficulty": "hard",
+          "learning_goal": "Ecologische relaties",
+          "tags": [
+            "ecologie",
+            "symbiose"
+          ]
+        }
+      ]
+    },
+    {
+      "quiz_id": "natuurkunde_vwo1",
+      "title": "Natuurkunde",
+      "subject": "natuurkunde",
+      "textbook": "Pulsar",
+      "class_level": "VWO 1",
+      "learning_method": "Pulsar",
+      "questions": [
+        {
+          "id": "nat_basis_1",
+          "question_text": "Wat is de eenheid van kracht?",
+          "options": [
+            "Meter (m)",
+            "Newton (N)",
+            "Kilogram (kg)",
+            "Joule (J)"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Kracht wordt gemeten in Newton (N).",
+          "difficulty": "easy",
+          "learning_goal": "Eenheden kennen",
+          "tags": [
+            "eenheden",
+            "kracht"
+          ]
+        },
+        {
+          "id": "nat_basis_2",
+          "question_text": "Wat gebeurt er met water bij 0°C?",
+          "options": [
+            "Het kookt",
+            "Het verdampt",
+            "Het bevriest",
+            "Het smelt"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Bij 0°C bevriest water tot ijs.",
+          "difficulty": "easy",
+          "learning_goal": "Fase-overgangen",
+          "tags": [
+            "temperatuur",
+            "fasen"
+          ]
+        },
+        {
+          "id": "nat_basis_3",
+          "question_text": "Welke energievorm heeft een bewegend object?",
+          "options": [
+            "Warmte-energie",
+            "Bewegingsenergie",
+            "Chemische energie",
+            "Licht-energie"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een bewegend object heeft bewegingsenergie (kinetische energie).",
+          "difficulty": "easy",
+          "learning_goal": "Energievormen herkennen",
+          "tags": [
+            "energie",
+            "beweging"
+          ]
+        },
+        {
+          "id": "nat_basis_4",
+          "question_text": "Wat is de lichtsnelheid in vacuüm?",
+          "options": [
+            "300 m/s",
+            "3000 m/s",
+            "300.000 km/s",
+            "300.000 m/s"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Licht beweegt met ongeveer 300.000 km/s in vacuüm.",
+          "difficulty": "medium",
+          "learning_goal": "Natuurconstanten kennen",
+          "tags": [
+            "licht",
+            "snelheid"
+          ]
+        },
+        {
+          "id": "nat_basis_5",
+          "question_text": "Welke kracht zorgt ervoor dat je op de grond blijft staan?",
+          "options": [
+            "Magnetische kracht",
+            "Elektrische kracht",
+            "Zwaartekracht",
+            "Wrijvingskracht"
+          ],
+          "correct_option_index": 2,
+          "explanation": "De zwaartekracht trekt je naar het middelpunt van de aarde.",
+          "difficulty": "easy",
+          "learning_goal": "Krachten herkennen",
+          "tags": [
+            "krachten",
+            "zwaartekracht"
+          ]
+        },
+        {
+          "id": "nat_basis_6",
+          "question_text": "Wat is een geleider van elektriciteit?",
+          "options": [
+            "Hout",
+            "Plastic",
+            "Koper",
+            "Glas"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Metalen zoals koper zijn goede geleiders van elektriciteit.",
+          "difficulty": "easy",
+          "learning_goal": "Eigenschappen van materialen",
+          "tags": [
+            "elektriciteit",
+            "materialen"
+          ]
+        },
+        {
+          "id": "nat_basis_7",
+          "question_text": "Hoeveel graden Celsius is kamertemperatuur ongeveer?",
+          "options": [
+            "10°C",
+            "20°C",
+            "30°C",
+            "40°C"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Kamertemperatuur is ongeveer 20°C.",
+          "difficulty": "easy",
+          "learning_goal": "Temperatuurschalen",
+          "tags": [
+            "temperatuur"
+          ]
+        },
+        {
+          "id": "nat_basis_8",
+          "question_text": "Wat is de formule voor snelheid?",
+          "options": [
+            "snelheid = afstand × tijd",
+            "snelheid = afstand ÷ tijd",
+            "snelheid = tijd ÷ afstand",
+            "snelheid = kracht × massa"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Snelheid = afgelegde afstand gedeeld door tijd.",
+          "difficulty": "medium",
+          "learning_goal": "Formules toepassen",
+          "tags": [
+            "beweging",
+            "formules"
+          ]
+        },
+        {
+          "id": "nat_basis_9",
+          "question_text": "Welk type energie heeft een batterij?",
+          "options": [
+            "Bewegingsenergie",
+            "Chemische energie",
+            "Warmte-energie",
+            "Licht-energie"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Een batterij slaat energie op in chemische vorm.",
+          "difficulty": "medium",
+          "learning_goal": "Energievormen",
+          "tags": [
+            "energie",
+            "elektriciteit"
+          ]
+        },
+        {
+          "id": "nat_basis_10",
+          "question_text": "Wat gebeurt er met het volume van een gas als je het opwarmt?",
+          "options": [
+            "Het wordt kleiner",
+            "Het blijft gelijk",
+            "Het wordt groter",
+            "Het verdwijnt"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Als je een gas opwarmt, zetten de deeltjes uit en neemt het volume toe.",
+          "difficulty": "medium",
+          "learning_goal": "Eigenschappen van gassen",
+          "tags": [
+            "gassen",
+            "temperatuur"
+          ]
+        },
+        {
+          "id": "nat_gev_1",
+          "question_text": "Wat is de formule voor arbeid?",
+          "options": [
+            "Arbeid = kracht × tijd",
+            "Arbeid = kracht × afstand",
+            "Arbeid = massa × snelheid",
+            "Arbeid = energie × tijd"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Arbeid = kracht × afgelegde afstand (in de richting van de kracht).",
+          "difficulty": "hard",
+          "learning_goal": "Arbeid en energie",
+          "tags": [
+            "energie",
+            "formules"
+          ]
+        },
+        {
+          "id": "nat_gev_2",
+          "question_text": "Wat gebeurt er met weerstand als je de draadlengte verdubbelt?",
+          "options": [
+            "Halveert",
+            "Blijft gelijk",
+            "Verdubbelt",
+            "Verviervoudigt"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Weerstand is evenredig met de lengte: 2× lengte = 2× weerstand.",
+          "difficulty": "hard",
+          "learning_goal": "Elektrische weerstand",
+          "tags": [
+            "elektriciteit"
+          ]
+        },
+        {
+          "id": "nat_gev_3",
+          "question_text": "Welke wet beschrijft: kracht = massa × versnelling?",
+          "options": [
+            "Wet van Archimedes",
+            "Tweede wet van Newton",
+            "Wet van Ohm",
+            "Wet van Boyle"
+          ],
+          "correct_option_index": 1,
+          "explanation": "De tweede wet van Newton: F = m × a.",
+          "difficulty": "hard",
+          "learning_goal": "Wetten van Newton",
+          "tags": [
+            "krachten",
+            "beweging"
+          ]
+        },
+        {
+          "id": "nat_gev_4",
+          "question_text": "Wat is het verschil tussen massa en gewicht?",
+          "options": [
+            "Geen verschil",
+            "Massa is overal hetzelfde, gewicht hangt af van zwaartekracht",
+            "Gewicht is groter",
+            "Massa hangt af van locatie"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Massa is constant, gewicht = massa × zwaartekracht (varieert per planeet).",
+          "difficulty": "hard",
+          "learning_goal": "Massa vs gewicht",
+          "tags": [
+            "krachten"
+          ]
+        },
+        {
+          "id": "nat_gev_5",
+          "question_text": "Wat is de eenheid van energie?",
+          "options": [
+            "Watt (W)",
+            "Newton (N)",
+            "Joule (J)",
+            "Volt (V)"
+          ],
+          "correct_option_index": 2,
+          "explanation": "Energie wordt gemeten in Joule (J).",
+          "difficulty": "medium",
+          "learning_goal": "Eenheden",
+          "tags": [
+            "energie",
+            "eenheden"
+          ]
+        },
+        {
+          "id": "nat_gev_6",
+          "question_text": "Wat is het verschil tussen serie- en parallelschakeling?",
+          "options": [
+            "Geen verschil",
+            "Serie: één pad; parallel: meerdere paden",
+            "Parallel is sneller",
+            "Serie gebruikt meer stroom"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Bij serieschakeling is er één stroompad, bij parallel meerdere.",
+          "difficulty": "hard",
+          "learning_goal": "Elektrische schakelingen",
+          "tags": [
+            "elektriciteit",
+            "schakelingen"
+          ]
+        },
+        {
+          "id": "nat_gev_7",
+          "question_text": "Wat is isolatie?",
+          "options": [
+            "Materiaal dat warmte goed geleidt",
+            "Materiaal dat warmte slecht geleidt",
+            "Een energievorm",
+            "Een type batterij"
+          ],
+          "correct_option_index": 1,
+          "explanation": "Isolatiemateriaal geleidt warmte slecht en houdt warmte binnen.",
+          "difficulty": "medium",
+          "learning_goal": "Warmtetransport",
+          "tags": [
+            "warmte",
+            "materialen"
+          ]
+        },
+        {
+          "id": "nat_gev_8",
+          "question_text": "Wat is een hefboom?",
+          "options": [
+            "Een machine die kracht vergroot of afstand vergroot",
+            "Een energiebron",
+            "Een type motor",
+            "Een elektrisch onderdeel"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Een hefboom is een eenvoudige machine die kracht of afstand kan vergroten.",
+          "difficulty": "medium",
+          "learning_goal": "Eenvoudige machines",
+          "tags": [
+            "mechanica"
+          ]
+        },
+        {
+          "id": "nat_gev_9",
+          "question_text": "Welke kleur licht heeft de kortste golflengte?",
+          "options": [
+            "Rood",
+            "Groen",
+            "Blauw",
+            "Violet"
+          ],
+          "correct_option_index": 3,
+          "explanation": "Violet licht heeft de kortste golflengte in het zichtbare spectrum.",
+          "difficulty": "hard",
+          "learning_goal": "Lichtspectrum",
+          "tags": [
+            "licht",
+            "golven"
+          ]
+        },
+        {
+          "id": "nat_gev_10",
+          "question_text": "Wat is vermogen?",
+          "options": [
+            "Energie per seconde",
+            "Kracht per meter",
+            "Massa per volume",
+            "Snelheid per tijd"
+          ],
+          "correct_option_index": 0,
+          "explanation": "Vermogen = energie per tijdseenheid (Watt = Joule/seconde).",
+          "difficulty": "hard",
+          "learning_goal": "Vermogen",
+          "tags": [
+            "energie",
+            "vermogen"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "pack_id": "hist_vwo1_core",
+  "version": "1.0.0",
+  "subject": "hist",
+  "grade_band": "vwo_1",
+  "difficulty_band": "mixed",
+  "questions": [
+    {
+      "id": "0c610689-fef4-488a-aa5b-ef56651fd016",
+      "question_text": "Wat is het belangrijkste kenmerk van een directe democratie zoals in Athene?",
+      "options": [
+        "'Het volk kiest vertegenwoordigers'",
+        "'De koning heeft alle macht'",
+        "'Alle vrije mannen stemmen zelf over wetten'",
+        "'Vrouwen en slaven hebben stemrecht'"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "In het oude Athene stemden alle vrije mannen zelf over wetten: een directe democratie.",
+      "learning_goal": "Uitleggen wat directe democratie inhoudt in het oude Athene.",
+      "tags": [
+        "Grieken",
+        "democratie",
+        "bestuur"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "a23748a4-ab49-43e5-bd84-e330f28a8995",
+      "question_text": "Wat was de belangrijkste reden voor de uitbreiding van het Romeinse Rijk?",
+      "options": [
+        "'Ze wilden vrede sluiten met alle buren'",
+        "'Ze hadden behoefte aan meer landbouwgrond en slaven'",
+        "'Ze werden aangevallen door de Germanen'",
+        "'Ze wilden meer handel drijven met China'"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De Romeinen breidden hun rijk uit voor rijkdom, landbouwgrond en slaven.",
+      "learning_goal": "Begrijpen waarom het Romeinse Rijk zich uitbreidde.",
+      "tags": [
+        "Romeinen",
+        "expansie",
+        "oorzaken"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "bf7c3996-4682-4b78-987c-bd92ee6b9299",
+      "question_text": "Wat wordt bedoeld met 'romanisering'?",
+      "options": [
+        "'De vernietiging van lokale culturen'",
+        "'De verspreiding van Latijn en Romeinse gebruiken'",
+        "'De verovering van Rome door Germanen'",
+        "'De bouw van middeleeuwse steden'"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Romanisering betekent het overnemen van Romeinse cultuur, taal en gewoonten.",
+      "learning_goal": "Uitleggen wat romanisering betekent en hoe dit gebeurde.",
+      "tags": [
+        "Romeinen",
+        "cultuur",
+        "romanisering"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "e630cbca-37db-4373-8c9b-bc76e0f7bc78",
+      "question_text": "Wie had in de Romeinse Republiek de meeste macht in vredestijd?",
+      "options": [
+        "'De keizer'",
+        "'De senaat'",
+        "'Het leger'",
+        "'De volksvergadering'"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "In de Romeinse Republiek had de senaat veel invloed, vooral in vredestijd.",
+      "learning_goal": "Begrijpen hoe de macht verdeeld was in de Romeinse Republiek.",
+      "tags": [
+        "bestuur",
+        "Romeinen",
+        "republiek"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "01821d0a-5102-4d3a-8d87-a258d0d28bb6",
+      "question_text": "Welke Romeinse bouwwerken dienden voor vermaak van het volk?",
+      "options": [
+        "'Aquaducten'",
+        "'Thermen'",
+        "'Amfitheaters'",
+        "'Tempels'"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Amfitheaters zoals het Colosseum waren bedoeld voor vermaak zoals gladiatorengevechten.",
+      "learning_goal": "Herkennen van Romeinse bouwwerken en hun functie.",
+      "tags": [
+        "Romeinen",
+        "architectuur",
+        "cultuur"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "73867953-9a04-4ebd-af90-740cab2e59ad",
+      "question_text": "Waarom werd Julius Caesar vermoord?",
+      "options": [
+        "'Hij verloor een oorlog'",
+        "'Hij werd te populair en machtig'",
+        "'Hij voerde nieuwe belastingen in'",
+        "'Hij maakte een deal met de Germanen'"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De senaat was bang dat Caesar te machtig werd en liet hem vermoorden.",
+      "learning_goal": "Inzicht in de politieke spanningen in de Romeinse Republiek.",
+      "tags": [
+        "Romeinen",
+        "Julius Caesar",
+        "politiek"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "bf403bd0-4e12-4dec-b1c3-9fcde0bfb108",
+      "question_text": "Wat was het verschil tussen een slaaf en een vrije Romein?",
+      "options": [
+        "'Slaven mochten stemmen'",
+        "'Vrije Romeinen betaalden geen belasting'",
+        "'Slaven hadden geen rechten'",
+        "'Slaven hadden meer land'"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Slaven in Rome hadden geen burgerrechten, vrije Romeinen wel.",
+      "learning_goal": "Verschil uitleggen tussen vrije burgers en slaven.",
+      "tags": [
+        "Romeinen",
+        "samenleving",
+        "slavernij"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "71cd7a46-7455-4276-bf4d-419a79fcdd68",
+      "question_text": "Wat bedoelen we met het 'klassieke erfgoed' van Grieken en Romeinen?",
+      "options": [
+        "'Hun mythen en sagen'",
+        "'De invloed van hun cultuur op latere tijden'",
+        "'Hun militaire veroveringen'",
+        "'Hun landbouwmethoden'"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Klassiek erfgoed betekent dat hun kunst, wetenschap en denken invloedrijk bleven.",
+      "learning_goal": "Uitleggen wat wordt bedoeld met klassiek erfgoed.",
+      "tags": [
+        "erfgoed",
+        "cultuur",
+        "Grieken",
+        "Romeinen"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "31de7361-0414-446c-aba1-f9cedca5e025",
+      "question_text": "Welke taal spraken de meeste mensen in het westen van het Romeinse Rijk?",
+      "options": [
+        "'Grieks'",
+        "'Latijn'",
+        "'Keltisch'",
+        "'Germaans'"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Latijn was de voertaal in het westen van het Romeinse Rijk.",
+      "learning_goal": "Weten welke taal in het Romeinse Rijk dominant was.",
+      "tags": [
+        "taal",
+        "Romeinen",
+        "Latijn"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "5cfac5a1-8d65-4c7c-be68-21f63c19e401",
+      "question_text": "Welke invloed hadden de Grieken op de Romeinse cultuur?",
+      "options": [
+        "'Geen",
+        "ze stonden vijandig tegenover elkaar'",
+        "'Ze namen goden en bouwstijlen over'",
+        "'Ze gebruikten elkaars munteenheden'"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De Romeinen namen veel van de Griekse goden, kunst en filosofie over.",
+      "learning_goal": "Begrijpen hoe de Griekse cultuur de Romeinse beïnvloedde.",
+      "tags": [
+        "invloed",
+        "cultuur",
+        "Grieken",
+        "Romeinen"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "hist_basis_1",
+      "question_text": "Wat is de prehistorie?",
+      "options": [
+        "De tijd voordat mensen bestonden",
+        "De tijd voordat er geschreven bronnen waren",
+        "De middeleeuwen",
+        "De tijd na de Romeinen"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De prehistorie is de tijd voordat mensen begonnen met schrijven.",
+      "learning_goal": "Historische begrippen kennen",
+      "tags": [
+        "prehistorie",
+        "tijdvakken"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "hist_basis_2",
+      "question_text": "Wat is een primaire bron?",
+      "options": [
+        "Een geschiedenisboek",
+        "Een bron uit de tijd zelf",
+        "Een film over geschiedenis",
+        "Een internet artikel"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een primaire bron komt uit de tijd die je bestudeert, zoals een origineel document of foto.",
+      "learning_goal": "Bronnen analyseren",
+      "tags": [
+        "bronnen",
+        "onderzoek"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "hist_basis_3",
+      "question_text": "In welk tijdvak leefden de jagers en verzamelaars?",
+      "options": [
+        "Middeleeuwen",
+        "Prehistorie",
+        "Romeinse tijd",
+        "Moderne tijd"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Jagers en verzamelaars leefden in de prehistorie, voordat landbouw werd uitgevonden.",
+      "learning_goal": "Tijdvakken plaatsen",
+      "tags": [
+        "prehistorie",
+        "samenleving"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "hist_basis_4",
+      "question_text": "Wat is een monarch?",
+      "options": [
+        "Een president",
+        "Een koning of koningin",
+        "Een burgemeester",
+        "Een minister"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een monarch is een koning of koningin die regeert over een land.",
+      "learning_goal": "Bestuurlijke begrippen kennen",
+      "tags": [
+        "bestuur",
+        "politiek"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "hist_basis_5",
+      "question_text": "Wat betekent 'democratie'?",
+      "options": [
+        "Regering door één persoon",
+        "Regering door het volk",
+        "Regering door de kerk",
+        "Regering door het leger"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Democratie betekent volksheerschappij, waarbij het volk beslist.",
+      "learning_goal": "Politieke systemen begrijpen",
+      "tags": [
+        "democratie",
+        "bestuur"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "hist_basis_6",
+      "question_text": "Wat is een chronologische volgorde?",
+      "options": [
+        "Op alfabetische volgorde",
+        "Op belangrijkheid",
+        "Op tijdsvolgorde",
+        "Op plaats"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Chronologische volgorde betekent gebeurtenissen ordenen in de volgorde waarin ze plaatsvonden.",
+      "learning_goal": "Tijdsbesef ontwikkelen",
+      "tags": [
+        "chronologie",
+        "tijd"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "hist_basis_7",
+      "question_text": "Wat is een revolutie?",
+      "options": [
+        "Een langzame verandering",
+        "Een plotselinge, grote verandering",
+        "Een oorlog tussen landen",
+        "Een ontdekking"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een revolutie is een snelle, ingrijpende verandering in de maatschappij.",
+      "learning_goal": "Historische begrippen kennen",
+      "tags": [
+        "revolutie",
+        "verandering"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "hist_basis_8",
+      "question_text": "Wat is een beschaving?",
+      "options": [
+        "Een groep jagers",
+        "Een ontwikkelde samenleving met steden, schrijven en bestuur",
+        "Een primitieve stam",
+        "Een religieuze groep"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een beschaving is een ontwikkelde samenleving met kenmerken zoals steden, schrift en georganiseerd bestuur.",
+      "learning_goal": "Kenmerken van beschavingen herkennen",
+      "tags": [
+        "beschaving",
+        "samenleving"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "hist_basis_9",
+      "question_text": "Wat is een tijdlijn?",
+      "options": [
+        "Een lijst van belangrijke personen",
+        "Een kaart van een gebied",
+        "Een schematische weergave van gebeurtenissen in de tijd",
+        "Een familie stamboom"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Een tijdlijn toont gebeurtenissen in chronologische volgorde.",
+      "learning_goal": "Historische hulpmiddelen gebruiken",
+      "tags": [
+        "tijdlijn",
+        "hulpmiddelen"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "hist_basis_10",
+      "question_text": "Wat betekent 'voor Christus' (v.Chr.)?",
+      "options": [
+        "Na het jaar 0",
+        "Voor het jaar 0",
+        "In de middeleeuwen",
+        "In de moderne tijd"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Jaren voor Christus (v.Chr.) zijn jaren vóór het jaar 0 in onze jaartelling.",
+      "learning_goal": "Jaartelling begrijpen",
+      "tags": [
+        "jaartelling",
+        "chronologie"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "hist_gev_1",
+      "question_text": "Wat was de belangrijkste functie van het Forum Romanum?",
+      "options": [
+        "Militaire basis",
+        "Handels- en vergaderplaats",
+        "Religieus centrum",
+        "Watervoorziening"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Het Forum Romanum was het centrum voor handel, politiek en rechtspraak.",
+      "learning_goal": "Romeinse architectuur",
+      "tags": [
+        "romeinen"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "hist_gev_2",
+      "question_text": "Welke uitvinding was cruciaal voor het ontstaan van beschavingen?",
+      "options": [
+        "Het wiel",
+        "Landbouw",
+        "Schrijven",
+        "Vuur"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Landbouw maakte vaste nederzettingen mogelijk, wat leidde tot beschavingen.",
+      "learning_goal": "Neolithische revolutie",
+      "tags": [
+        "prehistorie",
+        "beschaving"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "hist_gev_3",
+      "question_text": "Wat was het verschil tussen patriciers en plebejers in Rome?",
+      "options": [
+        "Taal",
+        "Afkomst en rechten",
+        "Geloof",
+        "Kleding"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Patriciers waren adellijke families met meer rechten, plebejers waren gewone burgers.",
+      "learning_goal": "Romeinse samenleving",
+      "tags": [
+        "romeinen",
+        "samenleving"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "hist_gev_4",
+      "question_text": "Waarom was de Nijl belangrijk voor het oude Egypte?",
+      "options": [
+        "Militaire verdediging",
+        "Jaarlijkse overstromingen brachten vruchtbare grond",
+        "Religieuze ceremonies",
+        "Drinkwater alleen"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De jaarlijkse overstromingen van de Nijl maakten de grond vruchtbaar voor landbouw.",
+      "learning_goal": "Egyptische beschaving",
+      "tags": [
+        "egypte",
+        "landbouw"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "hist_gev_5",
+      "question_text": "Wat is een kenmerk van een absolute monarchie?",
+      "options": [
+        "Het volk heeft alle macht",
+        "De koning heeft onbeperkte macht",
+        "De wet bepaalt alles",
+        "Niemand heeft macht"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Bij een absolute monarchie heeft de heerser volledige macht zonder beperkingen.",
+      "learning_goal": "Bestuurssystemen",
+      "tags": [
+        "politiek"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "hist_gev_6",
+      "question_text": "Wat betekent 'AD' in jaartallen (bijv. 500 AD)?",
+      "options": [
+        "After Death",
+        "Anno Domini",
+        "Ancient Date",
+        "After Dynasty"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Anno Domini betekent 'in het jaar van de Heer' (na Christus).",
+      "learning_goal": "Jaartelling",
+      "tags": [
+        "chronologie"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "hist_gev_7",
+      "question_text": "Welke groep had GEEN stemrecht in de Atheense democratie?",
+      "options": [
+        "Rijke mannen",
+        "Soldaten",
+        "Vrouwen en slaven",
+        "Oudere mannen"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Alleen vrije mannelijke burgers hadden stemrecht in Athene.",
+      "learning_goal": "Griekse democratie",
+      "tags": [
+        "grieken",
+        "democratie"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "hist_gev_8",
+      "question_text": "Wat was een belangrijke oorzaak van de val van het West-Romeinse Rijk?",
+      "options": [
+        "Een vulkaanuitbarsting",
+        "Invasies van Germaanse stammen",
+        "Een epidemie",
+        "Een aardbeving"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Germaanse stammen vielen het West-Romeinse Rijk binnen en droegen bij aan de val.",
+      "learning_goal": "Val van Rome",
+      "tags": [
+        "romeinen",
+        "ondergang"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "hist_gev_9",
+      "question_text": "Wat is een archeoloog?",
+      "options": [
+        "Iemand die gebouwen ontwerpt",
+        "Iemand die het verleden bestudeert door opgravingen",
+        "Een geschiedenisleraar",
+        "Een museumdirecteur"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Archeologen bestuderen het verleden door materiële resten op te graven en te onderzoeken.",
+      "learning_goal": "Historisch onderzoek",
+      "tags": [
+        "archeologie"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "hist_gev_10",
+      "question_text": "Wat was de Pax Romana?",
+      "options": [
+        "Een oorlog",
+        "Een periode van vrede in het Romeinse Rijk",
+        "Een wet",
+        "Een gebouw"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De Pax Romana was een periode van relatieve vrede en stabiliteit in het Romeinse Rijk.",
+      "learning_goal": "Romeinse geschiedenis",
+      "tags": [
+        "romeinen",
+        "vrede"
+      ],
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -96,8 +96,8 @@ export function quizReducer(state: QuizState, action: QuizAction): QuizState {
       // Mark current level as done, unlock next
       const idx = action.payload;
       const levels = state.levels.map((lvl, i) => {
-        if (i === idx) return { ...lvl, status: 'done' };
-        if (i === idx + 1 && lvl.status === 'locked') return { ...lvl, status: 'current' };
+        if (i === idx) return { ...lvl, status: 'done' as LevelStatus };
+        if (i === idx + 1 && lvl.status === 'locked') return { ...lvl, status: 'current' as LevelStatus };
         return lvl;
       });
       return { ...state, levels };
@@ -161,8 +161,10 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({ children
      
   }, []);
 
+  const contextValue = React.useMemo(() => ({ state, dispatch }), [state]);
+
   return (
-    <QuizContext.Provider value={{ state, dispatch }}>
+    <QuizContext.Provider value={contextValue}>
       {children}
     </QuizContext.Provider>
   );

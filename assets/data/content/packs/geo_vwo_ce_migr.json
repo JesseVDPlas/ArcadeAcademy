@@ -1,0 +1,109 @@
+{
+  "pack_id": "geo_vwo_ce_migr",
+  "version": "1.0.0",
+  "subject": "geo",
+  "grade_band": "vwo_4",
+  "difficulty_band": "mixed",
+  "questions": [
+    {
+      "id": "VWO-WRLD-GLOBAL_MIGR-VK-L1-01-v1",
+      "question_text": "De Filipijnen sturen jaarlijks miljoenen arbeidsmigranten naar het buitenland. Een groot deel gaat naar Qatar en andere Golfstaten om te werken in de bouw en huishoudelijke sector. Indonesië heeft een vergelijkbare bevolkingsomvang maar stuurt relatief minder arbeidsmigranten naar dezelfde regio. Welke factor uit de push-pull theorie verklaart het best waarom Filipijnse arbeidsmigranten vaker naar Qatar vertrekken dan Indonesische arbeidsmigranten?",
+      "options": [
+        "Het gemiddeld loonverschil tussen de Filipijnen en Qatar is groter dan tussen Indonesië en Qatar, waardoor de pull-factor voor Filipijnen sterker is.",
+        "Qatar heeft een strenger immigratiebeleid voor Indonesiërs dan voor Filipijnen, wat de migratiestroom beperkt.",
+        "De Filipijnen liggen geografisch dichter bij Qatar, waardoor reiskosten lager zijn en migratie aantrekkelijker wordt.",
+        "Indonesische arbeiders spreken overwegend geen Engels, wat hen minder aantrekkelijk maakt voor werkgevers in Qatar."
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "De push-pull theorie stelt dat loonverschillen een belangrijke pull-factor zijn. Het gemiddelde inkomen in de Filipijnen is lager dan in Indonesië in…",
+      "learning_goal": "Eindterm WRLD-MIGR-02",
+      "tags": [
+        "push-pull theorie",
+        "loonverschil",
+        "internationale arbeidsverdeling"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "VWO-WRLD-GLOBAL_MIGR-AN-L2-02-v1",
+      "question_text": "In Bradford (VK) vestigden zich in de jaren '60 veel Pakistaanse textielarbeiders. Na de deindustrialisatie in de jaren '80 verdween het grootste deel van de textielindustrie. Toch bleef de Pakistaanse gemeenschap in Bradford groeien en is het aandeel Pakistaanse Britten er nog steeds bovengemiddeld hoog. Welk geografisch mechanisme verklaart het best waarom de Pakistaanse gemeenschap in Bradford bleef groeien ondanks het verdwijnen van de oorspronkelijke trekkracht?",
+      "options": [
+        "Migratienetwerken werken zelfversterkend: bestaande gemeenschappen verlagen de drempel voor nieuwe migranten uit hetzelfde herkomstgebied.",
+        "Bradford ontwikkelde zich na de deindustrialisatie tot een nieuw economisch centrum met veel nieuwe banen voor laagopgeleiden.",
+        "De Britse overheid voerde een actief hervestigingsbeleid waarmee Pakistaanse migranten bewust naar Bradford werden geleid.",
+        "Klimaatverandering in Pakistan zorgde voor extra pushfactoren die de migratie naar Bradford in stand hielden."
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Migratienetwerken zijn een klassiek geografisch mechanisme waarbij sociale verbindingen (familie, kennissen, gemeenschapsorganisaties) nieuwe migratie…",
+      "learning_goal": "Eindterm WRLD-MIGR-02",
+      "tags": [
+        "kettingmigratie",
+        "migratienetwerken",
+        "deindustrialisatie",
+        "diaspora"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "VWO-WRLD-GLOBAL_MIGR-TO-L2-03-v1",
+      "question_text": "Indiase IT-professionals kiezen vaker voor de VS (Silicon Valley) dan voor Canada, ondanks dat Canada een snellere en voorspelbaardere immigratieprocedure biedt via het Express Entry-systeem. Silicon Valley herbergt duizenden Indiase techbedrijven, alumni-netwerken van IIT-afgestudeerden en gespecialiseerde recruiters. Pas het concept agglomeratievoordeel toe: welke factor verklaart het best waarom Silicon Valley voor Indiase IT-migranten aantrekkelijker blijft dan Canada, ondanks de eenvoudigere immigratieroute?",
+      "options": [
+        "De concentratie van gelijksoortige bedrijven, netwerken en kennis in Silicon Valley creëert voordelen die individuele bedrijven of landen elders niet kunnen bieden.",
+        "Het hogere salarisniveau in de VS compenseert volledig voor de moeilijkere immigratieprocedure.",
+        "Canada heeft een minder ontwikkeld technologisch ecosysteem, waardoor IT-bedrijven er structureel slechter presteren.",
+        "Indiase IT-professionals verkiezen de VS vanwege de grotere culturele overeenkomsten met India."
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Agglomeratievoordelen ontstaan door geografische clustering van gelijksoortige activiteiten: kennisoverdracht, gespecialiseerde arbeidsmarkten, toeleveranciers…",
+      "learning_goal": "Eindterm WRLD-MIGR-02",
+      "tags": [
+        "agglomeratievoordeel",
+        "kenniseconomie",
+        "braindrains",
+        "migratiebeleid"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "VWO-WRLD-GLOBAL_MIGR-VG-L2-04-v1",
+      "question_text": "Duitsland ontvangt veel arbeidsmigranten uit Roemenië en Polen. Spanje ontvangt relatief veel migranten uit Marokko en Colombia. Beide landen zijn grote EU-economieën met een vergelijkbare behoefte aan laaggeschoolde arbeid in de landbouw, bouw en zorgsector. Welk geografisch principe verklaart het best het verschil in herkomstpatroon van arbeidsmigranten tussen Duitsland (Oost-Europa) en Spanje (Maghreb en Latijns-Amerika)?",
+      "options": [
+        "Historische en geografische nabijheid bepalen mede de herkomst: Duitsland trekt uit aangrenzende EU-landen, Spanje vanuit voormalige kolonies en nabijgelegen Noord-Afrika.",
+        "Duitsland heeft een actiever recruitmentbeleid in Oost-Europa, terwijl Spanje passief migranten ontvangt.",
+        "Het verschil is volledig te verklaren door taalgrenzen: Oost-Europeanen leren makkelijker Duits, Zuid-Amerikanen makkelijker Spaans.",
+        "Spanje heeft een liberaler asielbeleid dan Duitsland, wat migranten uit conflictgebieden aantrekt."
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Geografische nabijheid (afstand als barrière) en historische banden (koloniale relaties, gastarbeiderprogramma's) zijn klassieke geografische factoren die…",
+      "learning_goal": "Eindterm WRLD-MIGR-02",
+      "tags": [
+        "herkomstpatronen",
+        "afstandsprincipe",
+        "koloniale banden",
+        "EU arbeidsmarkt"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "VWO-WRLD-CPI_GLOBAL_MIGR-EV-L3-05-v1",
+      "question_text": "Venezuela kende tussen 2015 en 2023 een van de grootste vluchtelingencrises buiten oorlogsgebieden: ruim 7 miljoen mensen verlieten het land. Meer dan 80% vestigde zich in buurlanden als Colombia, Peru en Ecuador. Een commentator stelt: 'Strenger immigratiebeleid in ontvangende landen is de enige effectieve manier om deze migratiestromen te beheersen.' Beoordeel de stelling van de commentator. Welke redenering weerlegt deze stelling het meest overtuigend?",
+      "options": [
+        "De stelling miskent dat pushfactoren (economische crisis, politieke instabiliteit) de primaire drijfveer zijn; restrictiever beleid in één land leidt tot verschuiving naar buurlanden, niet tot afname van de totale stroom.",
+        "De stelling is juist omdat strenger beleid bewezen effectief is in het verminderen van irreguliere migratie wereldwijd.",
+        "De stelling klopt niet omdat Venezuela's buren geen capaciteit hebben voor strenger beleid door gebrek aan financiële middelen.",
+        "De stelling is irrelevant omdat klimaatverandering de werkelijke oorzaak is van de Venezolaanse migratie."
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Een sterke weerlegging combineert twee geografische inzichten: (1) bij dominante pushfactoren lost restrictiever beleid in ontvangende landen het probleem niet…",
+      "learning_goal": "Eindterm WRLD-MIGR-02",
+      "tags": [
+        "pushfactoren",
+        "centrum-periferie",
+        "beleidsinstrumenten",
+        "regionale spreiding",
+        "vluchtelingencrisis"
+      ],
+      "difficulty": "hard"
+    }
+  ]
+}

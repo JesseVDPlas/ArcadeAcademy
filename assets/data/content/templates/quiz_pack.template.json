@@ -1,0 +1,27 @@
+{
+  "pack_id": "hist_vwo1_core",
+  "version": "1.0.0",
+  "subject": "hist",
+  "grade_band": "vwo_1",
+  "difficulty_band": "mixed",
+  "questions": [
+    {
+      "id": "hist_vwo1_001",
+      "question_text": "Voorbeeldvraag?",
+      "options": [
+        "Optie A",
+        "Optie B",
+        "Optie C",
+        "Optie D"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Korte uitleg in maximaal 160 tekens.",
+      "learning_goal": "Specifiek leerdoel voor deze vraag.",
+      "tags": [
+        "tag1",
+        "tag2"
+      ],
+      "difficulty": "medium"
+    }
+  ]
+}

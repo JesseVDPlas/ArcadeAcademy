@@ -1,89 +1,25 @@
 import quizData from '@/assets/data/test_quiz_data_vwo1.json';
 import { useUser } from '@/contexts/UserContext';
+import { SUBJECTS } from '@/constants/subjects';
 import { colors, fonts, radius, spacing } from '@/theme';
-import { FontAwesome } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
-import React, { useCallback } from 'react';
-import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
-import Animated, {
-    useAnimatedStyle,
-    useSharedValue,
-    withRepeat,
-    withSequence,
-    withTiming,
-} from 'react-native-reanimated';
-
-type LevelStatus = 'done' | 'current' | 'locked';
-
-interface LevelTileProps {
-  title: string;
-  status: LevelStatus;
-  onPress: () => void;
-}
-
-const LevelTile: React.FC<LevelTileProps> = ({ title, status, onPress }) => {
-  const scale = useSharedValue(1);
-  const rotation = useSharedValue(0);
-
-  const animatedBorderStyle = useAnimatedStyle(() => {
-    if (status === 'current') {
-      return {
-        borderColor: colors.neon,
-        borderWidth: 2,
-        shadowColor: colors.neon,
-        shadowRadius: withRepeat(withSequence(withTiming(8), withTiming(4)), -1, true),
-      };
-    }
-    return {};
-  });
-
-  const handlePress = () => {
-    if (status === 'locked') {
-      rotation.value = withSequence(
-        withTiming(-5, { duration: 50 }),
-        withRepeat(withTiming(5, { duration: 100 }), 5, true),
-        withTiming(0, { duration: 50 })
-      );
-      Alert.alert('Level Locked!', 'Complete previous levels to unlock.');
-    } else {
-      onPress();
-    }
-  };
-
-  const animatedShakeStyle = useAnimatedStyle(() => ({
-    transform: [{ rotate: `${rotation.value}deg` }],
-  }));
-
-  const getStatusStyle = () => {
-    switch (status) {
-      case 'done':
-        return styles.done;
-      case 'current':
-        return styles.current;
-      case 'locked':
-        return styles.locked;
-    }
-  };
-
-  return (
-    <Pressable onPress={handlePress}>
-      <Animated.View style={[styles.tile, getStatusStyle(), animatedBorderStyle, animatedShakeStyle]}>
-        {status === 'locked' && (
-          <FontAwesome name="lock" size={24} color="#00000080" style={styles.lockIcon} />
-        )}
-        <Text style={styles.tileText}>{title}</Text>
-      </Animated.View>
-    </Pressable>
-  );
-};
+import React, { useCallback, useMemo } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import LevelTile from './LevelTile';
 
 const LevelMap = () => {
   const router = useRouter();
   const { grade, level, completedQuizzes } = useUser();
 
-  // For demo: hardcode one completed quiz
-  const MOCK_COMPLETED = ['feniks_vwo_1_geschiedenis_h1'];
-  const userCompletedQuizzes = completedQuizzes.length > 0 ? completedQuizzes : MOCK_COMPLETED;
+  const userCompletedQuizzes = useMemo<string[]>(() => {
+    if (Array.isArray(completedQuizzes)) return completedQuizzes;
+    if (completedQuizzes && typeof completedQuizzes === 'object') {
+      return Object.values(completedQuizzes)
+        .flat()
+        .filter((quizId): quizId is string => typeof quizId === 'string');
+    }
+    return [];
+  }, [completedQuizzes]);
 
   const combinedClassLevel = `${level || ''} ${grade || ''}`.trim();
   const levels = quizData.quizzes.filter(
@@ -91,7 +27,7 @@ const LevelMap = () => {
   );
 
   const getLevelStatus = useCallback(
-    (quizId: string, index: number): LevelStatus => {
+    (quizId: string, index: number) => {
       if (userCompletedQuizzes.includes(quizId)) return 'done';
       // The first non-completed quiz is 'current'
       const firstLockedIndex = levels.findIndex((l) => !userCompletedQuizzes.includes(l.quiz_id));
@@ -107,12 +43,21 @@ const LevelMap = () => {
       <View style={styles.mapGrid}>
         {levels.map((level, index) => {
           const status = getLevelStatus(level.quiz_id, index);
+          const subjectId =
+            SUBJECTS.find((s) => s.label.toLowerCase() === level.subject.toLowerCase())?.id ??
+            level.subject.toLowerCase().replace(/\s+/g, '');
           return (
             <LevelTile
               key={level.quiz_id}
-              title={level.subject}
+              subjectId={subjectId}
+              label={level.subject}
               status={status}
-              onPress={() => router.push(`/quiz/${level.subject}`)}
+              onPress={() =>
+                router.push({
+                  pathname: '/(tabs)/quiz/[subject]',
+                  params: { subject: subjectId },
+                })
+              }
             />
           );
         })}
@@ -140,36 +85,6 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'center',
     gap: spacing.m,
-  },
-  tile: {
-    width: 100,
-    height: 100,
-    borderRadius: radius.pixel,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: spacing.s,
-    borderWidth: 2,
-  },
-  tileText: {
-    fontFamily: fonts.arcade,
-    color: colors.deep,
-    fontSize: 10,
-    textAlign: 'center',
-  },
-
-  done: {
-    backgroundColor: colors.neon,
-    borderColor: colors.green,
-  },
-  current: {
-    backgroundColor: colors.white,
-  },
-  locked: {
-    backgroundColor: '#444',
-    borderColor: '#666',
-  },
-  lockIcon: {
-    position: 'absolute',
   },
 });
 

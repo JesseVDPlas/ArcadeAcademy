@@ -1,0 +1,360 @@
+{
+  "pack_id": "math_vwo1_core",
+  "version": "1.0.0",
+  "subject": "math",
+  "grade_band": "vwo_1",
+  "difficulty_band": "mixed",
+  "questions": [
+    {
+      "id": "math_basis_1",
+      "question_text": "Wat is 7 × 8?",
+      "options": [
+        "54",
+        "56",
+        "64",
+        "48"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "7 × 8 = 56",
+      "learning_goal": "Tafels beheersen",
+      "tags": [
+        "rekenen",
+        "vermenigvuldigen"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "math_basis_2",
+      "question_text": "Los op: x + 5 = 12",
+      "options": [
+        "x = 5",
+        "x = 7",
+        "x = 17",
+        "x = 12"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "x = 12 - 5 = 7",
+      "learning_goal": "Eenvoudige vergelijkingen oplossen",
+      "tags": [
+        "algebra",
+        "vergelijkingen"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "math_basis_3",
+      "question_text": "Wat is een even getal?",
+      "options": [
+        "Een getal dat deelbaar is door 2",
+        "Een getal dat eindigt op 1, 3, 5, 7 of 9",
+        "Een getal groter dan 10",
+        "Een negatief getal"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Een even getal is deelbaar door 2 zonder rest.",
+      "learning_goal": "Getalbegrippen kennen",
+      "tags": [
+        "getallen",
+        "deelbaarheid"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "math_basis_4",
+      "question_text": "Wat is 25% van 80?",
+      "options": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "25% = 1/4, dus 80 ÷ 4 = 20",
+      "learning_goal": "Procenten berekenen",
+      "tags": [
+        "procenten",
+        "breuken"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "math_basis_5",
+      "question_text": "Hoeveel graden heeft een driehoek in totaal?",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De som van de hoeken in een driehoek is altijd 180°.",
+      "learning_goal": "Eigenschappen van driehoeken kennen",
+      "tags": [
+        "meetkunde",
+        "hoeken"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "math_basis_6",
+      "question_text": "Wat is de oppervlakte van een rechthoek met lengte 5 cm en breedte 3 cm?",
+      "options": [
+        "8 cm²",
+        "15 cm²",
+        "16 cm²",
+        "20 cm²"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Oppervlakte = lengte × breedte = 5 × 3 = 15 cm²",
+      "learning_goal": "Oppervlakte berekenen",
+      "tags": [
+        "meetkunde",
+        "oppervlakte"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "math_basis_7",
+      "question_text": "Vereenvoudig: 3a + 2a",
+      "options": [
+        "5a",
+        "6a",
+        "5a²",
+        "3a²"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "3a + 2a = 5a (gelijksoortige termen optellen)",
+      "learning_goal": "Letterrekenen",
+      "tags": [
+        "algebra",
+        "vereenvoudigen"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "math_basis_8",
+      "question_text": "Wat is de breuk 1/2 als decimaal getal?",
+      "options": [
+        "0,25",
+        "0,5",
+        "0,75",
+        "1,0"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "1/2 = 0,5",
+      "learning_goal": "Breuken en decimalen",
+      "tags": [
+        "breuken",
+        "decimalen"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "math_basis_9",
+      "question_text": "Los op: 2x = 10",
+      "options": [
+        "x = 2",
+        "x = 5",
+        "x = 8",
+        "x = 20"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "x = 10 ÷ 2 = 5",
+      "learning_goal": "Vergelijkingen oplossen",
+      "tags": [
+        "algebra",
+        "vergelijkingen"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "math_basis_10",
+      "question_text": "Wat is het gemiddelde van 10, 20 en 30?",
+      "options": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "(10 + 20 + 30) ÷ 3 = 60 ÷ 3 = 20",
+      "learning_goal": "Gemiddelde berekenen",
+      "tags": [
+        "statistiek",
+        "rekenen"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "math_gev_1",
+      "question_text": "Los op: 3x - 7 = 14",
+      "options": [
+        "x = 5",
+        "x = 7",
+        "x = 9",
+        "x = 21"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "3x = 21, dus x = 7",
+      "learning_goal": "Vergelijkingen oplossen",
+      "tags": [
+        "algebra"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "math_gev_2",
+      "question_text": "Wat is de omtrek van een cirkel met diameter 10 cm? (π ≈ 3,14)",
+      "options": [
+        "15,7 cm",
+        "31,4 cm",
+        "78,5 cm",
+        "314 cm"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Omtrek = π × d = 3,14 × 10 = 31,4 cm",
+      "learning_goal": "Cirkelberekeningen",
+      "tags": [
+        "meetkunde",
+        "cirkel"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "math_gev_3",
+      "question_text": "Vereenvoudig: 2(3x + 5)",
+      "options": [
+        "5x + 5",
+        "6x + 5",
+        "6x + 10",
+        "5x + 10"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "2(3x + 5) = 6x + 10",
+      "learning_goal": "Haakjes wegwerken",
+      "tags": [
+        "algebra"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "math_gev_4",
+      "question_text": "Wat is 3² + 4²?",
+      "options": [
+        "25",
+        "49",
+        "7",
+        "14"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "3² + 4² = 9 + 16 = 25",
+      "learning_goal": "Machten berekenen",
+      "tags": [
+        "machten"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "math_gev_5",
+      "question_text": "Een rechthoek heeft oppervlakte 48 cm² en lengte 8 cm. Wat is de breedte?",
+      "options": [
+        "6 cm",
+        "40 cm",
+        "56 cm",
+        "384 cm"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Breedte = Oppervlakte ÷ lengte = 48 ÷ 8 = 6 cm",
+      "learning_goal": "Oppervlakte formules toepassen",
+      "tags": [
+        "meetkunde"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "math_gev_6",
+      "question_text": "Welke breuk is gelijk aan 0,75?",
+      "options": [
+        "1/4",
+        "2/3",
+        "3/4",
+        "4/5"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "3/4 = 0,75",
+      "learning_goal": "Breuken en decimalen",
+      "tags": [
+        "breuken"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "math_gev_7",
+      "question_text": "Als 5x = 35, wat is dan x + 10?",
+      "options": [
+        "7",
+        "17",
+        "45",
+        "12"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "5x = 35 dus x = 7, dan x + 10 = 17",
+      "learning_goal": "Meerstaps vergelijkingen",
+      "tags": [
+        "algebra"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "math_gev_8",
+      "question_text": "Wat is het gemiddelde van 8, 12, 16 en 20?",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "(8+12+16+20) ÷ 4 = 56 ÷ 4 = 14",
+      "learning_goal": "Gemiddelde berekenen",
+      "tags": [
+        "statistiek"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "math_gev_9",
+      "question_text": "Hoeveel graden heeft een vierhoek in totaal?",
+      "options": [
+        "180°",
+        "270°",
+        "360°",
+        "450°"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Een vierhoek heeft 360° (4 - 2) × 180° = 360°",
+      "learning_goal": "Hoeksommen",
+      "tags": [
+        "meetkunde"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "math_gev_10",
+      "question_text": "Wat is 40% van 250?",
+      "options": [
+        "90",
+        "100",
+        "110",
+        "150"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "40% = 0,4 dus 0,4 × 250 = 100",
+      "learning_goal": "Procenten berekenen",
+      "tags": [
+        "procenten"
+      ],
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# 01 iOS Architecture
+
+## Goal
+Keep architecture consistent, testable, and scalable for an iOS-first app.
+
+## Architecture defaults
+- SwiftUI-first implementation.
+- Feature-based folder structure.
+- MVVM (or equivalent clear separation of concerns).
+- Explicit async state modeling.
+
+## Always
+- Keep business logic in ViewModel, service, or domain layers.
+- Keep views declarative and UI-focused.
+- Define clear boundaries for models, services, and state.
+- Keep naming consistent and human-readable.
+- Ensure new features can be unit tested.
+
+## Prohibited
+- Network or persistence logic inline in SwiftUI views.
+- God objects with mixed responsibilities.
+- Ad-hoc global state unless strictly necessary and documented.

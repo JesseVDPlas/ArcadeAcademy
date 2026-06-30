@@ -1,0 +1,20 @@
+# 00 Project Foundation
+
+## Goal
+Set product context, target user value, and MVP scope discipline for Arcade Academy.
+
+## Context
+- Arcade Academy is a mobile-first educational product.
+- V1 focus: quiz flow, progression, motivation, and launch readiness.
+- Changes should increase learning value, retention, or MVP shippability.
+
+## Always
+- Classify work as MVP / Later / Out-of-scope before implementation.
+- Define user value before building.
+- Prefer simple solutions that ship reliably in V1.
+- Flag non-MVP ideas explicitly as backlog candidates.
+
+## Prohibited
+- Scope creep without explicit MVP approval.
+- Features with unclear user value.
+- Technical choices that add avoidable V1 complexity.

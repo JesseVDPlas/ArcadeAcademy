@@ -1,0 +1,365 @@
+{
+  "pack_id": "geo_vwo1_core",
+  "version": "1.0.0",
+  "subject": "geo",
+  "grade_band": "vwo_1",
+  "difficulty_band": "mixed",
+  "questions": [
+    {
+      "id": "geo_basis_1",
+      "question_text": "Wat is de hoofdstad van Nederland?",
+      "options": [
+        "Rotterdam",
+        "Amsterdam",
+        "Den Haag",
+        "Utrecht"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Amsterdam is de hoofdstad van Nederland.",
+      "learning_goal": "Hoofdsteden kennen",
+      "tags": [
+        "europa",
+        "hoofdsteden"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "geo_basis_2",
+      "question_text": "Hoeveel continenten zijn er op aarde?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Er zijn 7 continenten: Afrika, Antarctica, Azië, Australië/Oceanië, Europa, Noord-Amerika en Zuid-Amerika.",
+      "learning_goal": "Aardrijkskundige basiskennis",
+      "tags": [
+        "continenten",
+        "werelddelen"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "geo_basis_3",
+      "question_text": "Wat is een kaartschaal?",
+      "options": [
+        "De grootte van een kaart",
+        "De verhouding tussen afstand op de kaart en werkelijke afstand",
+        "De kleuren op een kaart",
+        "De legenda van een kaart"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een kaartschaal geeft de verhouding weer tussen afstanden op de kaart en in werkelijkheid.",
+      "learning_goal": "Kaarten lezen",
+      "tags": [
+        "kaarten",
+        "schaal"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "geo_basis_4",
+      "question_text": "Welke oceaan ligt tussen Europa en Amerika?",
+      "options": [
+        "Stille Oceaan",
+        "Indische Oceaan",
+        "Atlantische Oceaan",
+        "Noordelijke IJszee"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "De Atlantische Oceaan ligt tussen Europa en Amerika.",
+      "learning_goal": "Oceanen kennen",
+      "tags": [
+        "oceanen",
+        "werelddelen"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "geo_basis_5",
+      "question_text": "Wat is de evenaar?",
+      "options": [
+        "De noordpool",
+        "De zuidpool",
+        "Een denkbeeldige lijn rond het midden van de aarde",
+        "De rand van een continent"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "De evenaar is een denkbeeldige lijn die de aarde in twee gelijke helften verdeelt.",
+      "learning_goal": "Aardrijkskundige begrippen kennen",
+      "tags": [
+        "coördinaten",
+        "aarde"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "geo_basis_6",
+      "question_text": "Wat is een delta?",
+      "options": [
+        "Een berg",
+        "Een gebied waar een rivier in zee uitmondt",
+        "Een woestijn",
+        "Een vulkaan"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een delta is het gebied waar een rivier in meerdere armen in zee uitmondt.",
+      "learning_goal": "Landvormen herkennen",
+      "tags": [
+        "landvormen",
+        "water"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "geo_basis_7",
+      "question_text": "Wat betekent NAP?",
+      "options": [
+        "Nieuwe Amsterdamse Polder",
+        "Normaal Amsterdams Peil",
+        "Noord Atlantische Pact",
+        "Nationale Afwatering Project"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "NAP staat voor Normaal Amsterdams Peil, het referentiepunt voor hoogtes in Nederland.",
+      "learning_goal": "Nederlandse begrippen kennen",
+      "tags": [
+        "nederland",
+        "hoogte"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "geo_basis_8",
+      "question_text": "Wat is een polder?",
+      "options": [
+        "Een heuvel",
+        "Een drooggemaakt stuk land",
+        "Een bos",
+        "Een rivier"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een polder is een stuk land dat is drooggemaakt en beschermd wordt tegen water.",
+      "learning_goal": "Nederlandse landschap kennen",
+      "tags": [
+        "nederland",
+        "water"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "geo_basis_9",
+      "question_text": "Welk kompaspunt ligt tegenover noord?",
+      "options": [
+        "Oost",
+        "West",
+        "Zuid",
+        "Noordoost"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Zuid ligt tegenover noord op het kompas.",
+      "learning_goal": "Kompasrichtingen kennen",
+      "tags": [
+        "oriëntatie",
+        "kompas"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "geo_basis_10",
+      "question_text": "Wat is een hoofdstad?",
+      "options": [
+        "De grootste stad van een land",
+        "De stad waar de regering zetelt",
+        "De oudste stad van een land",
+        "De rijkste stad van een land"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een hoofdstad is de stad waar de regering van een land zetelt.",
+      "learning_goal": "Aardrijkskundige begrippen",
+      "tags": [
+        "steden",
+        "bestuur"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "geo_gev_1",
+      "question_text": "Wat is een breedtegraad?",
+      "options": [
+        "Een denkbeeldige lijn van oost naar west",
+        "Een denkbeeldige lijn van noord naar zuid",
+        "De afstand tot de evenaar",
+        "De afstand tot Greenwich"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Breedtegraden lopen parallel aan de evenaar van oost naar west.",
+      "learning_goal": "Coördinatensysteem",
+      "tags": [
+        "coördinaten"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "geo_gev_2",
+      "question_text": "Welk continent is het droogste?",
+      "options": [
+        "Afrika",
+        "Australië",
+        "Antarctica",
+        "Azië"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Antarctica is technisch gezien de droogste omdat het bijna geen neerslag krijgt.",
+      "learning_goal": "Klimaatzones",
+      "tags": [
+        "klimaat"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "geo_gev_3",
+      "question_text": "Wat is een fjord?",
+      "options": [
+        "Een woestijn",
+        "Een diep dal dat door een gletsjer is uitgeslepen en nu gevuld is met zeewater",
+        "Een vulkaan",
+        "Een tropisch eiland"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een fjord is een door gletsjers gevormd dal dat nu met zeewater gevuld is.",
+      "learning_goal": "Landvormen",
+      "tags": [
+        "landschap",
+        "gletsjers"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "geo_gev_4",
+      "question_text": "Wat betekent getijde?",
+      "options": [
+        "Het verschil in waterstand door de maan",
+        "Een storm op zee",
+        "Een zeestroom",
+        "De diepte van de zee"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Getijden worden veroorzaakt door de aantrekkingskracht van de maan op het water.",
+      "learning_goal": "Natuurlijke processen",
+      "tags": [
+        "water",
+        "maan"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "geo_gev_5",
+      "question_text": "Welke kaartprojectie behoudt oppervlakten maar vervormt vormen?",
+      "options": [
+        "Mercator",
+        "Peters",
+        "Globe",
+        "Stereografisch"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De Peters-projectie behoudt oppervlakten maar vervormt vormen van landmassa's.",
+      "learning_goal": "Kaartprojecties",
+      "tags": [
+        "kaarten"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "geo_gev_6",
+      "question_text": "Wat is erosie?",
+      "options": [
+        "Het opbouwen van land",
+        "Het afslijten van gesteente door water, wind of ijs",
+        "Een aardbeving",
+        "Vulkanische activiteit"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Erosie is het proces waarbij gesteente wordt afgesleten door natuurlijke krachten.",
+      "learning_goal": "Natuurlijke processen",
+      "tags": [
+        "erosie",
+        "landschap"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "geo_gev_7",
+      "question_text": "In welke klimaatzone ligt Nederland?",
+      "options": [
+        "Tropisch",
+        "Gematigd zeeklimaat",
+        "Poolklimaat",
+        "Steppenklimaat"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Nederland heeft een gematigd zeeklimaat met milde winters en koele zomers.",
+      "learning_goal": "Klimaatzones",
+      "tags": [
+        "klimaat",
+        "nederland"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "geo_gev_8",
+      "question_text": "Wat is een belangrijke oorzaak van zeespiegelstijging?",
+      "options": [
+        "Meer regen",
+        "Smeltende ijskappen door klimaatverandering",
+        "Aardbevingen",
+        "Meer scheepvaart"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Het smelten van ijskappen en gletsjers door klimaatverandering verhoogt de zeespiegel.",
+      "learning_goal": "Klimaatverandering",
+      "tags": [
+        "klimaat",
+        "water"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "geo_gev_9",
+      "question_text": "Wat is de hoofdfunctie van een dijk in Nederland?",
+      "options": [
+        "Landbouw",
+        "Bescherming tegen water",
+        "Transport",
+        "Recreatie"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Dijken beschermen het lage land tegen overstromingen.",
+      "learning_goal": "Waterbeheer",
+      "tags": [
+        "nederland",
+        "water"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "geo_gev_10",
+      "question_text": "Welke lijn verdeelt de aarde in een oostelijk en westelijk halfrond?",
+      "options": [
+        "Evenaar",
+        "Nulmeridiaan (Greenwich)",
+        "Noordpool",
+        "Keerkring van Kreeft"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De nulmeridiaan door Greenwich verdeelt oost en west.",
+      "learning_goal": "Coördinatensysteem",
+      "tags": [
+        "coördinaten"
+      ],
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -6,17 +6,21 @@ import { StyleSheet, View } from 'react-native';
 interface LifeBarProps {
   lives: number;
   maxLives?: number;
+  size?: 'sm' | 'md';
 }
 
-const LifeBar: React.FC<LifeBarProps> = ({ lives, maxLives = 3 }) => {
+const LifeBar: React.FC<LifeBarProps> = ({ lives, maxLives = 3, size = 'md' }) => {
+  const heartSize = size === 'sm' ? 12 : 24;
+  const spacing = size === 'sm' ? 2 : 4;
+
   return (
     <View style={styles.container}>
       {Array.from({ length: maxLives }).map((_, i) => (
         <FontAwesome
           key={i}
           name="heart"
-          size={24}
-          style={[styles.heart, { color: i < lives ? colors.red : colors.deep }]}
+          size={heartSize}
+          style={[styles.heart, { marginHorizontal: spacing, color: i < lives ? colors.red : colors.deep }]}
         />
       ))}
     </View>
@@ -26,9 +30,9 @@ const LifeBar: React.FC<LifeBarProps> = ({ lives, maxLives = 3 }) => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+    alignItems: 'center',
   },
   heart: {
-    marginHorizontal: 4,
     textShadowColor: 'rgba(0, 0, 0, 0.5)',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 1,

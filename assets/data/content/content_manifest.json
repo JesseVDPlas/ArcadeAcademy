@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-06-30T16:17:53.007Z",
+  "active_packs": [
+    {
+      "pack_id": "hist_vwo1_core",
+      "version": "1.0.0",
+      "subject": "hist",
+      "grade_band": "vwo_1",
+      "difficulty_band": "mixed",
+      "question_count": 30,
+      "enabled": true
+    },
+    {
+      "pack_id": "nl_vwo1_core",
+      "version": "1.0.0",
+      "subject": "nl",
+      "grade_band": "vwo_1",
+      "difficulty_band": "mixed",
+      "question_count": 20,
+      "enabled": true
+    },
+    {
+      "pack_id": "math_vwo1_core",
+      "version": "1.0.0",
+      "subject": "math",
+      "grade_band": "vwo_1",
+      "difficulty_band": "mixed",
+      "question_count": 20,
+      "enabled": true
+    },
+    {
+      "pack_id": "geo_vwo1_core",
+      "version": "1.0.0",
+      "subject": "geo",
+      "grade_band": "vwo_1",
+      "difficulty_band": "mixed",
+      "question_count": 20,
+      "enabled": true
+    }
+  ],
+  "staging_packs": [
+    {
+      "pack_id": "geo_vwo_ce_migr",
+      "version": "1.0.0",
+      "subject": "geo",
+      "grade_band": "vwo_4",
+      "difficulty_band": "mixed",
+      "question_count": 5,
+      "note": "Staging — wacht op ≥10 vragen. Verplaats naar active_packs na batch 2."
+    }
+  ],
+  "fallback_pack_id": "hist_vwo1_core"
+}

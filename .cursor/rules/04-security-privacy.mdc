@@ -1,0 +1,21 @@
+# 04 Security Privacy
+
+## Goal
+Apply privacy-by-default and baseline security for auth, rewards, and player data.
+
+## Always
+- Store only minimum required data.
+- Keep secrets out of the repository.
+- Model auth and identity flows explicitly.
+- Validate reward and leaderboard mutations server-side.
+- Keep analytics free of unnecessary personal data.
+
+## Trust boundaries
+- Client may propose actions.
+- Server validates economy-relevant writes.
+- Security-sensitive decisions must not trust client input alone.
+
+## Prohibited
+- Hardcoded API keys or secrets.
+- PII in logs or analytics events without strict necessity and approval.
+- Client-side trust for token, lives, XP, or leaderboard updates.

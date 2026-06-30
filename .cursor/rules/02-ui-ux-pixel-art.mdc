@@ -1,0 +1,21 @@
+# 02 UI UX Pixel Art
+
+## Goal
+Preserve pixel-art identity without harming clarity, accessibility, or usability.
+
+## Design intent
+- Retro and pixel-art style stays visually consistent.
+- Readability always beats decoration.
+- BitByte appears with a clear functional UX role.
+
+## Always
+- Ensure every view has a clear primary CTA.
+- Implement explicit loading, empty, error, and success states.
+- Keep key content legible on small mobile screens.
+- Use clear color hierarchy for status, progression, and errors.
+- Use motion to support feedback and motivation, not distraction.
+
+## Prohibited
+- Pixel styling that reduces contrast or readability.
+- Ambiguous CTA hierarchy.
+- Decorative BitByte usage without product function.

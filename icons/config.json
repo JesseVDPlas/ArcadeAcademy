@@ -1,0 +1,12 @@
+{
+  "baseSize": 24,
+  "hudBaseSize": 32,
+  "scales": [1, 2, 3],
+  "outputDir": "app/assets/icons/pixel",
+  "incomingDir": "icons/incoming",
+  "manifestJsonPath": "app/assets/icons/pixel/icons.manifest.json",
+  "manifestTsPath": "app/assets/icons/pixel/icons.manifest.ts",
+  "emitJson": true,
+  "attributionPath": "icons/ATTRIBUTION.md",
+  "sourceUrlBase": "https://www.streamlinehq.com/icons/pixel"
+}

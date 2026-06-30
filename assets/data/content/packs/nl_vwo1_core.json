@@ -1,0 +1,363 @@
+{
+  "pack_id": "nl_vwo1_core",
+  "version": "1.0.0",
+  "subject": "nl",
+  "grade_band": "vwo_1",
+  "difficulty_band": "mixed",
+  "questions": [
+    {
+      "id": "nl_basis_1",
+      "question_text": "Wat is een zelfstandig naamwoord?",
+      "options": [
+        "Een werkwoord",
+        "Een naam voor een ding, persoon of dier",
+        "Een bijvoeglijk naamwoord",
+        "Een lidwoord"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een zelfstandig naamwoord is een woord dat een naam geeft aan een ding, persoon of dier.",
+      "learning_goal": "Herkennen van woordsoorten",
+      "tags": [
+        "grammatica",
+        "woordsoorten"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "nl_basis_2",
+      "question_text": "Welke zin is correct gespeld?",
+      "options": [
+        "Ik ga naar de winkel",
+        "Ik ga naa de winkel",
+        "Ik gaa naar de winkel",
+        "Ik ga naar de winkel"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "De eerste zin is correct gespeld.",
+      "learning_goal": "Spelling toepassen",
+      "tags": [
+        "spelling"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "nl_basis_3",
+      "question_text": "Wat is de stam van het werkwoord 'lopen'?",
+      "options": [
+        "Loop",
+        "Lopen",
+        "Loopt",
+        "Liep"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "De stam van 'lopen' is 'loop'.",
+      "learning_goal": "Werkwoorden vervoegen",
+      "tags": [
+        "werkwoorden",
+        "grammatica"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "nl_basis_4",
+      "question_text": "Wat is een synoniem?",
+      "options": [
+        "Een tegengesteld woord",
+        "Een woord met dezelfde betekenis",
+        "Een samengesteld woord",
+        "Een leenwoord"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een synoniem is een woord met ongeveer dezelfde betekenis als een ander woord.",
+      "learning_goal": "Woordenschat uitbreiden",
+      "tags": [
+        "woordenschat"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "nl_basis_5",
+      "question_text": "Welk leesteken gebruik je aan het einde van een vraag?",
+      "options": [
+        "Punt",
+        "Komma",
+        "Vraagteken",
+        "Uitroepteken"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Een vraag eindigt altijd met een vraagteken.",
+      "learning_goal": "Interpunctie correct gebruiken",
+      "tags": [
+        "interpunctie"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "nl_basis_6",
+      "question_text": "Wat is de meervoudsvorm van 'huis'?",
+      "options": [
+        "Huisen",
+        "Huizen",
+        "Huise",
+        "Huis"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "De meervoudsvorm van 'huis' is 'huizen'.",
+      "learning_goal": "Meervoudsvormen maken",
+      "tags": [
+        "grammatica",
+        "spelling"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "nl_basis_7",
+      "question_text": "Welke tijd is dit: 'Ik liep naar school'?",
+      "options": [
+        "Tegenwoordige tijd",
+        "Verleden tijd",
+        "Toekomende tijd",
+        "Voltooid tegenwoordige tijd"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "'Liep' is de verleden tijd van 'lopen'.",
+      "learning_goal": "Werkwoordstijden herkennen",
+      "tags": [
+        "werkwoorden",
+        "tijden"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "nl_basis_8",
+      "question_text": "Wat is een bijvoeglijk naamwoord?",
+      "options": [
+        "Een woord dat een eigenschap beschrijft",
+        "Een werkwoord",
+        "Een lidwoord",
+        "Een persoonlijk voornaamwoord"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "Een bijvoeglijk naamwoord beschrijft een eigenschap van een zelfstandig naamwoord.",
+      "learning_goal": "Woordsoorten herkennen",
+      "tags": [
+        "grammatica",
+        "woordsoorten"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "nl_basis_9",
+      "question_text": "Welk woord is een antoniem van 'groot'?",
+      "options": [
+        "Klein",
+        "Enorm",
+        "Hoog",
+        "Breed"
+      ],
+      "correct_option_index": 0,
+      "explanation_short": "'Klein' is het tegenovergestelde (antoniem) van 'groot'.",
+      "learning_goal": "Woordenschat: antoniemen",
+      "tags": [
+        "woordenschat"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": "nl_basis_10",
+      "question_text": "Hoeveel klinkers heeft het woord 'computer'?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Computer heeft 3 klinkers: o, u, e.",
+      "learning_goal": "Klinkers en medeklinkers onderscheiden",
+      "tags": [
+        "spelling",
+        "klanken"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "nl_gev_1",
+      "question_text": "Wat is een metafoor?",
+      "options": [
+        "Een letterlijke vergelijking",
+        "Een overdreven uitdrukking",
+        "Een beeldende vergelijking zonder 'als' of 'zoals'",
+        "Een herhaling van woorden"
+      ],
+      "correct_option_index": 2,
+      "explanation_short": "Een metafoor is een beeldende vergelijking waarbij je iets direct met iets anders vergelijkt zonder 'als' of 'zoals'.",
+      "learning_goal": "Stijlfiguren herkennen",
+      "tags": [
+        "stijlfiguren",
+        "literatuur"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "nl_gev_2",
+      "question_text": "Wat is de functie van een bijwoordelijke bepaling?",
+      "options": [
+        "Het onderwerp beschrijven",
+        "Tijd, plaats, manier of reden aangeven",
+        "Het werkwoord vervoegen",
+        "De hoofdzin verbinden"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een bijwoordelijke bepaling geeft meer informatie over tijd, plaats, manier of reden.",
+      "learning_goal": "Zinsdelen herkennen",
+      "tags": [
+        "grammatica",
+        "zinsdelen"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "nl_gev_3",
+      "question_text": "Wat is een personificatie?",
+      "options": [
+        "Een persoon beschrijven",
+        "Menselijke eigenschappen geven aan dingen of dieren",
+        "Een overdrijving",
+        "Een vergelijking"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Personificatie is het geven van menselijke eigenschappen aan dingen of dieren.",
+      "learning_goal": "Stijlfiguren herkennen",
+      "tags": [
+        "stijlfiguren"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "nl_gev_4",
+      "question_text": "Welke zin bevat een onderschikkend voegwoord?",
+      "options": [
+        "Ik eet een appel",
+        "Hij kwam omdat het regende",
+        "Ze zingen en dansen",
+        "Morgen ga ik winkelen"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "'Omdat' is een onderschikkend voegwoord dat een bijzin inleidt.",
+      "learning_goal": "Voegwoorden herkennen",
+      "tags": [
+        "grammatica",
+        "voegwoorden"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "nl_gev_5",
+      "question_text": "Wat is het verschil tussen 'hun' en 'hen'?",
+      "options": [
+        "Er is geen verschil",
+        "'Hun' is bezittelijk, 'hen' is lijdend voorwerp",
+        "'Hen' is bezittelijk, 'hun' is lijdend voorwerp",
+        "Ze zijn allebei bezittelijk"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "'Hun' gebruik je voor bezit (hun huis), 'hen' gebruik je als meewerkend of lijdend voorwerp (ik zie hen).",
+      "learning_goal": "Voornaamwoorden correct gebruiken",
+      "tags": [
+        "grammatica",
+        "voornaamwoorden"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "nl_gev_6",
+      "question_text": "Wat is een alliteratie?",
+      "options": [
+        "Rijmende woorden",
+        "Herhaling van dezelfde beginletter",
+        "Een lange zin",
+        "Een vragende zin"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Alliteratie is het herhalen van dezelfde beginletter in opeenvolgende woorden.",
+      "learning_goal": "Stijlfiguren herkennen",
+      "tags": [
+        "stijlfiguren"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "nl_gev_7",
+      "question_text": "Wat is een voltooid deelwoord?",
+      "options": [
+        "Een werkwoord in de tegenwoordige tijd",
+        "Een werkwoord dat eindigt op -d of -t",
+        "Een zelfstandig naamwoord",
+        "Een bijvoeglijk naamwoord"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een voltooid deelwoord is een werkwoordsvorm die eindigt op -d of -t, zoals 'gelopen' of 'gemaakt'.",
+      "learning_goal": "Werkwoordsvormen herkennen",
+      "tags": [
+        "grammatica",
+        "werkwoorden"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": "nl_gev_8",
+      "question_text": "Welke zin is een vragende bijzin?",
+      "options": [
+        "Wat doe jij?",
+        "Ik vraag me af wat jij doet",
+        "Doe jij dat?",
+        "Waarom kom je niet?"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "'Ik vraag me af wat jij doet' bevat een vragende bijzin ('wat jij doet').",
+      "learning_goal": "Bijzinnen herkennen",
+      "tags": [
+        "grammatica",
+        "zinsbouw"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "nl_gev_9",
+      "question_text": "Wat is een eufemisme?",
+      "options": [
+        "Een overdrijving",
+        "Een verzachtende uitdrukking",
+        "Een herhaling",
+        "Een vraag"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Een eufemisme is een verzachtende of verhullende uitdrukking voor iets onaangenaams.",
+      "learning_goal": "Stijlfiguren herkennen",
+      "tags": [
+        "stijlfiguren",
+        "woordenschat"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": "nl_gev_10",
+      "question_text": "Wat is het verschil tussen 'als' en 'dan' bij vergelijkingen?",
+      "options": [
+        "Er is geen verschil",
+        "'Als' bij gelijkheid, 'dan' bij ongelijkheid",
+        "'Dan' bij gelijkheid, 'als' bij ongelijkheid",
+        "Ze zijn allebei hetzelfde"
+      ],
+      "correct_option_index": 1,
+      "explanation_short": "Je gebruikt 'als' bij gelijkheid (zo groot als) en 'dan' bij ongelijkheid (groter dan).",
+      "learning_goal": "Correct taalgebruik",
+      "tags": [
+        "grammatica",
+        "vergelijkingen"
+      ],
+      "difficulty": "medium"
+    }
+  ]
+}

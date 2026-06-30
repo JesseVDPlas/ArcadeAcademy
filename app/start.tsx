@@ -1,6 +1,7 @@
 import { RetroButton } from '@/components/shared/RetroButton';
 import { useUser } from '@/contexts/UserContext';
-import { colors, fonts, spacing } from '@/theme';
+import { isOnboardingComplete } from '@/lib/onboarding';
+import { colors, coreStyles, fonts, spacing } from '@/theme';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import React from 'react';
@@ -8,7 +9,17 @@ import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'r
 
 export default function StartScreen() {
   const router = useRouter();
-  const { soundOn, toggleSound } = useUser();
+  const { soundOn, toggleSound, name, grade, level } = useUser();
+  const completed = isOnboardingComplete({ name, grade, level });
+  const ctaTarget = completed ? '/(tabs)/home' : '/onboarding/intro';
+
+  React.useEffect(() => {
+    if (completed) return;
+    const timeout = setTimeout(() => {
+      router.replace('/onboarding/intro');
+    }, 500);
+    return () => clearTimeout(timeout);
+  }, [completed, router]);
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -20,10 +31,13 @@ export default function StartScreen() {
         />
         <Text style={styles.title}>ARCADE ACADEMY</Text>
         <RetroButton
+          testID="start-cta"
           style={styles.button}
-          onPress={() => router.replace('/onboarding/name')}
+          variant="primary"
+          size="large"
+          onPress={() => router.replace(ctaTarget)}
         >
-          Start
+          {completed ? 'CONTINUE' : 'START'}
         </RetroButton>
         <TouchableOpacity style={styles.muteBtn} onPress={toggleSound}>
           <Ionicons
@@ -40,7 +54,7 @@ export default function StartScreen() {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: colors.dark,
+    backgroundColor: coreStyles.screenBg,
   },
   center: {
     flex: 1,
@@ -64,23 +78,9 @@ const styles = StyleSheet.create({
     textShadowRadius: 8,
     textAlign: 'center',
   },
-  input: {
-    width: 220,
-    borderWidth: 2,
-    borderColor: colors.neon,
-    borderRadius: 10,
-    color: colors.neon,
-    fontFamily: fonts.arcade,
-    fontSize: 14,
-    paddingVertical: 10,
-    paddingHorizontal: 16,
-    marginBottom: spacing.m,
-    backgroundColor: '#111',
-    textAlign: 'center',
-    letterSpacing: 1,
-  },
   button: {
-    width: 200,
+    width: 300,
+    minHeight: 56,
     marginVertical: spacing.s,
   },
   muteBtn: {

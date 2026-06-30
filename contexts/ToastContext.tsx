@@ -13,6 +13,15 @@ interface ToastContextValue {
 
 const ToastContext = createContext<ToastContextValue>({ show: () => {} });
 
+// Internal state for RetroToast to access
+let toastState: Toast | null = null;
+let toastVisible = false;
+let toastListeners: Array<() => void> = [];
+
+const notifyListeners = () => {
+  toastListeners.forEach(listener => listener());
+};
+
 export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [toast, setToast] = useState<Toast | null>(null);
   const [visible, setVisible] = useState(false);
@@ -22,32 +31,52 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     setToast({ message, type });
     setVisible(false);
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setTimeout(() => setVisible(true), 10); // allow fade-out if needed
-    timeoutRef.current = setTimeout(() => setVisible(false), 2000);
+    setTimeout(() => {
+      setVisible(true);
+      toastState = { message, type };
+      toastVisible = true;
+      notifyListeners();
+    }, 10);
+    timeoutRef.current = setTimeout(() => {
+      setVisible(false);
+      toastVisible = false;
+      notifyListeners();
+      setTimeout(() => {
+        setToast(null);
+        toastState = null;
+        notifyListeners();
+      }, 300);
+    }, 2000);
   }, []);
 
-  // Hide toast after fade-out
-  React.useEffect(() => {
-    if (!visible) {
-      const t = setTimeout(() => setToast(null), 300);
-      return () => clearTimeout(t);
-    }
-  }, [visible]);
+  const contextValue = React.useMemo(() => ({ show }), [show]);
 
   return (
-    <ToastContext.Provider value={{ show }}>
+    <ToastContext.Provider value={contextValue}>
       {children}
       {/* Toast UI is rendered by RetroToast at root */}
     </ToastContext.Provider>
   );
 };
 
+// Hook for RetroToast to subscribe to toast state
+export const useToastState = () => {
+  const [state, setState] = React.useState({ toast: toastState, visible: toastVisible });
+
+  React.useEffect(() => {
+    const listener = () => {
+      setState({ toast: toastState, visible: toastVisible });
+    };
+    toastListeners.push(listener);
+    return () => {
+      toastListeners = toastListeners.filter(l => l !== listener);
+    };
+  }, []);
+
+  return state;
+};
+
 export const useToast = () => useContext(ToastContext);
 
-// For RetroToast: export the current toast state
-export const useToastState = () => {
-  const [toast, setToast] = useState<Toast | null>(null);
-  const [visible, setVisible] = useState(false);
-  // This hook will be replaced by context subscription in RetroToast
-  return { toast, visible };
-}; 
+// Export Toast type for RetroToast
+export type { Toast };

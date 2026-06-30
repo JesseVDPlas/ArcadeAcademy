@@ -1,4 +1,4 @@
-import { colors, fonts } from '@/theme';
+import { colors, coreStyles, fonts, radii, spacing } from '@/theme';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
@@ -34,7 +34,7 @@ export default function Level() {
         onPress={() => {
           if (selected) {
             setLevel(selected);
-            router.replace('/onboarding/goal');
+            router.replace('/onboarding/grade');
           }
         }}
       >
@@ -44,13 +44,26 @@ export default function Level() {
   );
 }
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.background, alignItems: 'center', justifyContent: 'center' },
-  title: { color: colors.neon, fontSize: 24, fontFamily: fonts.arcade, marginBottom: 24 },
-  options: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginBottom: 24 },
-  option: { borderColor: colors.neon, borderWidth: 2, borderRadius: 10, padding: 16, margin: 8, backgroundColor: '#111' },
-  selected: { backgroundColor: colors.neon },
-  optionText: { color: colors.neon, fontSize: 18, fontFamily: fonts.arcade },
+  container: { flex: 1, backgroundColor: coreStyles.screenBg, alignItems: 'center', justifyContent: 'center' },
+  title: { color: colors.neonGreen, fontSize: 24, fontFamily: fonts.arcade, marginBottom: spacing.xl },
+  options: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginBottom: spacing.xl },
+  option: {
+    borderColor: colors.neonGreen,
+    borderWidth: 1,
+    borderRadius: radii.m,
+    padding: spacing.l,
+    margin: spacing.s,
+    backgroundColor: coreStyles.buttonBg,
+  },
+  selected: { backgroundColor: colors.neonGreen },
+  optionText: { color: colors.neonGreen, fontSize: 18, fontFamily: fonts.arcade },
   selectedText: { color: colors.selectedText, fontFamily: fonts.arcade },
-  button: { backgroundColor: '#111', borderColor: colors.neon, borderWidth: 2, borderRadius: 10, padding: 16 },
-  buttonText: { color: colors.neon, fontSize: 18, fontFamily: fonts.arcade, fontWeight: 'bold' },
-}); 
+  button: {
+    backgroundColor: coreStyles.buttonBg,
+    borderColor: coreStyles.buttonBorder,
+    borderWidth: 1,
+    borderRadius: radii.m,
+    padding: spacing.l,
+  },
+  buttonText: { color: colors.neonGreen, fontSize: 18, fontFamily: fonts.arcade, fontWeight: 'bold' },
+});
